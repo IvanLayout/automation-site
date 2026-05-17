@@ -324,6 +324,33 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.comp-projects__slider').length) {
+		new Swiper(".comp-projects__slider", {
+			loop: false,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				el: ".slider-pagination",
+				type: "fraction",
+			},
+		})
+	}
 });
 
 

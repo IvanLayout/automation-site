@@ -1,0 +1,13 @@
+<svg width="885" height="701" viewBox="0 0 885 701" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.1">
+<line opacity="0.8" x1="441.816" y1="0.183594" x2="441.816" y2="700.184" stroke="#E2E8F3"/>
+<g opacity="0.8">
+<line x1="882.326" y1="94.6836" x2="0.326904" y2="94.6836" stroke="#E2E8F3"/>
+<line x1="884.324" y1="492.684" x2="0.324951" y2="492.684" stroke="#E2E8F3"/>
+</g>
+<line opacity="0.8" y1="-0.5" x2="931" y2="-0.5" transform="matrix(-0.947709 0.319137 -0.27874 -0.960366 882.316 0.183594)" stroke="#E2E8F3"/>
+<line opacity="0.8" y1="-0.5" x2="969" y2="-0.5" transform="matrix(-0.910077 0.414439 -0.339265 -0.940691 883.316 297.184)" stroke="#E2E8F3"/>
+<line opacity="0.8" y1="-0.5" x2="931" y2="-0.5" transform="matrix(-0.948045 -0.318136 0.277842 -0.960627 883.316 296.184)" stroke="#E2E8F3"/>
+<line opacity="0.8" y1="-0.5" x2="971" y2="-0.5" transform="matrix(-0.910282 -0.413989 0.364951 -0.931027 884.316 699.184)" stroke="#E2E8F3"/>
+</g>
+</svg>
