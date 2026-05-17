@@ -243,27 +243,13 @@ $(() => {
 		}
 	})
 
-	$('body').on('click', '.header-submenu__sub-item a._sub', function (e) {
+	$('body').on('click', '.header-submenu__link._sub', function (e) {
 		e.preventDefault()
 
-		if ($(this).hasClass('_active')) {
-			$(this).removeClass('_active')
+		if ($(this).closest('.header-submenu__item').hasClass('_active')) {
+			$(this).closest('.header-submenu__item').removeClass('_active')
 		} else {
-			$(this).addClass('_active')
-		}
-	})
-
-	$('body').on('click', '.header-submenu__sub-more', function (e) {
-		e.preventDefault()
-
-		if ($(this).hasClass('_active')) {
-			$(this).removeClass('_active')
-
-			$(this).closest('.header-submenu__sub').find('._hide').removeClass('_show')
-		} else {
-			$(this).addClass('_active')
-
-			$(this).closest('.header-submenu__sub').find('._hide').addClass('_show')
+			$(this).closest('.header-submenu__item').addClass('_active')
 		}
 	})
 	
@@ -299,18 +285,6 @@ $(() => {
 			$(this).next('.header-submenu').addClass('_show')
 
 			$('.header__info, .catalog-head__back').addClass('_second')
-		})
-
-		$('body').on('click', '.header-submenu__link._sub', function (e) {
-			e.preventDefault()
-
-			let titleCatalog2 = $(this).find('.header-submenu__link-name').text()
-
-			$('.catalog-head__title').text(titleCatalog2)
-
-			$(this).next('.header-submenu__sub').addClass('_show')
-
-			$('.header__info, .catalog-head__back').addClass('_third')
 		})
 	}
 
