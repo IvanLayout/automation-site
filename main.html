@@ -52,9 +52,23 @@
 								</button>
 							</div>
 
+							<div class="header__iso">
+								<a href="/" class="header__iso-link">
+									<span class="header__iso-icon">
+										<img src="images/iso.png" alt="">
+									</span>
+									<span>Сертификат ISO</span>
+								</a>
+							</div>
+
 							<nav class="header__list _flex">
 								<div class="header__list-item">
-									<a href="/" class="header__list-link header__list-link_sub">О компании</a>
+									<a href="/" class="header__list-link header__list-link_sub">
+										О компании
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
 
 									<div class="header__list-submenu">
 										<div>
@@ -93,7 +107,12 @@
 									<a href="/" class="header__list-link">Как купить?</a>
 								</div>
 								<div class="header__list-item">
-									<a href="/" class="header__list-link header__list-link_sub">Услуги</a>
+									<a href="/" class="header__list-link header__list-link_sub">
+										Услуги
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
 
 									<div class="header__list-submenu">
 										<div>
@@ -183,6 +202,11 @@
 
 							<div class="header-catalog">
 								<button type="button" class="header-catalog__open">
+									<span class="header-catalog__open-burger">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
 									Каталог
 								</button>
 
@@ -3179,7 +3203,7 @@
 											Везде
 
 											<svg>
-												<use xlink:href="images/sprite.svg#arrow1"></use>
+												<use xlink:href="images/sprite.svg#arrow3"></use>
 											</svg>
 										</button>
 
@@ -3320,7 +3344,7 @@
 									</div>
 
 									<div class="header__search-field _flex">
-										<input type="text" value="" placeholder="Поиск по сайту…" id="header__search-input" class="header__search-input">
+										<input type="text" value="" placeholder="Микроволновый рефлексный датчик уровня HHK-703–4" id="header__search-input" class="header__search-input">
 
 										<button type="submit" class="header__search-submit">
 											<svg>
@@ -3338,18 +3362,18 @@
 							</div>
 
 							<div class="header__btns _flex">
-								<button type="button" data-content="#modal-login" class="header__btn modal-btn">
+								<a href="/" class="header__btn">
 									<span class="header__btn-icon">
-										<svg width="16" height="18">
-											<use xlink:href="images/sprite.svg#user"></use>
+										<svg width="20" height="20">
+											<use xlink:href="images/sprite.svg#stock"></use>
 										</svg>
 									</span>
-									<span class="header__btn-name">Войти</span>
-								</button>
+									<span class="header__btn-name">Акции</span>
+								</a>
 								<a href="/" class="header__btn">
 									<span class="header__btn-number">10</span>
 									<span class="header__btn-icon">
-										<svg width="20" height="18">
+										<svg width="20" height="20">
 											<use xlink:href="images/sprite.svg#favorite"></use>
 										</svg>
 									</span>
@@ -3357,21 +3381,29 @@
 								</a>
 								<a href="/" class="header__btn">
 									<span class="header__btn-icon">
-										<svg width="15" height="19">
+										<svg width="20" height="20">
 											<use xlink:href="images/sprite.svg#compare"></use>
 										</svg>
 									</span>
-									<span class="header__btn-name">Сравнить</span>
+									<span class="header__btn-name">Сравнение</span>
 								</a>
 								<a href="/" class="header__btn">
 									<span class="header__btn-number">100</span>
 									<span class="header__btn-icon">
-										<svg width="19" height="18">
+										<svg width="20" height="20">
 											<use xlink:href="images/sprite.svg#cart"></use>
 										</svg>
 									</span>
 									<span class="header__btn-name">Корзина</span>
 								</a>
+								<button type="button" data-content="#modal-login" class="header__btn modal-btn">
+									<span class="header__btn-icon">
+										<svg width="20" height="20">
+											<use xlink:href="images/sprite.svg#user"></use>
+										</svg>
+									</span>
+									<span class="header__btn-name">Войти</span>
+								</button>
 							</div>
 						</div>
 					</div>
