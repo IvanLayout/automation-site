@@ -3578,6 +3578,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: center;
 	flex-wrap: wrap;
 
+	width: 100%;
+	height: 100%;
+
 	aspect-ratio: 1 / .671;
 	border-radius: 10px;
 	overflow: hidden;
@@ -4226,6 +4229,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 .main-news__cols
 {
 	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
 	margin-top: 24px;
 }
 
@@ -4245,6 +4250,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	aspect-ratio: 1 / .574;
 	width: 100%;
+	height: 100%;
 
 	padding: 40px;
 }
@@ -5353,7 +5359,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .footer__colr
 {
-	width: calc(100% - 350px);
+	width: calc(100% - 360px);
 	max-width: 1285px;
 	padding-top: 8px;
 }
