@@ -3121,7 +3121,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	
 	height: 100%;
 
-	object-fit: cover
+	object-fit: cover;
+	object-position: 0;
 }
 
 
@@ -3321,7 +3322,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .areas-activity__grid._flex .paint-suitable__item
 {
 	width: calc(50% - 10px);
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .paint-suitable__item
@@ -3887,13 +3888,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	font-size: 16px;
 	line-height: 1.2;
-
-	max-height: 38px;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
 }
 
 .reviews__buy-product
@@ -3934,7 +3928,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 24px;
 }
 
-.brands__slider .slider-pagination
+.brands__slider .slider-pagination,
+.brands__slider .slider-button-next,
+.brands__slider .slider-button-prev
 {
 	display: none;
 }
@@ -4455,7 +4451,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-radius: 10px;
 	overflow: hidden;
 
-	/* height: 700px; */
+	min-height: 700px;
 }
 
 .comp-projects__info
@@ -5369,6 +5365,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 	justify-content: space-between;
 }
 
+.footer-menu__col-big
+{
+	width: 100%;
+	margin-top: 53px;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
 .footer-menu__title
 {
 	font-size: 20px;
@@ -5413,15 +5421,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
-.footer__middle
+.footer__soc-mob
 {
-	margin-top: 55px;
-	justify-content: space-between;
+	display: none;
 }
 
 .footer__rating
 {
 	height: 49px;
+	margin-top: 57px;
 }
 
 .footer__rating-img
@@ -5526,24 +5534,23 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .footer__bot
 {
-	margin-left: -76px;
-}
-
-.footer__bot > div
-{
-	margin-left: 76px;
 	margin-top: 16px;
 }
 
 
 .footer__links
 {
-	margin-right: auto;
+	margin-left: 76px;
 }
 
 .footer__links-link + .footer__links-link
 {
 	margin-left: 56px;
+}
+
+.footer__creator
+{
+	margin-left: auto;
 }
 
 a.footer__creator-img

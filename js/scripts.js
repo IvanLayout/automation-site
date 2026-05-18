@@ -301,6 +301,10 @@ $(() => {
 				},
 				'1024': {
 					spaceBetween: 0,
+					slidesPerView: 4
+				},
+				'1700': {
+					spaceBetween: 0,
 					slidesPerView: 5
 				}
 			}
@@ -321,6 +325,10 @@ $(() => {
 					slidesPerView:'auto',
 				},
 				'1024': {
+					spaceBetween: 25,
+					slidesPerView:'auto',
+				},
+				'700': {
 					spaceBetween: 30,
 					slidesPerView: 5,
 				}
