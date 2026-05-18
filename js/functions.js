@@ -252,6 +252,19 @@ $(() => {
 			$(this).closest('.header-submenu__item').addClass('_active')
 		}
 	})
+
+
+	if ( $(window).width() < 1024 ) {
+		$('body').on('click', '.header__list-link._sub', function (e) {
+			e.preventDefault()
+
+			if ( $(this).closest('.header__list-item').hasClass('_show') ) {
+				$(this).closest('.header__list-item').removeClass('_show')
+			} else {
+				$(this).closest('.header__list-item').addClass('_show')
+			}
+		})
+	}
 	
 
 	// Наведение на пункты меню

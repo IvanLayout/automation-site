@@ -10,10 +10,23 @@ if (document.body.clientWidth < 390) {
 }
 
 $(() => {
+	$('body').on('click', '.mob-menu-btn', function (e) {
+		e.preventDefault()
+
+		if ($('.header__top').hasClass('_show')) {
+			$('.header__top').removeClass('_show')
+			$('body').removeClass('_lock')
+		} else {
+			$('.header__top').addClass('_show')
+			$('body').addClass('_lock')
+		}
+	})
+
+
 	if ($('.header__cats').length) {
 		new Swiper(".header__cats", {
 			loop: false,
-			spaceBetween: 20,
+			spaceBetween: 10,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -33,6 +46,24 @@ $(() => {
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'768': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 'auto',
 				}
 			}
 		})

@@ -1,0 +1,173 @@
+@media (max-width: 1499px)
+{
+    .cont {
+        max-width: 1280px;
+    }
+
+	.header__adres{
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .header__adres-btn{
+        padding-left: 19px;
+    }
+
+    .header__adres-marker{
+        width: 12px;
+        height: 16px;
+        margin-top: -8px;
+    }
+
+    .header__iso-link{
+        font-size: 12px;
+        gap: 9px;
+    }
+
+
+    .header__list{
+        gap: 15px;
+    }
+
+    .header__list-item {
+        font-size: 14px;
+    }
+
+    .header__contacts{
+        gap: 15px;
+    }
+
+    .header__phone{
+        font-size: 14px;
+    }
+
+    .header__mail{
+        font-size: 12px;
+    }
+
+    .header__messengers{
+        margin-left: 15px;
+    }
+
+
+    .header__info{
+        padding: 15px 0 13px;
+    }
+
+    .header__info .cont{
+        gap: 10px;
+    }
+
+    .header__logo{
+        margin-right: 10px;
+    }
+
+    .header__logo img{
+        max-width: 192px;
+    }
+
+    .header-catalog__open{
+        font-size: 12px;
+        padding: 0 10px 0 36px;
+    }
+
+    .header-catalog__open-burger{
+        width: 16px;
+        left: 11px;
+    }
+
+    .header__search{
+        max-width: 422px;
+    }
+
+    .mini-modal__select{
+        width: 72px;
+        margin-right: 8px;
+    }
+
+    .mini-modal__btn-select{
+        font-size: 12px;
+        padding-left: 14px;
+    }
+
+    .header__search-field{
+        width: calc(100% - 80px);
+    }
+
+    .header__search .header__search-input{
+        font-size: 12px;
+    }
+
+    .header__btns{
+        gap: 15px;
+        padding-left: 30px;
+    }
+
+    .header__btn{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .header__cats-link{
+        font-size: 14px;
+        line-height: 39px;
+    }
+
+
+    .header-catalog__wrap::before {
+        right: calc(100% - 405px);
+    }
+
+    .header-menu{
+        width: 395px;
+        padding-right: 13px;
+    }
+
+    .header-menu__link{
+        font-size: 14px;
+    }
+
+    .header-submenu {
+        left: 405px;
+        width: calc(100% - 365px);
+        padding-left: 30px;
+    }
+
+    .header-submenu__title{
+        font-size: 20px;
+    }
+
+    .header-submenu__flex{
+        margin-top: 0;
+        gap: 20px 32px;
+    }
+
+    .header-submenu__col{
+        width: calc(50% - 16px);
+    }
+
+    .header-submenu__item{
+        margin-top: 20px;
+    }
+
+    .header-submenu__link{
+        font-size: 14px;
+    }
+
+    .header-submenu__link._sub{
+        padding-left: 25px;
+    }
+
+    .header-submenu__sub-item{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .header-submenu__link._sub::before{
+        top: 1.5px;
+    }
+
+    .header-catalog__block {
+        height: calc(100vh - 119px);
+    }
+}
