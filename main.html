@@ -43,6 +43,22 @@
 				<!-- Шапка -->
 				<header class="header">
 					<div class="header__top">
+						<div class="header__top-mob">
+							<div class="cont">
+								<button type="button" class="header__top-close">
+									<svg>
+										<use xlink:href="images/sprite.svg#close"></use>
+									</svg>
+								</button>
+
+								<div class="header__top-logo">
+									<a href="/">
+										<img src="images/logo_small.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+
 						<div class="cont _flex">
 							<div class="header__adres">
 								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
@@ -179,15 +195,15 @@
 						</div>
 					</div>
 
-               <div class="header__mob">
-                  <div class="cont _flex">
-                     <button type="button" class="mob-menu-btn">
+					<div class="header__mob">
+						<div class="cont _flex">
+							<button type="button" class="mob-menu-btn">
 								<span></span>
 								<span></span>
 								<span></span>
 							</button>
 
-                    <div class="header__adres">
+							<div class="header__adres">
 								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
 									<svg class="header__adres-marker">
 										<use xlink:href="images/sprite.svg#marker"></use>
@@ -196,7 +212,7 @@
 								</button>
 							</div>
 
-                     <div class="header__iso">
+							<div class="header__iso">
 								<a href="/" class="header__iso-link">
 									<span class="header__iso-icon">
 										<img src="images/iso.png" alt="">
@@ -204,13 +220,13 @@
 								</a>
 							</div>
 
-                     <div class="header__logo">
+							<div class="header__logo">
 								<a href="/">
 									<img src="images/logo_small.svg" alt="">
 								</a>
 							</div>
 
-                     <div class="header__contacts _flex">
+							<div class="header__contacts _flex">
 								<div class="header__lg">
 									<a href="/"></a>
 								</div>
@@ -221,8 +237,8 @@
 									<a href="tel:+88043337039"></a>
 								</div>
 							</div>
-                  </div>
-               </div>
+						</div>
+					</div>
 
 					<div class="header__info">
 						<div class="cont _flex">
@@ -1946,6 +1962,60 @@
 					</div>
 				</header>
 
+				<div class="overlay-catalog"></div>
+				<div class="overlay"></div>
+
+				<div class="fix-btns">
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#home"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Главная</span>
+					</a>
+					<button type="button" class="fix-btns__btn open-catalog-mob">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_catalog"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Каталог</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#favorite"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">999</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
+					<button type="button" class="fix-btns__btn open-user-info">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#user"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Профиль</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#cart"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">999</span>
+
+						<span class="fix-btns__btn-name">Корзина</span>
+					</a>
+				</div>
 				<!-- End Шапка -->
 
 				<section class="first-section">

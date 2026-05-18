@@ -13,13 +13,25 @@ $(() => {
 	$('body').on('click', '.mob-menu-btn', function (e) {
 		e.preventDefault()
 
-		if ($('.header__top').hasClass('_show')) {
-			$('.header__top').removeClass('_show')
-			$('body').removeClass('_lock')
-		} else {
-			$('.header__top').addClass('_show')
-			$('body').addClass('_lock')
-		}
+		$('.header__top').addClass('_show')
+		$('body').addClass('_lock')
+		$('.overlay').addClass('_show')
+	})
+
+	$('body').on('click', '.header__top-close', function (e) {
+		e.preventDefault()
+
+		$('.header__top').removeClass('_show')
+		$('body').removeClass('_lock')
+		$('.overlay').removeClass('_show')
+	})
+
+	$('body').on('click', '.overlay', function (e) {
+		e.preventDefault()
+
+		$('.header__top').removeClass('_show')
+		$('body').removeClass('_lock')
+		$('.overlay').removeClass('_show')
 	})
 
 

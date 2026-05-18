@@ -316,11 +316,17 @@ button
 ------------*/
 .header
 {
-
+	position: relative;
+	background: #fff;
+	z-index: 91;
 }
 
 .header__top{
 	border-bottom: 1px solid rgba(27, 39, 69, 0.1);
+}
+
+.header__top-mob{
+	display: none;
 }
 
 .header__top .cont
@@ -1112,8 +1118,8 @@ button
 	}
 }
 
-
-.overlay-catalog
+.overlay-catalog,
+.overlay
 {
     position: fixed;
     z-index: 90;
@@ -1131,9 +1137,11 @@ button
     transition: opacity .2s linear;
 }
 
-.overlay-catalog._show
+.overlay-catalog._show,
+.overlay._show
 {
     opacity: 1;
+	pointer-events: auto;
 }
 
 .header-catalog__block
