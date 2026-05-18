@@ -1,4 +1,28 @@
 @media (max-width: 1199px)
 {
-	
+
+    .header__adres{
+        margin-right: 15px;
+    }
+
+    .header__iso{
+        margin-right: 15px;
+    }
+
+    .header__iso-link {
+        gap: 0;
+    }
+
+    .header__iso-link span{
+        font-size: 0;
+    }
+
+    .header__list-item {
+        font-size: 12px;
+    }
+
+    .header__btn{
+        padding: 0;
+        font-size: 12px;
+    }
 }

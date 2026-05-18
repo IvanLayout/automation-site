@@ -1,0 +1,83 @@
+@media (max-width: 1699px)
+{
+    .cont{
+        max-width: 1480px;
+    }
+
+	.header__adres{
+        font-size: 16px;
+        margin-right: 28px;
+    }
+
+    .header__iso{
+        margin-right: 30px;
+    }
+
+
+    .header__list{
+        gap: 20px;
+    }
+
+    .header__list-item{
+        font-size: 16px;
+    }
+
+
+    .header__contacts{
+        gap: 20px;
+    }
+
+    .header__phone{
+        font-size: 16px;
+    }
+
+    .header__mail{
+        font-size: 14px;
+    }
+
+    .header__messengers{
+        margin-left: 20px;
+    }
+
+
+    .header__logo{
+        margin-right: 0;
+    }
+
+    .header__logo img{
+        max-width: 218px;
+    }
+
+
+    .header__search .header__search-input{
+        font-size: 14px;
+    }
+
+    .header__btns{
+        gap: 25px;
+    }
+
+
+    .header-catalog__block{
+        height: calc(100vh - 129px);
+    }
+
+    .header-submenu{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100% - 460px);
+    }
+
+    .header-submenu__flex{
+        gap: 40px 20px;
+    }
+
+    .header-submenu__col{
+        width: calc(50% - 10px);
+    }
+
+    .header__cats-link{
+        font-size: 16px;
+        line-height: 53px;
+    }
+}
