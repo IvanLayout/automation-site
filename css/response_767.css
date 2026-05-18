@@ -1,6 +1,36 @@
 @media (max-width: 767px)
 {
+	.cont{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
+	.fix-btns{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header-catalog .cont{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header-submenu{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header__mob .header__adres{
+		display: none;
+	}
+
+	.header__top-close{
+		left: 10px;
+	}
+
+	.header__bot{
+		display: none;
+	}
 	/* commit */
 
 	

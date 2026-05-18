@@ -33,53 +33,6 @@ $(() => {
 		$('body').removeClass('_lock')
 		$('.overlay').removeClass('_show')
 	})
-
-
-	if ($('.header__cats').length) {
-		new Swiper(".header__cats", {
-			loop: false,
-			spaceBetween: 10,
-			slidesPerView: 'auto',
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				}
-			},
-			breakpoints: {
-				'320': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
-				},
-				'480': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
-				},
-				'768': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
-				},
-				'1024': {
-					spaceBetween: 20,
-					slidesPerView: 'auto',
-				}
-			}
-		})
-	}
 	// commit
 
 
@@ -412,6 +365,52 @@ $(() => {
 $(window).on('load', () => {
 	if ($('.areas-activity__wrap').length){
 		paintSuitableSlider()
+	}
+
+	if ($('.header__cats').length) {
+		new Swiper(".header__cats", {
+			loop: false,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'768': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 'auto',
+				}
+			}
+		})
 	}
 });
 
