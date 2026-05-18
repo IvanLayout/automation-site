@@ -3301,7 +3301,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	margin-top: -5px;
 
-	background: url(../images/ic_arrow.svg) 50% no-repeat;
+	background: url(../images/ic_arrow.svg) 50%/contain no-repeat;
 }
 
 
@@ -3326,13 +3326,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: stretch;
 }
 
-.areas-activity__grid._flex .paint-suitable__item
+.areas-activity__grid._flex .areas-activity__item
 {
 	width: calc(50% - 10px);
 	margin-top: 20px;
 }
 
-.paint-suitable__item
+.areas-activity__item
 {
 	border-radius: 10px;
 	background: #F4F5F7;
@@ -3343,12 +3343,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #1B2745;
 	position: relative;
 	overflow: hidden;
-	aspect-ratio: 1 / .317;
+	min-height: 276px;
 
 	transition: color .2s linear, background .2s linear;
 }
 
-.paint-suitable__img
+.areas-activity__img
 {
 	position: absolute;
 	top: 0;
@@ -3368,32 +3368,31 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transition: opacity .2s linear;
 }
 
-.paint-suitable__img img
+.areas-activity__img img
 {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
 }
 
-.paint-suitable__title
+.areas-activity__title
 {
 	font-size: 28px;
 	font-weight: 500;
 	display: block;
 }
 
-.paint-suitable__desc
+.areas-activity__desc
 {
 	display: block;
 	margin-top: 16px;
-	font-size: 18px;
 	color: rgba(255, 255, 255, .7);
 	opacity: 0;
 	transition: opacity .2s linear;
 	margin-bottom: 30px;
 }
 
-.paint-suitable__number
+.areas-activity__number
 {
 	font-size: 16px;
 	line-height: 1.5;
@@ -3406,7 +3405,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transition: color .2s linear;
 }
 
-.paint-suitable__number svg
+.areas-activity__number svg
 {
 	position: absolute;
 	top: 0;
@@ -3423,23 +3422,23 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 @media (any-hover: hover)
 {
-    .paint-suitable__item:hover
+    .areas-activity__item:hover
 	{
 		color: #fff;
 		background: #1B2745;
 	}
 
-	.paint-suitable__item:hover .paint-suitable__desc
+	.areas-activity__item:hover .areas-activity__desc
 	{
 		opacity: 1;
 	}
 
-	.paint-suitable__item:hover .paint-suitable__number
+	.areas-activity__item:hover .areas-activity__number
 	{
 		color: #fff;
 	}
 
-	.paint-suitable__item:hover .paint-suitable__img
+	.areas-activity__item:hover .areas-activity__img
 	{
 		opacity: .15;
 	}
@@ -3512,24 +3511,34 @@ input[type=checkbox]:checked + .checkbox__text::after
     main-about
 ------------*/
 
+.main-about__top
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	margin-top: -20px;
+}
+
 .main-about__cols
 {
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
-	margin-top: -53px;
+	margin-top: 33px;
 }
 
-.main-about__coll
+.main-about__coll,
+.main-about__top-coll
 {
 	width: calc(46.63% - 10px);
-	margin-top: 53px;
+	margin-top: 20px;
 }
 
-.main-about__colr
+.main-about__colr,
+.main-about__top-colr
 {
 	width: calc(53.37% - 10px);
-	margin-top: 53px;
+	margin-top: 20px;
 }
 
 .main-about__title

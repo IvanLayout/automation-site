@@ -238,9 +238,8 @@
 		margin-top: -7px;
 	}
 
-	.paint-suitable__item
+	.areas-activity__item
 	{
-		min-height: 219px;
 		padding-bottom: 18px;
 	}
 
@@ -367,13 +366,7 @@
 
 	.main-about__cols 
 	{
-		margin-top: -40px;
-	}
-
-	.main-about__colr,
-	.main-about__coll
-	{
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 
 	.main-about__btn 

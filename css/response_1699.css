@@ -157,13 +157,14 @@
 		margin-top: 0;
 	}
 
-	.paint-suitable__item
+	.areas-activity__item
 	{
 		padding-top: 26px;
 		padding-bottom: 26px;
+		min-height: 219px;
 	}
 
-	.paint-suitable__title
+	.areas-activity__title
 	{
 		font-size: 20px;
 	}
@@ -270,19 +271,19 @@
 
 	.main-about__cols
 	{
-		margin-top: -50px;
+		margin-top: 30px;
 	}
 
-	.main-about__coll 
+	.main-about__coll,
+	.main-about__top-coll
 	{
 		width: calc(50% - 10px);
-		margin-top: 50px;
 	}
 
-	.main-about__colr
+	.main-about__colr,
+	.main-about__top-colr
 	{
 		width: calc(50% - 10px);
-		margin-top: 50px;
 	}
 
 	.main-about__desc
@@ -481,7 +482,7 @@
 
 	.footer__logo
 	{
-		width: 217px;
+		max-width: 217px;
 	}
 
 	.footer__coll_marg 

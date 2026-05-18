@@ -40,7 +40,6 @@
 	{
 		width: 9px;
 		height: 15px;
-		margin-left: -3px;
 	}
 
 	.btn-border,
@@ -78,7 +77,7 @@
 		font-size: 14px;
 	}
 
-	.paint-suitable__title 
+	.areas-activity__title 
 	{
 		font-size: 18px;
 	}

@@ -120,8 +120,8 @@ $(() => {
 					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 20,
-					slidesPerView: 1
+					spaceBetween: 15,
+					slidesPerView: 2
 				},
 				'1024': {
 					spaceBetween: 20,
@@ -157,8 +157,8 @@ $(() => {
 					slidesPerView: 1
 				},
 				'768': {
-					spaceBetween: 15,
-					slidesPerView: 1
+					spaceBetween: 20,
+					slidesPerView: 2
 				},
 				'1024': {
 					spaceBetween: 20,
@@ -212,8 +212,8 @@ $(() => {
 					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 20,
-					slidesPerView: 1
+					spaceBetween: 15,
+					slidesPerView: 2
 				},
 				'1024': {
 					spaceBetween: 20,
@@ -256,8 +256,8 @@ $(() => {
 					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
+					spaceBetween: 15,
+					slidesPerView: 1,
 				},
 				'768': {
 					spaceBetween: 20,
@@ -308,8 +308,8 @@ $(() => {
 					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 20,
-					slidesPerView: 1
+					spaceBetween: 0,
+					slidesPerView: 'auto',
 				},
 				'1024': {
 					spaceBetween: 0,
@@ -333,8 +333,8 @@ $(() => {
 			watchSlidesProgress: true,
 			breakpoints: {
 				'768': {
-					spaceBetween: 60,
-					slidesPerView:'auto',
+					spaceBetween: 48,
+					slidesPerView: 5,
 				},
 				'1024': {
 					spaceBetween: 25,
@@ -483,7 +483,7 @@ function paintSuitableSlider(){
 					slidesPerView: 1,
 				},
 				'768': {
-					spaceBetween: 20,
+					spaceBetween: 15,
 					slidesPerView: 2,
 				}
 			},
