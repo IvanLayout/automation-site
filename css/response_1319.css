@@ -33,4 +33,9 @@
     }
 
 	/* commit */
+
+	.footer__colr 
+	{
+		width: calc(100% - 290px);
+	}
 }

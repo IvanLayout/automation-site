@@ -27,4 +27,188 @@
     }
 
 	/* commit */
+
+	.slider-button-prev, 
+	.slider-button-next
+	{
+		width: 35px;
+		height: 35px;
+	}
+
+	.slider-button-prev svg, 
+	.slider-button-next svg 
+	{
+		width: 9px;
+		height: 15px;
+		margin-left: -3px;
+	}
+
+	.btn-border,
+	.btn-red
+	{
+		font-size: 12px;
+	}
+
+	.main-title,
+	.cooperation__title
+	{
+		font-size: 28px;
+	}
+
+	.cats-main__grid
+	{
+		margin-left: -15px;
+	}
+
+	.cats-main__item
+	{
+		width: calc(100% / 6 - 15px);
+		margin: 15px 0 0 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.cats-main__img 
+	{
+		height: 60px;
+	}
+
+	.cats-main__name 
+	{
+		font-size: 14px;
+	}
+
+	.paint-suitable__title 
+	{
+		font-size: 18px;
+	}
+
+	.comp-projects__title 
+	{
+		font-size: 26px;
+	}
+
+
+	.tabs-text__btn._active 
+	{
+		font-size: 26px;
+	}
+
+	.tabs-text__btn 
+	{
+		font-size: 18px;
+	}
+
+
+	.main-about__val 
+	{
+		font-size: 32px;
+	}
+
+	.certs__item
+	{
+		padding: 15px;
+	}
+
+	.certs__name 
+	{
+		font-size: 14px;
+	}
+
+	.certs__download 
+	{
+		margin-top: 20px;
+	}
+
+
+	.reviews__btn .btn-border
+	{
+		font-size: 12px;
+	}
+
+
+	.cooperation__bg
+	{
+		padding: 40px;
+	}
+
+	.cooperation__items
+	{
+		margin-top: -75px;
+	}
+
+	.cooperation__item-box 
+	{
+		width: calc(100% / 2 - 15px);
+		font-size: 16px;
+		margin-top: 75px;
+	}
+
+	.cooperation-thumbs__item 
+	{
+		font-size: 14px;
+	}
+
+
+	.footer-menu__flex
+	{
+		margin-left: -30px;
+		margin-top: -30px;
+	}
+
+	.footer-menu__col
+	{
+		width: calc(100%/3 - 30px);
+		margin: 30px 0 0 30px;
+	}
+
+	.footer-menu__col-big
+	{
+		display: block;
+	}
+
+	
+	.footer__blocks
+	{
+		padding-right: 0;
+		display: block;
+	}
+
+	.footer__box + .footer__box
+	{
+		margin-top: 15px;
+		margin-left: 0;
+	}
+
+	.footer__socials-items._flex .footer__socials-item
+	{
+		margin-left: 0;
+	}
+
+	.footer__socials-items._flex .footer__socials-item 
+	{
+		margin-left: 0;
+	}
+
+	.footer__socials-items
+	{
+		margin-left: 0;
+		display: block;
+	}
+
+	.footer__socials-item + .footer__socials-item 
+	{
+		margin-top: 15px;
+	}
+
+	.footer__copy
+	{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.footer__links
+	{
+		margin-left: 0;
+	}
 }

@@ -2514,10 +2514,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 .tabs-text__btn
 {
 	color: rgba(115, 125, 135, .5);
-	font: 500 28px/1.3 var(--font-family);
+	font: 500 28px/1 var(--font-family);
 	white-space: nowrap;
 	transition: color .2s linear;
-	height: 53px;
 
 	display: flex;
 	justify-content: flex-start;
@@ -2545,7 +2544,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	color: #1B2745;
 	font-size: 48px;
-	line-height: 1.01;
+	line-height: 1;
 }
 
 .tab-content
