@@ -3766,6 +3766,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: block;
 	width: 100%;
 	aspect-ratio: 1 / 1.4416;
+	object-fit: cover;
 }
 
 .certs__info
@@ -3957,6 +3958,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-left: 1px solid rgba(27, 39, 69, .2);
 }
 
+.brands__img
+{
+	display: inline-block;
+}
+
 .brands__item img
 {
 	display: block;
@@ -4085,13 +4091,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .cooperation__items
 {
-	margin: -88px 0 0 -35px;
+	margin-top: -88px;
+
+	justify-content: space-between;
+	max-width: 592px;
 }
 
 .cooperation__item-box
 {
-	width: calc(100%/2 - 35px);
-	margin: 88px 0 0 35px;
+	width: calc(100%/2 - 17.5px);
+	margin-top: 88px;
 	position: relative;
 	padding-top: 22px;
 
@@ -4272,6 +4281,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	max-width: 547px;
 	background: rgba(255, 255, 255, .9);
 	padding: 24px 24px 30px;
+	border-radius: 6px;
 
 	position: relative;
 	z-index: 1;

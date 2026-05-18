@@ -412,6 +412,11 @@
 		aspect-ratio: 1 / .65;
 	}
 
+	.brands__img
+	{
+		height: 50px;
+	}
+
 
 	.cooperation__bg
 	{
@@ -495,7 +500,7 @@
 	.footer__colr 
 	{
 		width: calc(100% - 329px);
-		padding-top: 0;
+		padding-top: 4;
 	}
 
 	.footer__blocks 
