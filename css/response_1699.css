@@ -464,6 +464,45 @@
 	}
 
 
+	.first-section__col:first-child
+	{
+		padding: 50px 50px 45px;
+	}
+
+	.info-slider__title
+	{
+		font-size: 48px;
+	}
+
+	.info-slider__desc
+	{
+		font-size: 16px;
+		margin-top: 24px;
+	}
+
+	.info-slider__link
+	{
+		margin-top: 32px;
+	}
+
+
+	.main-slider__item
+	{
+		padding: 54px;
+	}
+
+	.main-thumbs__item
+	{
+		padding: 25px 6px 11px;
+	}
+
+	.main-thumbs__img
+	{
+		height: 75px;
+		width: 75px;
+	}
+
+
 	.footer
 	{
 		padding-top: 44px;

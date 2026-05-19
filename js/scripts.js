@@ -376,6 +376,11 @@ $(() => {
 				el: ".slider-pagination",
 				type: "fraction",
 			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
 		})
 	}
 
@@ -391,13 +396,13 @@ $(() => {
 			watchSlidesProgress: true,
 			breakpoints: {
 				'375': {
-					slidesPerView: 'auto',
+					slidesPerView: 3,
 				},
 				'480': {
-					slidesPerView: 5,
+					slidesPerView: 4,
 				},
 				'768': {
-					slidesPerView: 6,
+					slidesPerView: 3,
 				},
 				'1024': {
 					slidesPerView: 4,

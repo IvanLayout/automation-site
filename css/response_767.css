@@ -599,6 +599,30 @@
 	}
 
 
+	.first-section__col
+	{
+		width: 100%;
+	}
+
+	.first-section__col:first-child
+	{
+		border-radius: 10px 10px 0 0;
+		padding-bottom: 40px;
+	}
+
+	.first-section__col:last-child
+	{
+		background: #ECEEF1;
+		border-radius: 0 0 10px 10px;
+		border-top: 1px solid rgba(27, 39, 69, .05);
+	}
+
+	.info-slider 
+	{
+		padding-bottom: 55px;
+	}
+
+
 	.footer
 	{
 		padding-top: 30px;

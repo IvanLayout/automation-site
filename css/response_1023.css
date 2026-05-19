@@ -1543,6 +1543,71 @@
 	}
 
 
+	.info-slider
+	{
+		padding-bottom: 45px;
+	}
+
+	.info-slider__desc
+	{
+		font-size: 12px;
+	}
+
+	.info-slider__link
+	{
+		margin-top: 16px;
+	}
+
+	.info-slider .slider-button-next._bot-number
+	{
+		width: 25px;
+		height: 25px;
+
+		left: 82px;
+	}
+
+	.info-slider .slider-button-prev._bot-number
+	{
+		width: 25px;
+		height: 25px;
+	}
+
+	.info-slider .slider-button-prev._bot-number svg, 
+	.info-slider .slider-button-next._bot-number svg 
+	{
+		width: 7px;
+		height: 13px;
+	}
+
+	.info-slider .slider-pagination.slider-pagination_number 
+	{
+		bottom: 5px;
+		left: 41px;
+	}
+
+
+	.main-slider__item
+	{
+		padding: 36px;
+	}
+
+	.main-slider__img 
+	{
+		aspect-ratio: 1 / 0.688;
+	}
+
+	.main-thumbs__img 
+	{
+		height: 37px;
+		width: 37px;
+	}
+
+	.main-thumbs__name
+	{
+		margin-top: 7px;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 65px;

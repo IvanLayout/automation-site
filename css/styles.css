@@ -3187,6 +3187,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-left: 1px solid rgba(27, 39, 69, .1);
 	font-weight: 500;
 	height: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
 }
 
 .main-thumbs__img
@@ -3198,6 +3204,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: wrap;
 
 	height: 95px;
+	width: 95px;
 }
 
 .main-thumbs__img img
@@ -3219,12 +3226,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	background: #ECEEF1;
 	color: #D64923;
+	font-weight: 500;
 }
 
 .main-thumbs__name
 {
 	margin-top: 20px;
 	display: block;
+	width: 100%;
 }
 /*------------
     advantages
