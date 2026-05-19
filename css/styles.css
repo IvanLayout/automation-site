@@ -1680,6 +1680,55 @@ button
 	}
 }
 
+.mob-wrap
+{
+	display: none;
+	margin-top: 25px;
+}
+
+.btn-mob
+{
+    color: #D64923;
+    font-size: 14px;
+    line-height: 38px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+    display: block;
+	width: 100%;
+
+    padding: 0 20px;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+
+    border-radius: 4px;
+	border: 1px solid #D64923;
+}
+
+.btn-mob > span
+{
+	position: relative;
+	padding-right: 15px;
+}
+
+.btn-mob > span svg
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 0;
+
+	display: block;
+
+	width: 5px;
+	height: 9px;
+	margin-top: -4.5px;
+
+	fill: #D64923;
+}
+
 /*------------
     breadcrumbs
 ------------*/
@@ -4051,6 +4100,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	opacity: .1;
 	z-index: 1;
+}
+
+.cooperation__bg-span
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
 }
 
 .cooperation__bg-img img
