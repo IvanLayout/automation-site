@@ -351,6 +351,70 @@ $(() => {
 			},
 		})
 	}
+
+	if ($('.info-slider').length) {
+		new Swiper(".info-slider", {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				el: ".slider-pagination",
+				type: "fraction",
+			},
+		})
+	}
+
+
+	if ($('.first-section').length) {
+		mainThumbs = new Swiper('.main-thumbs', {
+			spaceBetween: 0,
+			slidesPerView: 'auto',
+			direction: 'horizontal',
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				'375': {
+					slidesPerView: 'auto',
+				},
+				'480': {
+					slidesPerView: 5,
+				},
+				'768': {
+					slidesPerView: 6,
+				},
+				'1024': {
+					slidesPerView: 4,
+				}
+			}
+		})
+
+		new Swiper('.main-slider', {
+			spaceBetween: 20,
+			loop: false,
+			speed: 1000,
+			watchOverflow: true,
+			thumbs: {
+				swiper: mainThumbs
+			}
+		})
+	}
 });
 
 
