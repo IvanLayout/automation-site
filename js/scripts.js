@@ -388,8 +388,7 @@ $(() => {
 	if ($('.first-section').length) {
 		mainThumbs = new Swiper('.main-thumbs', {
 			spaceBetween: 0,
-			slidesPerView: 'auto',
-			direction: 'horizontal',
+			slidesPerView: 3,
 			loop: false,
 			speed: 500,
 			watchOverflow: true,
@@ -407,18 +406,47 @@ $(() => {
 				'1024': {
 					slidesPerView: 4,
 				}
-			}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-slide').removeClass('_active')
+					
+					setTimeout(function(){
+						$(swiper.el).find('.swiper-slide-thumb-active').addClass('_active')
+					},500)
+				},
+				
+			},
 		})
 
-		new Swiper('.main-slider', {
+		mainSlider = new Swiper('.main-slider', {
 			spaceBetween: 20,
 			loop: false,
 			speed: 1000,
 			watchOverflow: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
 			thumbs: {
-				swiper: mainThumbs
+				swiper: mainThumbs,
+				autoScrollOffset: 1
+			},
+			on: {
+				realIndexChange: function (swiper) {
+					$('.first-section').find('.main-thumbs .swiper-slide').removeClass('_active')
+					
+					setTimeout(function(){
+						$('.first-section').find('.main-thumbs .swiper-slide-thumb-active').addClass('_active')
+					}, 100)
+				},
 			}
 		})
+
+		$('.main-thumbs').on('mouseenter', '.main-thumbs__item', function() {
+			const index = $(this).index();
+			mainSlider.slideTo(index);
+		});
 	}
 });
 
