@@ -5157,6 +5157,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 10px;
 	font-size: 20px;
 	font-weight: 500;
+
+	
 }
 
 .inner-news__name a
@@ -5164,6 +5166,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-decoration: none;
 	color: #1B2745;
 	transition: color .2s linear;
+
+	max-height: 52px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 @media (any-hover: hover)
