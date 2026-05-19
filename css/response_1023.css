@@ -921,11 +921,20 @@
         bottom: 32px;
 	}
 
-	.slider-button-prev._bot-number svg, 
+	.slider-button-prev._bot-number svg
+	{
+		width: 7px;
+		height: 13px;
+
+		margin-left: -2px;
+	}
+
 	.slider-button-next._bot-number svg
 	{
-		width: 9px;
-		height: 15px;
+		width: 7px;
+		height: 13px;
+
+		margin-left: 2px;
 	}
 
 	.slider-pagination.slider-pagination_number 
@@ -1436,6 +1445,11 @@
 		min-width: 1px;
 	}
 
+
+	.footer
+	{
+		padding-bottom: 65px;
+	}
 
 	.footer__coll 
 	{

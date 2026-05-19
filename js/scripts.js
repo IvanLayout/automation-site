@@ -5,7 +5,7 @@ WW = window.innerWidth || document.clientWidth || document.querySelector('body')
 fakeResize = false
 fakeResize2 = true
 
-if (document.body.clientWidth < 390) {
+if (document.body.clientWidth < 375) {
 	document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
 }
 
@@ -291,7 +291,7 @@ $(() => {
 				},
 				'1700': {
 					spaceBetween: 30,
-					slidesPerView: 5,
+					slidesPerView:'auto',
 				}
 			},
 			on: {

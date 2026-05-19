@@ -4237,6 +4237,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: rgba(255, 255, 255, .2);
 }
 
+.cooperation-thumbs .swiper-wrapper
+{
+	justify-content: space-between;
+}
+
 .cooperation-thumbs__item
 {
 	position: relative;
@@ -4245,6 +4250,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	cursor: pointer;
 	font-size: 20px;
 	transition: color .2s linear;
+
+	width: auto;
 }
 
 .cooperation-thumbs__item::after
@@ -5534,6 +5541,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
+.footer-menu__mob-soc
+{
+	display: none;
+}
+
 .footer__blocks
 {
 	padding-right: 145px;
@@ -5652,12 +5664,14 @@ a.footer__creator-img
 	text-decoration: none;
 	border: none;
 	opacity: .5;
+	display: inline-block;
 }
 
 .footer__creator-img img 
 {
     display: block;
     max-width: 100%;
+	max-height: 100%;
 }
 /*------------
     Modal
