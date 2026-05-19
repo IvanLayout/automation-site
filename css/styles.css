@@ -5660,6 +5660,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #1B2745;
 }
 
+.footer.footer_small
+{
+	padding-top: 44px;
+	padding-bottom: 32px;
+}
+
+.footer__top
+{
+	align-items: center;
+	align-content: center;
+}
+
 .footer__coll
 {
 	width: 320px;
@@ -5668,6 +5680,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 .footer__coll_marg
 {
 	margin-top: 79px;
+}
+
+.footer_small .footer__logo
+{
+	width: 236px;
 }
 
 .footer__logo img
@@ -5743,6 +5760,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-top: 8px;
 }
 
+.footer-menu._flex
+{
+	margin-left: 53px;
+	margin-right: auto;
+}
+
 .footer-menu__flex
 {
 	justify-content: space-between;
@@ -5758,6 +5781,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-items: flex-start;
 	align-content: flex-start;
 	flex-wrap: wrap;
+}
+
+.footer-menu._flex .footer-menu__title + .footer-menu__title
+{
+	margin-left: 30px;
 }
 
 .footer-menu__title
@@ -5809,6 +5837,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: none;
 }
 
+.footer.footer_small .footer__rating
+{
+	margin-top: 0;
+	margin-right: 20px;
+}
+
 .footer__rating
 {
 	height: 49px;
@@ -5843,9 +5877,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-left: -25px;
 }
 
+.footer.footer_small .footer__socials-items
+{
+	margin-left: -20px;
+}
+
 .footer__socials-items._flex .footer__socials-item
 {
 	margin-left: 25px;
+}
+
+.footer.footer_small .footer__socials-items._flex .footer__socials-item
+{
+	margin-left: 20px;
 }
 
 .footer__socials-title
@@ -5898,6 +5942,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	line-height: 1.28;
 }
 
+.footer.footer_small .footer__info
+{
+	margin-top: 35px;
+}
+
 .footer__info a
 {
 	color: rgba(255, 255, 255, .5);
@@ -5934,6 +5983,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 .footer__links-link + .footer__links-link
 {
 	margin-left: 56px;
+}
+
+.footer.footer_small .footer__links-link + .footer__links-link 
+{
+    margin-left: 25px;
 }
 
 .footer__creator
