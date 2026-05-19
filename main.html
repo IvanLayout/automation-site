@@ -173,6 +173,24 @@
 								<div class="header__list-item">
 									<a href="/" class="header__list-link">Контакты</a>
 								</div>
+								<div class="header__list-item header__list-item_mob">
+									<a href="/" class="header__list-link">
+										<span>
+											Избранное
+
+											<span class="header__list-number">999</span>
+										</span>
+									</a>
+								</div>
+								<div class="header__list-item header__list-item_mob">
+									<a href="/" class="header__list-link">
+										<span>
+											Сравнение
+
+											<span class="header__list-number">999</span>
+										</span>
+									</a>
+								</div>
 							</nav>
 
 							<div class="header__contacts _flex">
@@ -1692,167 +1710,76 @@
 								</div>
 
 								<div class="header__search">
-									<div class="header__search-flex _flex">
-										<div class="mini-modal mini-modal__select">
-											<button type="button" class="mini-modal__btn mini-modal__btn-select">
-												Везде
+									<div class="header__search-wrap">
+										<button type="button" class="header__search-close">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow_back"></use>
+											</svg>
+										</button>
 
-												<svg>
-													<use xlink:href="images/sprite.svg#arrow3"></use>
-												</svg>
-											</button>
+										<div class="header__search-flex _flex">
+											<div class="mini-modal mini-modal__select">
+												<button type="button" class="mini-modal__btn mini-modal__btn-select">
+													Везде
 
-											<div class="mini-modal__modal mini-modal__modal-select">
-												<div class="header__search-all">
-													<a href="/">
-														<svg>
-															<use xlink:href="images/sprite.svg#lupa"></use>
-														</svg>
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow3"></use>
+													</svg>
+												</button>
 
-														Везде
-													</a>
-												</div>
-
-												<div class="header-cats">
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Все для рассады</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat2.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Органическая мульча</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat3.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Кокосовая мульча</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat4.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Грунт, торф, навоз, компост</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat5.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Удобрения, биоактиваторы</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat6.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Средства защиты дома и сада</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat7.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Декоративные отсыпки</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat8.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Геоматериалы</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat9.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Инструментарий</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat10.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Товары для полива</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat11.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Травосмеси, сидераты</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat12.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Садовый декор и мебель</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat13.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Сопутствующие товары</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat14.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">Продукция наших партнёров</span>
-														</a>
-													</div>
-													<div class="header-cats__cat">
-														<a href="/" class="header-cats__link">
-															<span class="header-cats__link-icon">
-																<img data-src="images/ic_cat15.svg" src="images/img_plug.png" alt="" class="lazyload">
-															</span>
-															<span class="header-cats__link-name">А также в нашем магазине</span>
-														</a>
+												<div class="mini-modal__modal mini-modal__modal-select">
+													<div class="header-select">
+														<div>
+															<a href="/">Везде</a>
+														</div>
+														<div>
+															<a href="/">О&nbsp;компании</a>
+														</div>
+														<div>
+															<a href="/">Наши клиенты</a>
+														</div>
+														<div>
+															<a href="/">Почему мы</a>
+														</div>
+														<div>
+															<a href="/">Служба качества</a>
+														</div>
+														<div>
+															<a href="/">Производители</a>
+														</div>
+														<div>
+															<a href="/">Компания в&nbsp;лицах</a>
+														</div>
+														<div>
+															<a href="/">Вакансии</a>
+														</div>
+														<div>
+															<a href="/">Акции</a>
+														</div>
+														<div>
+															<a href="/">Партнёрам</a>
+														</div>
+														<div>
+															<a href="/">Отзывы</a>
+														</div>
 													</div>
 												</div>
 											</div>
+
+											<div class="header__search-field _flex">
+												<input type="text" value="" placeholder="Микроволновый рефлексный датчик уровня HHK-703–4" id="header__search-input" class="header__search-input">
+
+												<button type="submit" class="header__search-submit">
+													<svg>
+														<use xlink:href="images/sprite.svg#lupa"></use>
+													</svg>
+												</button>
+											</div>
 										</div>
+									</div>
 
-										<div class="header__search-field _flex">
-											<input type="text" value="" placeholder="Микроволновый рефлексный датчик уровня HHK-703–4" id="header__search-input" class="header__search-input">
+									<div class="header__search-mob">
 
-											<button type="submit" class="header__search-submit">
-												<svg>
-													<use xlink:href="images/sprite.svg#lupa"></use>
-												</svg>
-											</button>
-
-											<button type="button" class="header__search-clear">
-												<svg>
-													<use xlink:href="images/sprite.svg#close"></use>
-												</svg>
-											</button>
-										</div>
 									</div>
 								</div>
 
