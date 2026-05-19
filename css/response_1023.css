@@ -149,6 +149,11 @@
         max-width: none;
     }
 
+	.header__info-wrap._show .header__search-mob
+	{
+		display: block;
+	}
+
     .header__btns{
         display: none;
     }

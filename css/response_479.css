@@ -281,4 +281,21 @@
 		margin-left: 0;
 		margin-top: 20px;
 	}
+
+
+	.products-view__item + .products-view__item
+	{
+		margin-top: 10px;
+	}
+
+	.you-search__history-btn
+	{
+		margin-top: 17px;
+		margin-left: 114px;
+	}
+
+	.products-view__name
+	{
+		max-width: 210px;
+	}
 }
