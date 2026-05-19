@@ -3069,6 +3069,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: 100%;
 
 	background: url(../images/first_section_bg_borders.svg) 50%/contain no-repeat;
+	
 	opacity: .1;
 }
 
