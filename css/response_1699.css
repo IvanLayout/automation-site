@@ -503,6 +503,24 @@
 	}
 
 
+	.articles__item._item_big
+	{
+		padding: 40px;
+	}
+
+	.inner-news__time
+	{
+		top: 20px;
+		right: 22px;
+	}
+
+	.inner-news__desc
+	{
+		max-height: 63px;
+		-webkit-line-clamp: 3;
+	}
+
+
 	.footer
 	{
 		padding-top: 44px;
