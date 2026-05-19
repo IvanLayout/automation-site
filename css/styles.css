@@ -5413,8 +5413,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	border: 1px solid rgba(115, 125, 135, .4);
 	border-radius: 4px;
-	font-weight: 400;
-	font-size: 18px;
 	line-height: 41px;
 	color: #1B2745;
 	padding: 0 13px;
@@ -5437,7 +5435,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: none;
 	border: 1px solid rgba(115, 125, 135, .4);
 	border-radius: 4px;
-	font-size: 18px;
 	line-height: 41px;
 	color: #1B2745;
 	padding: 0 14px;
