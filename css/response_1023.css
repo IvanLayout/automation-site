@@ -1596,6 +1596,14 @@
 		aspect-ratio: 1 / 0.688;
 	}
 
+    .main-thumbs__item-link{
+        pointer-events: none;
+    }
+
+    .main-thumbs__item._active .main-thumbs__item-link{
+        pointer-events: auto;
+    }
+
 	.main-thumbs__img 
 	{
 		height: 37px;
