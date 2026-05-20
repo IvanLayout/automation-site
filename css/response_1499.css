@@ -737,6 +737,28 @@
 		padding-top: 40px;
 	}
 
+	.footer.footer_small
+	{
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.footer-menu._flex
+	{
+		margin-left: 70px;
+	}
+
+	.footer-menu._flex .footer-menu__title + .footer-menu__title 
+	{
+		margin-left: 20px;
+	}
+
+	.footer.footer_small .footer__copy
+	{
+		width: 374px;
+		line-height: 1.8;
+	}
+
 	.footer__colr 
 	{
 		width: calc(100% - 305px);

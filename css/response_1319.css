@@ -38,4 +38,9 @@
 	{
 		width: calc(100% - 290px);
 	}
+
+	.footer-menu._flex 
+	{
+		margin-left: 50px;
+	}
 }

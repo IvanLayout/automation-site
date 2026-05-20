@@ -627,4 +627,9 @@
 	{
 		margin-left: 40px;
 	}
+
+	.footer.footer_small .footer__bot
+	{
+		font-size: 12px;
+	}
 }
