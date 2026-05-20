@@ -171,6 +171,14 @@
         height: calc(100vh - 119px);
     }
 
+	.header__small .header__info {
+		width: 590px;
+	}
+
+	.header__small .header__list{
+		gap: 20px;
+	}
+
 	/* commit */
 
 	body
@@ -663,6 +671,10 @@
 	.main-tags_marg 
 	{
 		margin-top: 17px;
+	}
+
+	.main-tags_blog{
+		height: 36px;
 	}
 
 	.main-tags__item,

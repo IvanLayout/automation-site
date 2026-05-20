@@ -32,6 +32,10 @@
         font-size: 12px;
     }
 
+    .header__small .header__info {
+        width: 500px;
+    }
+
 	/* commit */
 
 	.footer__colr 

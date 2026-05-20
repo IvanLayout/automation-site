@@ -84,31 +84,6 @@
 	}
 
 
-	.tabs-text
-	{
-		flex-wrap: nowrap;
-		
-		overflow: hidden;
-		overflow-x: auto;
-		width: calc(100% + 40px);
-		margin-right: -40px;
-		padding-right: 40px;
-		white-space: nowrap;
-		padding-bottom: 10px;
-	}
-
-	.tabs-text::-webkit-scrollbar
-	{
-		width: 5px;
-		height: 5px;
-
-		background-color: rgba(27, 39, 69, .1);
-	}
-
-	.tabs-text::-webkit-scrollbar-thumb
-	{
-		background-color: rgba(27, 39, 69, .2);
-	}
 	
 	.tabs-text__btn
 	{
@@ -122,9 +97,13 @@
 	}
 
 
-	.certs__img 
+	.certs__item
 	{
-		width: 52.6%;
+		padding: 19px;
+	}
+
+	.certs__name {
+		font-size: 16px;
 	}
 
 

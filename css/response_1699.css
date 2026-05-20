@@ -81,6 +81,9 @@
         line-height: 53px;
     }
 
+	.header__small .header__info{
+		width: 512px;
+	}
 
 	/* commit */
 

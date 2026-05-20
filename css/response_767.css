@@ -10,6 +10,11 @@
 		padding-right: 20px;
 	}
 
+	.header{
+		background: #fff;
+		box-shadow: 0 0 10px 0 rgba(13, 30, 42, 0.1);
+	}
+
 	.header-catalog .cont{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -30,6 +35,36 @@
 
 	.header__bot{
 		display: none;
+	}
+
+	.header__small .mob-menu-btn{
+		left: 20px;
+	}
+
+	.header__small .header__list{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header__small .header__contacts,
+    .header__small .header__messengers{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+	.header__small .header__info{
+        width: calc(100% + 40px);
+        margin-right: -20px;
+		margin-left: -20px;
+    }
+
+    .header__small .header__info-wrap{
+        padding-left: 20px;
+		padding-right: 20px;
+    }
+
+	.footer.footer_small{
+		padding-bottom: 15px;
 	}
 	/* commit */
 
@@ -354,7 +389,7 @@
 	.certs__item
 	{
 		border-radius: 10px;
-		padding: 20px;
+		padding: 14px;
 	}
 
 	.certs__info
@@ -365,12 +400,16 @@
 
 	.certs__img
 	{
-		width: 38.7%;
+		width: 52.6%;
 	}
 
 	.certs__img::after
 	{
 		display: none;
+	}
+
+	.certs__name {
+		font-size: 14px;
 	}
 
 	.certs__desc

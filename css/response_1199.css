@@ -26,6 +26,11 @@
         font-size: 12px;
     }
 
+
+	.header__top .header__search {
+        width: 460px;
+    }
+
 	/* commit */
 
 	.slider-button-prev, 

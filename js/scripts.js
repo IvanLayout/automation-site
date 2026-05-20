@@ -14,6 +14,7 @@ $(() => {
 		e.preventDefault()
 
 		$('.header__top').addClass('_show')
+		$('.header__small-right').addClass('_show')
 		$('body').addClass('_lock')
 		$('.overlay').addClass('_show')
 	})
@@ -22,6 +23,7 @@ $(() => {
 		e.preventDefault()
 
 		$('.header__top').removeClass('_show')
+		$('.header__small-right').removeClass('_show')
 		$('body').removeClass('_lock')
 		$('.overlay').removeClass('_show')
 	})
@@ -30,6 +32,7 @@ $(() => {
 		e.preventDefault()
 
 		$('.header__top').removeClass('_show')
+		$('.header__small-right').removeClass('_show')
 		$('body').removeClass('_lock')
 		$('.overlay').removeClass('_show')
 	})
@@ -131,8 +134,8 @@ $(() => {
 	if ($('.certs__slider').length) {
 		new Swiper(".certs__slider", {
 			loop: false,
-			spaceBetween: 10,
-			slidesPerView: 'auto',
+			spaceBetween: 15,
+			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -157,12 +160,12 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
+					spaceBetween: 15,
+					slidesPerView: 1,
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
+					spaceBetween: 15,
+					slidesPerView: 2,
 				},
 				'768': {
 					spaceBetween: 15,

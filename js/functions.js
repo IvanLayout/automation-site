@@ -342,7 +342,7 @@ $(() => {
 		}
 	})
 
-	$('body').on('focus', '.header__search-input', function(e) {
+	$('body').on('focus', '#header__search-input', function(e) {
 		e.preventDefault()
 
 		$('.header__info-wrap').addClass('_show')
@@ -369,17 +369,14 @@ $(() => {
 		})
 	})
 
-	// if ($('.main-tags').length){
-	// 	checkHiddenItems();
-	// }
 
-	// $('body').on('click', '.main-tags__open', function(e) {
-	// 	e.preventDefault()
+	$('body').on('click', '.main-tags__open', function(e) {
+		e.preventDefault()
 		
-	// 	$(this).addClass('_active')
-	// 	$(this).closest('.main-tags').find('.main-tags__item').addClass('_show')
-	// })
-
+		$(this).addClass('_active')
+		$(this).closest('.main-tags_blog').addClass('_active')
+		$(this).closest('.main-tags_blog').find('.main-tags__item').addClass('_show')
+	})
 })
 
 
@@ -395,6 +392,14 @@ $(window).on('load', () => {
 		}
 	}
 
+	if ( $('.inner-news__wrap').length ) {
+		if( $(window).scrollTop() == $('.inner-news__wrap').offset().top ) {
+			$('.inner-news__wrap').addClass('_fix')
+		} else {
+			$('.inner-news__wrap').removeClass('_fix')
+		}
+	}
+
 	$(window).on('scroll', () => {
 		if ( $('.header__info').length ) {
 			if( $(window).scrollTop() > $('.header__info').offset().top > 0 ) {
@@ -403,12 +408,27 @@ $(window).on('load', () => {
 				$('.header__info-wrap').removeClass('_fix')
 			}
 		}
+
+		if ( $('.inner-news__wrap').length ) {
+			if( $(window).scrollTop() == $('.inner-news__wrap').offset().top ) {
+				$('.inner-news__wrap').addClass('_fix')
+			} else {
+				$('.inner-news__wrap').removeClass('_fix')
+
+				// console.log($('.inner-news__wrap').offset().top)
+			}
+		}
 	})
+
+	if ($('.main-tags_blog').length){
+		hideExtraTags()
+	}
 })
 
-$(window).on('resize', function() {
-	if ($('.main-tags').length){
-		checkHiddenItems();
+$(window).on('resize', function() {	
+	if ($('.main-tags_blog').length){
+		console.log('asd')
+		hideExtraTags()
 	}
 })
 
@@ -446,17 +466,41 @@ function setHeight(className){
 const is_touch_device = () => !!('ontouchstart' in window)
 
 
-function checkHiddenItems() {
-	const $container = $('.main-tags');
-	const $items = $('.main-tags__item');
-	const $openBtn = $('.main-tags__open');
+function hideExtraTags() {
+    const $container = $('.main-tags_blog');
+    const $items = $container.find('.main-tags__item');
+    const $openBtn = $('.main-tags__open');
 
-	$items.each(function() {
-		const $item = $(this);
-		if ($item.is(':hidden')) {
-			$openBtn.addClass('_show');
-		} else {
-			$openBtn.removeClass('_show');
-		}
-	})
+    if (!$container.hasClass('_active')) {
+        $items.removeClass('_hide');
+        $openBtn.show(); // Спочатку показуємо, щоб виміряти її позицію
+
+        if ($items.length === 0) return;
+
+        const firstItemTop = $items.first().offset().top;
+        
+        // 1. Приховуємо всі, що явно нижче першого рядка
+        $items.each(function() {
+            if ($(this).offset().top > firstItemTop) {
+                $(this).addClass('_hide');
+            }
+        });
+
+        // 2. "Підтягуємо" кнопку: якщо вона все ще нижче, 
+        // ховаємо попередні теги по черзі
+        let visibleItems = $items.not('._hide');
+        let counter = visibleItems.length - 1;
+
+        while ($openBtn.offset().top > firstItemTop && counter >= 0) {
+            $(visibleItems[counter]).addClass('_hide');
+            counter--;
+        }
+
+        // 3. Якщо нічого не приховано — кнопка не потрібна
+        if ($items.filter('._hide').length === 0) {
+            $openBtn.hide();
+        } else {
+            $openBtn.show();
+        }
+    }
 }
