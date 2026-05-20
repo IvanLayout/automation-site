@@ -1832,7 +1832,7 @@
 
 	.inner-news__grid
 	{
-		margin-left: -30px;
+		margin: -30px 0 0 -15px;
 	}
 
 	.inner-news__item
