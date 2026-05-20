@@ -4843,7 +4843,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: none;
 }
 
-.articles__grid
+.articles__grid._grid-box
 {
 	display: grid;
 

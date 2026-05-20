@@ -453,11 +453,15 @@ $(() => {
 
 $(window).on('load', () => {
 	if ($('.areas-activity__wrap').length){
-		paintSuitableSlider()
+		areasActivitySlider()
 	}
 
 	if ($('.main-news__wrap').length){
 		mainNewsSlider()
+	}
+
+	if ($('.articles__wrap').length){
+		articlesSlider()
 	}
 
 	if ($('.header__cats').length) {
@@ -535,22 +539,26 @@ $(window).on('resize', () => {
 
 
 	if ($('.areas-activity__wrap').length){
-		paintSuitableSlider()
+		areasActivitySlider()
 	}
 
 	if ($('.main-news__wrap').length){
 		mainNewsSlider()
 	}
+
+	if ($('.articles__wrap').length){
+		articlesSlider()
+	}
 });
 
 
-function paintSuitableSlider(){
+function areasActivitySlider(){
 	if ( $(window).width() < 1024 && !$('.areas-activity__wrap').hasClass('swiper-initialized') ) {
 		$('.areas-activity__wrap').addClass('swiper')
 		$('.areas-activity__grid').addClass('swiper-wrapper').removeClass('_flex')
 		$('.areas-activity__item').addClass('swiper-slide')
 
-		paintSuitableSwiperSlider = new Swiper('.areas-activity__wrap', {
+		areasActivitySwiperSlider = new Swiper('.areas-activity__wrap', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -589,9 +597,9 @@ function paintSuitableSlider(){
 		})
 	} else if ($(window).width() > 1023 && $('.areas-activity__wrap').hasClass('swiper-initialized')) {
 		if ($('.areas-activity__wrap').length === 1 && $('.areas-activity__wrap').hasClass('swiper-initialized')) {
-			paintSuitableSwiperSlider.destroy(true, true)
+			areasActivitySwiperSlider.destroy(true, true)
 		} else if ($('.areas-activity__wrap').length >= 2 && $('.areas-activity__wrap').hasClass('swiper-initialized')) {
-			paintSuitableSwiperSlider.forEach(function (element) {
+			areasActivitySwiperSlider.forEach(function (element) {
 				element.destroy(true, true)
 			})
 		}
@@ -608,7 +616,7 @@ function mainNewsSlider(){
 		$('.main-news__items').addClass('swiper-wrapper').removeClass('_box-items')
 		$('.main-news__item').addClass('swiper-slide')
 
-		paintSuitableSwiperSlider = new Swiper('.main-news__wrap', {
+		mainNewsSwiperSlider = new Swiper('.main-news__wrap', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -633,9 +641,9 @@ function mainNewsSlider(){
 		})
 	} else if ($(window).width() > 767 && $('.main-news__wrap').hasClass('swiper-initialized')) {
 		if ($('.main-news__wrap').length === 1 && $('.main-news__wrap').hasClass('swiper-initialized')) {
-			paintSuitableSwiperSlider.destroy(true, true)
+			mainNewsSwiperSlider.destroy(true, true)
 		} else if ($('.main-news__wrap').length >= 2 && $('.main-news__wrap').hasClass('swiper-initialized')) {
-			paintSuitableSwiperSlider.forEach(function (element) {
+			mainNewsSwiperSlider.forEach(function (element) {
 				element.destroy(true, true)
 			})
 		}
@@ -643,5 +651,49 @@ function mainNewsSlider(){
 		$('.main-news__wrap').removeClass('swiper')
 		$('.main-news__items').removeClass('swiper-wrapper').addClass('_box-items')
 		$('.main-news__item').removeClass('swiper-slide')
+	}
+}
+
+function articlesSlider(){
+	if ( $(window).width() < 768 && !$('.articles__wrap').hasClass('swiper-initialized') ) {
+		$('.articles__wrap').addClass('swiper')
+		$('.articles__grid').addClass('swiper-wrapper').removeClass('_grid-box')
+		$('.articles__item').addClass('swiper-slide')
+
+		articlesSwiperSlider = new Swiper('.articles__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			}
+		})
+	} else if ($(window).width() > 767 && $('.articles__wrap').hasClass('swiper-initialized')) {
+		if ($('.articles__wrap').length === 1 && $('.articles__wrap').hasClass('swiper-initialized')) {
+			articlesSwiperSlider.destroy(true, true)
+		} else if ($('.articles__wrap').length >= 2 && $('.articles__wrap').hasClass('swiper-initialized')) {
+			articlesSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
+
+		$('.articles__wrap').removeClass('swiper')
+		$('.articles__grid').removeClass('swiper-wrapper').addClass('_grid-box')
+		$('.articles__item').removeClass('swiper-slide')
 	}
 }

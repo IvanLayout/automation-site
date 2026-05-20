@@ -1623,7 +1623,7 @@
 	}
 
 
-	.articles__grid
+	.articles__grid._grid-box
 	{
 		display: flex;
 		justify-content: space-between;
@@ -1634,16 +1634,24 @@
 		gap: 15px;
 	}
 
-	.articles__item
+	.articles__grid._grid-box .articles__item
 	{
 		width: calc(50% - 7.5px);
+	}
+
+	.articles__item
+	{
 		border-radius: 5px;
 		aspect-ratio: 1 / .7073;
 	}
 
-	.articles__item._item_big
+	.articles__grid._grid-box .articles__item._item_big
 	{
 		width: 100%;
+	}
+
+	.articles__item._item_big
+	{
 		aspect-ratio: 1 / .46;
 	}
 
