@@ -369,6 +369,17 @@ $(() => {
 		})
 	})
 
+	// if ($('.main-tags').length){
+	// 	checkHiddenItems();
+	// }
+
+	// $('body').on('click', '.main-tags__open', function(e) {
+	// 	e.preventDefault()
+		
+	// 	$(this).addClass('_active')
+	// 	$(this).closest('.main-tags').find('.main-tags__item').addClass('_show')
+	// })
+
 })
 
 
@@ -396,7 +407,9 @@ $(window).on('load', () => {
 })
 
 $(window).on('resize', function() {
-	
+	if ($('.main-tags').length){
+		checkHiddenItems();
+	}
 })
 
 // Вспомогательные функции
@@ -431,3 +444,19 @@ function setHeight(className){
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+
+function checkHiddenItems() {
+	const $container = $('.main-tags');
+	const $items = $('.main-tags__item');
+	const $openBtn = $('.main-tags__open');
+
+	$items.each(function() {
+		const $item = $(this);
+		if ($item.is(':hidden')) {
+			$openBtn.addClass('_show');
+		} else {
+			$openBtn.removeClass('_show');
+		}
+	})
+}
