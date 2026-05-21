@@ -714,6 +714,11 @@
 		width: calc(100% / 2 - 15px);
 	}
 
+	.inner-news__columns 
+	{
+		columns: 2;
+	}
+
 
 	.footer
 	{

@@ -377,6 +377,21 @@ $(() => {
 		$(this).closest('.main-tags_blog').addClass('_active')
 		$(this).closest('.main-tags_blog').find('.main-tags__item').addClass('_show')
 	})
+
+	// Аккордион простой
+	$('body').on('click', '.inner-news__open-all', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.inner-news__top')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.inner-news__data').slideUp(300)
+		} else {
+			parent.addClass('_active')
+			parent.find('.inner-news__data').slideDown(300)
+		}
+	})
 })
 
 

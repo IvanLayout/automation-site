@@ -213,6 +213,11 @@
 		margin-top: 5px;
 	}
 
+	.inner-news__columns
+	{
+		columns: 4;
+	}
+
 	.main-tags 
 	{
 		gap: 15px;

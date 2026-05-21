@@ -738,6 +738,11 @@
 		margin-left: 40px;
 	}
 
+	.inner-news__open-all
+	{
+		line-height: 36px;
+	}
+
 	.pagination
 	{
 		margin-top: 40px;
