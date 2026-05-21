@@ -10,7 +10,7 @@
 
 	.slider-pagination 
 	{
-		margin-top: 17px;
+		margin-top: 10px;
 	}
 
 	.advantages-main__item
@@ -142,7 +142,7 @@
 		aspect-ratio: 1 / .845;
 	}
 
-	.inner-news__item 
+	.inner-news__grid .inner-news__item
 	{
 		width: calc(100% / 1 - 15px);
 	}
