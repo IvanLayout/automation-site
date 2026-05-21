@@ -5649,7 +5649,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: 43px;
 }
 
-.main-tags_blog._active{
+.main-tags_blog._all{
 	height: auto;
 }
 
