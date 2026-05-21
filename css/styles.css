@@ -3219,7 +3219,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 24px;
 
 	display: grid;
-	grid-template-columns: 1fr 350px;
+	grid-template-columns: minmax(0, 1fr) 350px;
 	gap: 24px;
 	align-items: start;
 }
@@ -3573,6 +3573,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .page-text__small-products{
 	max-width: 1248px;
+	width: 100%;
 }
 
 
