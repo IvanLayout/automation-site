@@ -3090,6 +3090,55 @@ input[type=checkbox]:checked + .checkbox__text::after
 	grid-template-rows: 1fr 1fr; 
 	gap: 20px;
 }
+
+.page-text__aside{
+
+}
+
+.page-text__list{
+	box-shadow: 0 4px 35px 0 rgba(191, 191, 191, 0.25);
+	background: #fff;
+	border-radius: 10px;
+	padding: 14px 0;
+}
+
+.page-text__list-item + .page-text__list-item{
+	margin-top: 8px;
+}
+
+.page-text__list-link{
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	line-height: 1.3;
+	color: #1B2745;
+	text-align: left;
+	transition: color .2s linear;
+	padding: 6px 20px;
+	position: relative;
+}
+
+.page-text__list-link::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: transparent;
+	border-radius: 3px;
+	transition: background .2s linear;
+}
+
+@media (any-hover: hover){
+	.page-text__list-link:hover{
+		color: #319ACE;
+	}
+
+	.page-text__list-link:hover::before{
+		background-color: currentColor;
+	}
+}
 /*------------
     commit
 ------------*/
