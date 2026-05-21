@@ -721,7 +721,7 @@
 		border-radius: 10px;
 	}
 
-	.inner-news__item
+	.inner-news__grid .inner-news__item
 	{
 		width: calc(100% / 2 - 15px);
 	}
