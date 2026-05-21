@@ -705,6 +705,12 @@
 	}
 
 
+	.inner-news__open-all
+	{
+		font-size: 18px;
+		line-height: 41px;
+	}
+
 	.inner-news__item.inner-news__subscribe
 	{
 		border-radius: 10px;
