@@ -31,6 +31,22 @@
         width: 460px;
     }
 
+	.page-text__wrap {
+		grid-template-columns: minmax(0, 1fr) 250px;
+		gap: 20px;
+	}
+
+	.page-title{
+		font-size: 36px;
+	}
+
+	.banner-info__img {
+		width: 50%;
+	}
+
+	.banner-info__imp{
+		margin-top: 32px;
+	}
 	/* commit */
 
 	.slider-button-prev, 

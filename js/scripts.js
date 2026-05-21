@@ -138,7 +138,7 @@ $(() => {
 	if ($('.small-products__slider').length) {
 		new Swiper(".small-products__slider", {
 			loop: false,
-			spaceBetween: 15,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -164,7 +164,7 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 10,
 					slidesPerView: 1,
 				},
 				'480': {
@@ -177,6 +177,10 @@ $(() => {
 				},
 				'1024': {
 					spaceBetween: 20,
+					slidesPerView: 5
+				},
+				'1700': {
+					spaceBetween: 20,
 					slidesPerView: 6
 				}
 			}
@@ -186,7 +190,7 @@ $(() => {
 	if ($('.small-products__slider2').length) {
 		new Swiper(".small-products__slider2", {
 			loop: false,
-			spaceBetween: 15,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -212,7 +216,7 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 10,
 					slidesPerView: 1,
 				},
 				'480': {
@@ -224,6 +228,10 @@ $(() => {
 					slidesPerView: 3
 				},
 				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				},
+				'1700': {
 					spaceBetween: 20,
 					slidesPerView: 4
 				}

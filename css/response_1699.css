@@ -85,6 +85,92 @@
 		width: 512px;
 	}
 
+
+	.page-text__wrap-top{
+		grid-column: span 2;
+	}
+
+	.page-text__wrap-top .page-text__box{
+		max-width: none;
+	}
+
+	.page-text__box{
+		max-width: 927px;
+	}
+
+	.page-text__page-title{
+		max-width: 1145px;
+	}
+
+	.page-title{
+		font-size: 40px;
+	}
+
+	.page-text__colr{
+		order: 1;
+		padding-top: 0;
+		grid-row: span 2;
+	}
+
+	.page-text__coll{
+		order: 3;
+	}
+
+	.small-product{
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+
+	.article-cats__col{
+		padding: 25px;
+		font-size: 20px;
+	}
+
+	.article-cats__thumb{
+		max-width: 191px;
+	}
+
+	.article-cats__name{
+		margin-top: 32px;
+	}
+
+	.text-block h3{
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+
+	.text-block * + blockquote{
+		margin-top: 20px;
+	}
+
+	.text-block blockquote{
+		margin-bottom: 20px;
+		padding: 18px 19px;
+	}
+
+	.text-block * + table{
+		margin-top: 20px;
+	}
+
+	.text-block table th{
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+
+	.text-block table td{
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+
+	.text-block__coll {
+		width: 23.2%;
+	}
+
+	.section-subscribe__colr{
+		width: 46%;
+		margin-left: -6%;
+		margin-right: -60px;
+	}
 	/* commit */
 
 	.advantages-main__info
