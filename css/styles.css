@@ -2618,7 +2618,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .page-title
 {
-	
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 1.2;
+	color: #1B2745;
 }
 
 
@@ -3054,7 +3057,39 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
+.page-text__top{
+	gap: 20px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
 
+.page-text__date{
+	font-size: 18px;
+	line-height: 1.3;
+	color: #737D87;
+}
+
+.page-text__tag{
+	border: 1px solid rgba(214, 73, 35, 0.2);
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 1.3;
+	color: #1B2745;
+	padding: 3px 15px;
+}
+
+.page-text__top-shared{
+	display: none;
+}
+
+.page-text__wrap{
+	margin-top: 24px;
+
+	display: grid;
+	grid-template-columns: 1fr 350px;
+	grid-template-rows: 1fr 1fr; 
+	gap: 20px;
+}
 /*------------
     commit
 ------------*/
