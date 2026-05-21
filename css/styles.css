@@ -3526,7 +3526,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 
 .small-products__slider_marg{
-	margin-top: 20px;
+	margin-top: 24px;
 }
 
 .small-product{
@@ -3745,6 +3745,59 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: 100%;
 	object-fit: cover;
 	border-radius: 6px;
+}
+
+.section-text__text-block{
+	max-width: 1584px;
+}
+
+.section-text__files_marg{
+	margin-top: 24px;
+	max-width: 1584px;
+}
+
+.section-text__files{
+	border-bottom: 1px solid rgba(27, 39, 69, 0.2);
+}
+
+.section-text__file{
+	border-top: 1px solid rgba(27, 39, 69, 0.2);
+}
+
+.section-text__file-link{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+	gap: 20px;
+	padding: 15px 0;
+
+	color: #1B2745;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.section-text__file-download{
+	flex-shrink: 0;
+	white-space: nowrap;
+
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #D64923;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+	.section-text__file-link:hover{
+		color: #D64923
+	}
+
+	.section-text__file-link:hover .section-text__file-download{
+		color: #B71517;
+	}
 }
 /*------------
     commit
@@ -5780,7 +5833,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     inner-news
 ------------*/
 .inner-news__slider{
-	margin-top: 20px;
+	margin-top: 24px;
 }
 
 .inner-news__wrap

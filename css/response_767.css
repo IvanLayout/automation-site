@@ -218,6 +218,11 @@
 	.page-text__creator{
 		margin-right: auto;
 	}
+
+	.top-wrap_top{
+		align-items: flex-start;
+		align-content: flex-start;
+	}
 	/* commit */
 
 	.advantages-main__item

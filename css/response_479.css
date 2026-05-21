@@ -129,6 +129,16 @@
 	.page-socials__link{
 		width: 22px;
 	}
+
+
+	.section-text__file-link{
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+	
+	.section-text__file-download{
+		display: none;
+	}
 	/* commit */
 
 	._marg 

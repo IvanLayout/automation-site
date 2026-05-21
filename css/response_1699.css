@@ -171,6 +171,16 @@
 		margin-left: -6%;
 		margin-right: -60px;
 	}
+
+	.small-products__slider_marg{
+		margin-top: 20px;
+	}
+
+
+	.inner-news__slider{
+		margin-top: 20px;
+	}
+
 	/* commit */
 
 	.advantages-main__info

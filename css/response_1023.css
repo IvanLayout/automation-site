@@ -1112,6 +1112,15 @@
 		display: block;
 		aspect-ratio: 1/1.03;
 	}
+
+
+	.section-text__files_marg{
+		margin-top: 20px;
+	}
+
+	.section-text__file-download{
+		font-size: 12px;
+	}
 	/* commit */
 
 	body
