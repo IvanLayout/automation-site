@@ -6132,6 +6132,145 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-weight: 500;
 	font-size: 14px;
 }
+
+
+/*------------
+    cats-page
+------------*/
+
+.cats-page__top
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	flex-wrap: nowrap;
+}
+
+.cats-page__note
+{
+	margin-left: 30px;
+	flex-shrink: 0;
+	position: relative;
+	padding-left: 25px;
+}
+
+.cats-page__note::before
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 20px;
+	height: 20px;
+
+	background: url(../images/ic_lightbulb.svg) 50%/contain no-repeat;
+}
+
+
+.cats-page__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+
+	padding-top: 1px;
+    padding-left: 1px;
+	margin-top: 30px;
+}
+
+.cats-page__item
+{
+	width: calc(100%/5 + 1px);
+	display: flex;
+	flex-direction: column;
+
+	text-decoration: none;
+	padding: 32px 20px 60px;
+	background: #fff;
+	text-align: center;
+
+	border: 1px solid rgba(27, 39, 69, .2);
+    margin: -1px 0 0 -1px;
+}
+
+/* .cats-page__item:first-child
+{
+	border-top-left-radius: 10px;
+}
+
+.cats-page__item:nth-child(5)
+{
+	border-top-right-radius: 10px;
+} */
+
+/* .item:nth-child(6n) 
+{
+	border-top-right-radius: 10px;
+} */
+
+/* .cats-page__item:last-child
+{
+	border-bottom-right-radius: 10px;
+}
+
+.cats-page__grid:not(:has(.cats-page__item:nth-child(6))) .cats-page__item:first-child 
+{
+	border-bottom-left-radius: 10px;
+} */
+
+.cats-page__img
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	margin: 0 auto;
+
+	aspect-ratio: 1 / 1;
+	height: 159px;
+	width: 159px;
+}
+
+.cats-page__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.cats-page__name
+{
+	display: block;
+	color: #1B2745;
+	font-size: 20px;
+	flex: 1 0 auto;
+
+	margin-top: 19px;
+	font-weight: 500;
+	transition: color .2s linear;
+}
+
+.cats-page__val
+{
+	margin-top: 10px;
+	display: block;
+	color: #737D87;
+	line-height: 1.2;
+}
+
+@media (any-hover: hover)
+{
+    .cats-page__item:hover .cats-page__name
+	{
+		color: #D64923;
+	}
+}
+
 /*------------
 @media (any-hover: hover)
 {
