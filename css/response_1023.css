@@ -1155,6 +1155,10 @@
 	}
 
 
+	.tabs-text{
+		width: 100%;
+	}
+
 	.tabs-text__flex
 	{
 		flex-wrap: nowrap;
