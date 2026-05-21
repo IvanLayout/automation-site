@@ -4685,9 +4685,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-bottom: 1px solid rgba(164, 180, 208, .38);
 }
 
-.main-news__items._box-items .main-news__item + .main-news__item
+.main-news__item._item-mob
 {
-	margin-top: 24px;	
+	display: none;
+}
+
+.main-news__items._box-items .main-news__item
+{
+	margin-bottom: 24px;
+}
+
+.main-news__items._box-items .main-news__item:last-child
+{
+	margin-bottom: 0;
 }
 
 .main-news__item-date

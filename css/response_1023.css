@@ -1290,15 +1290,16 @@
 		border-right: 1px solid #E2E8F3;
 	}
 
-	.main-news__items._box-items .main-news__item:nth-child(3n) 
+	.main-news__items._box-items .main-news__item:nth-child(3n + 1) 
 	{
 		padding-right: 0;
 		border-right: 0;
 	}
 
-	.main-news__items._box-items .main-news__item + .main-news__item 
+	.main-news__items._box-items .main-news__item
 	{
 		margin-top: 20px;
+		margin-bottom: 0;
 	}
 
 	.main-news__item

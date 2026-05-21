@@ -365,9 +365,9 @@
 		padding-bottom: 20px;
 	}
 
-	.main-news__items._box-items .main-news__item + .main-news__item
+	.main-news__items._box-items .main-news__item
 	{
-		margin-top: 22px;
+		margin-bottom: 22px;
 	}
 
 

@@ -262,6 +262,11 @@
 		height: auto;
 	}
 
+	.main-news__item._item-mob
+	{
+		display: block;
+	}
+
 	.main-news__item-info
 	{
 		display: flex;
