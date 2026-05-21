@@ -325,8 +325,7 @@
 
 	.slider-pagination.slider-pagination_number 
 	{
-		bottom: 51px;
-		left: 98px;
+		bottom: 49px;
 	}
 
 
@@ -580,7 +579,9 @@
 	.info-slider .slider-pagination.slider-pagination_number 
 	{
 		bottom: 11px;
-		left: 58px;
+		left: 47px;
+
+		font-size: 14px;
 	}
 
 	.info-slider .slider-pagination.slider-pagination_number .swiper-pagination-current
@@ -588,9 +589,9 @@
 		font-size: 16px;
 	}
 
-	.info-slider .slider-pagination.slider-pagination_number
+	.info-slider .slider-button-next._bot-number
 	{
-		font-size: 14px;
+		left: 110px;
 	}
 
 

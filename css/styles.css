@@ -3136,7 +3136,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .info-slider .slider-pagination.slider-pagination_number
 {
 	bottom: 6px;
-    left: 52px;
+    left: 34px;
 	color: #1B2745;
 	line-height: 1;
 }
@@ -4831,10 +4831,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     position: absolute;
     bottom: 75px;
-    left: 132px;
+    left: 115px;
 	margin-top: 0;
 
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: flex-end;
 	align-content: flex-end;
     width: 60px;

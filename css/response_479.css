@@ -64,7 +64,8 @@
 	{
 		font-size: 12px;
 		bottom: 32px;
-        left: 57px;
+        left: 44px;
+		width: 44px;
 	}
 
 	.slider-pagination.slider-pagination_number .swiper-pagination-current
@@ -258,7 +259,8 @@
 	.info-slider .slider-pagination.slider-pagination_number
 	{
 		font-size: 12px;
-		left: 38px;
+		left: 25px;
+		bottom: 5px;
 	}
 
 	.info-slider .slider-pagination.slider-pagination_number .swiper-pagination-current
