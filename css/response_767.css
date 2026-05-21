@@ -720,6 +720,82 @@
 		columns: 2;
 	}
 
+	.main-tags
+	{
+		display: block;
+	}
+
+	.main-tags_blog
+	{
+		height: auto;
+	}
+
+	.main-tags_marg
+	{
+		margin-top: 0;
+	}
+
+
+	.mini-modal__news
+	{
+		margin-top: 20px;
+	}
+
+	.mini-modal__news-btn
+	{
+		display: block;
+	}
+
+	.main-tags.mini-modal__modal-news
+	{
+		position: absolute;
+	}
+
+	.mini-modal__modal-news
+	{
+		
+		top: calc(100% + 10px);
+		visibility: hidden;
+		pointer-events: none;
+		opacity: 0;
+
+		background: #fff;
+
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	.main-tags__item
+	{
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid rgba(115, 125, 135, .4);
+		border-top: none;
+		border-radius: 0;
+		line-height: 30px;
+	}
+
+	.main-tags__item:first-child
+	{
+		border-top: 1px solid rgba(115, 125, 135, .4);
+		border-radius: 4px 4px 0 0;
+	}
+
+	.main-tags__item:nth-last-child(2)
+	{
+		border-radius: 0 0 4px 4px;
+	}
+
+	.main-tags__item._hide 
+	{
+		display: block;
+	}
+
+	.main-tags__open
+	{
+		display: none !important; 
+	}
+
 
 	.footer
 	{
