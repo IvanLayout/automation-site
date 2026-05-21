@@ -374,7 +374,7 @@ $(() => {
 		e.preventDefault()
 		
 		$(this).addClass('_active')
-		$(this).closest('.main-tags_blog').addClass('_active')
+		$(this).closest('.main-tags_blog').addClass('_all')
 		$(this).closest('.main-tags_blog').find('.main-tags__item').addClass('_show')
 	})
 
