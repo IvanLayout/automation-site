@@ -5465,13 +5465,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	}
 }
 
-.inner-news__top._active .inner-news__open-all
+.inner-news__open-all._active
 {
 	border-color: #319ACE;
 	color: #319ACE;
 }
 
-.inner-news__top._active .inner-news__open-all svg
+.inner-news__open-all._active svg
 {
 	fill: #319ACE;
 

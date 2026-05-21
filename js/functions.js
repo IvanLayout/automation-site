@@ -378,19 +378,18 @@ $(() => {
 		$(this).closest('.main-tags_blog').find('.main-tags__item').addClass('_show')
 	})
 
-	// Аккордион простой
+	// Показать все теги
+
 	$('body').on('click', '.inner-news__open-all', function(e) {
 		e.preventDefault()
-
-		let parent = $(this).closest('.inner-news__top')
-
-		if( parent.hasClass('_active') ) {
-			parent.removeClass('_active')
-			parent.find('.inner-news__data').slideUp(300)
-		} else {
-			parent.addClass('_active')
-			parent.find('.inner-news__data').slideDown(300)
-		}
+	
+		let btn = $(this)
+		let parent = btn.closest('.inner-news__top')
+		let content = parent.find('.inner-news__data')
+	
+		btn.toggleClass('_active')
+	
+		content.slideToggle(300)
 	})
 })
 
