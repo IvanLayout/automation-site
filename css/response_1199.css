@@ -251,6 +251,19 @@
 	}
 
 
+	.cats-page__name
+	{
+		font-size: 14px;
+	}
+
+
+	.search-tags__item
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
 	.footer-menu__flex
 	{
 		margin-left: -30px;

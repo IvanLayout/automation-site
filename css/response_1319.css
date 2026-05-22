@@ -38,6 +38,12 @@
 
 	/* commit */
 
+
+	.cats-page__item
+	{
+		padding-top: 24px;
+	}
+
 	.footer__colr 
 	{
 		width: calc(100% - 290px);

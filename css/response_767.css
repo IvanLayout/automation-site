@@ -970,6 +970,35 @@
 	}
 
 
+	.cats-page__top
+	{
+		flex-wrap: wrap;
+	}
+
+	.cats-page__note
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.cats-page__grid
+	{
+		padding-top: 0;
+		padding-left: 0;
+		margin-top: 10px;
+		justify-content: space-between;
+	}
+
+	.cats-page__item 
+	{
+		width: calc(100% / 2 - 5px);
+		margin-top: 10px;
+		margin-left: 0;
+		border-radius: 10px;
+	}
+
+
 	.footer
 	{
 		padding-top: 30px;

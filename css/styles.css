@@ -6700,19 +6700,22 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-shrink: 0;
 	position: relative;
 	padding-left: 25px;
+	margin-top: 10px;
 }
 
 .cats-page__note::before
 {
 	position: absolute;
 	content: '';
-	top: 0;
+	top: 50%;
 	left: 0;
 
 	display: block;
 
 	width: 20px;
 	height: 20px;
+
+	margin-top: -13px;
 
 	background: url(../images/ic_lightbulb.svg) 50%/contain no-repeat;
 }
@@ -6731,11 +6734,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 .cats-page__item
 {
 	width: calc(100%/5 + 1px);
-	display: flex;
-	flex-direction: column;
+	display: block;
 
 	text-decoration: none;
-	padding: 32px 20px 60px;
+	padding: 32px 20px 3.4%;
 	background: #fff;
 	text-align: center;
 
@@ -6779,8 +6781,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin: 0 auto;
 
 	aspect-ratio: 1 / 1;
-	height: 159px;
-	width: 159px;
+
+	width: 100%;
+	max-width: 159px;
 }
 
 .cats-page__img img
@@ -6795,7 +6798,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: block;
 	color: #1B2745;
 	font-size: 20px;
-	flex: 1 0 auto;
 
 	margin-top: 19px;
 	font-weight: 500;

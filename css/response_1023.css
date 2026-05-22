@@ -2171,6 +2171,55 @@
 	}
 
 
+	.cats-page__note
+	{
+		padding-left: 17px;
+	}
+
+	.cats-page__note::before
+	{
+		width: 13px;
+		height: 13px;
+
+		margin-top: -9px;
+	}
+
+	.cats-page__item
+	{
+		width: calc(100% / 4 + 1px);
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.cats-page__img 
+	{
+		max-width: 81px;
+	}
+
+	.cats-page__name 
+	{
+		margin-top: 16px;
+	}
+
+	.cats-page__val 
+	{
+		font-size: 12px;
+	}
+
+
+	.search-tags__item
+	{
+		font-size: 12px;
+	}
+
+	.search-tags__open
+	{
+		font-size: 12px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 75px;

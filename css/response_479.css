@@ -423,6 +423,29 @@
 	}
 
 
+	.cats-page__item
+	{
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
+
+	.cats-page__img 
+	{
+		max-width: 96px;
+	}
+
+	.cats-page__name
+	{
+		margin-top: 13px;
+		font-size: 12px;
+	}
+
+	.cats-page__val
+	{
+		margin-top: 5px;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;

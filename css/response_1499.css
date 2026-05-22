@@ -899,6 +899,29 @@
 	}
 
 
+	.cats-page__grid
+	{
+		margin-top: 18px;
+	}
+
+	.cats-page__item 
+	{
+		padding-bottom: 24px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+	.cats-page__img 
+	{
+		max-width: 108px;
+	}
+
+	.cats-page__name
+	{
+		margin-top: 8px;
+	}
+
+
 	.footer
 	{
 		padding-top: 40px;

@@ -661,6 +661,28 @@
 	}
 
 
+	.cats-page__item
+	{
+		padding-bottom: 34px;
+	}
+
+	.cats-page__img
+	{
+		max-width: 126px;
+	}
+
+	.cats-page__name
+	{
+		font-size: 16px;
+	}
+
+	.cats-page__val
+	{
+		font-size: 14px;
+	}
+
+
+
 	.footer
 	{
 		padding-top: 44px;
