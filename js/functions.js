@@ -116,10 +116,7 @@ $(() => {
 		if( !$(this).hasClass('_active') ) {
 			let parent = $(this).closest('.tabs-container')
 			let activeTab = $(this).data('content')
-			let activeTitle = $(this).data('content-title')
 			let level = $(this).data('level')
-
-			console.log(activeTitle)
 
 			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
 			parent.find('.tab-content.' + level).removeClass('_active')
@@ -132,18 +129,24 @@ $(() => {
 
 	if( locationHash && $('.tabs-container').length ) {
 		let activeTab = $('.tabs__button_js[data-content="'+ locationHash +'"]')
-		let parent = activeTab.closest('.tabs-container')
-		let level = activeTab.data('level')
+		if (activeTab.length) {
+			setTimeout(function(){
+				let parent = activeTab.closest('.tabs-container')
+				let level = activeTab.data('level')
 
-		parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
-		parent.find('.tab-content.' + level).removeClass('_active')
+				parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
+				parent.find('.tab-content.' + level).removeClass('_active')
 
-		activeTab.addClass('_active')
-		$(locationHash).addClass('_active')
+				activeTab.addClass('_active')
+				$(locationHash).addClass('_active')
 
-		$('html, body').stop().animate({
-			scrollTop: $(locationHash).offset().top - 120
-		}, 1000)
+				$(`.tab-content[data-id='${locationHash}']`).addClass('_active')
+
+				$('html, body').stop().animate({
+					scrollTop: $(locationHash).offset().top - 120
+				}, 1000)
+			}, 200)
+		}
 	}
 
 
