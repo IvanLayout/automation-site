@@ -2723,6 +2723,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: nowrap;
 }
 
+.top-wrap .tab-content
+{
+    width: 0;
+}
+
+.top-wrap .tab-content._active
+{
+    width: auto;
+}
+
 .top-wrap__btn
 {
 	margin-left: 30px;

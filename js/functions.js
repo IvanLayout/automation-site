@@ -124,28 +124,9 @@ $(() => {
 			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
 			parent.find('.tab-content.' + level).removeClass('_active')
 
-			if ( parent.hasClass('animated') ) {
-				parent.removeClass('animated')
-
-				setTimeout(function(){
-					if ( !parent.hasClass('animated') ) {
-						parent.addClass('animated')
-					}
-				},50)
-			}
-
 			$(this).addClass('_active')
 			$(activeTab).addClass('_active')
-
-			if( $(this).closest('.tabs__item').length ){
-				parent.find('.tabs__item').removeClass('_active')
-				$(this).closest('.tabs__item').addClass('_active')
-			}
-
-			if( activeTitle !== 'undefined' ){
-				parent.find('.tabs__data').removeClass('_active')
-				$(activeTitle).addClass('_active')
-			}
+			$(`.tab-content[data-id='${activeTab}']`).addClass('_active')
 		}
 	})
 
