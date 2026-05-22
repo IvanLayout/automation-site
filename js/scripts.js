@@ -597,6 +597,89 @@ $(() => {
 		})
 	}
 
+	if ($('.products__slider').length) {
+		new Swiper(".products__slider", {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'768': {
+					spaceBetween: 48,
+					slidesPerView: 5,
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 5,
+				},
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+	}
+
+	if ($('.product__thumb').length) {
+		$('.product__thumb').each(function() {
+			const productThumb = new Swiper(this, {
+				loop: false,
+				spaceBetween: 10,
+				slidesPerView: 1,
+				watchSlidesProgress: true,
+				watchOverflow: true,
+				preloadImages: false,
+				nested: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				lazy: {
+					loadPrevNext: true,
+					elementClass: 'lazyload',
+					enabled: true,
+					loadedClass: 'loaded',
+					checkInView: true,
+					loadOnTransitionStart: true 
+				},
+				pagination: {
+					bulletActiveClass: 'slider-dot_active',
+					bulletClass: 'slider-dot',
+					clickableClass: 'slider-pagination-clickable',
+					el: '.slider-pagination',
+					clickable: true
+				},
+			})
+
+			$(this).on('mouseenter', '.slider-pagination .slider-dot', function() {
+				const index = $(this).index();
+				productThumb.slideTo(index);
+			});
+		});
+	}
+
 
 	if ($('.first-section').length) {
 		mainThumbs = new Swiper('.main-thumbs', {
@@ -661,6 +744,29 @@ $(() => {
 			mainSlider.slideTo(index);
 		});
 	}
+
+	// favorite
+	$('body').on('click', '.product-favorite', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
+
+	// compare
+	$('body').on('click', '.product-compare', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
 });
 
 
