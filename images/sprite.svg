@@ -76,6 +76,9 @@
 		<path d="M3.5 6.5L7 10.5L10.5 6.5" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M7 9.5V0.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="download2" viewBox="0 0 17 17">
+		<path d="M4 11V13.5H13V11M8.5 10.5V3.5M6.5 8.5L8.5 10.5L10.5 8.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow4" viewBox="0 0 4 7">
 		<path d="M0.177675 0.996086L2.53456 3.25291L0.177675 5.50973C-0.0592252 5.73658 -0.0592252 6.10302 0.177675 6.32987C0.414576 6.55671 0.797262 6.55671 1.03416 6.32987L3.82232 3.66006C4.05923 3.43322 4.05923 3.06678 3.82232 2.83993L1.03416 0.170134C0.797262 -0.0567115 0.414576 -0.0567115 0.177675 0.170134C-0.0531508 0.39698 -0.0592252 0.769234 0.177675 0.996086Z"/>
 	</symbol>

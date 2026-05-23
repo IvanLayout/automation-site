@@ -642,43 +642,43 @@ $(() => {
 		})
 	}
 
-	if ($('.product__thumb').length) {
-		$('.product__thumb').each(function() {
-			const productThumb = new Swiper(this, {
-				loop: false,
-				spaceBetween: 10,
-				slidesPerView: 1,
-				watchSlidesProgress: true,
-				watchOverflow: true,
-				preloadImages: false,
-				nested: true,
-				effect: 'fade',
-				fadeEffect: {
-					crossFade: true
-				},
-				lazy: {
-					loadPrevNext: true,
-					elementClass: 'lazyload',
-					enabled: true,
-					loadedClass: 'loaded',
-					checkInView: true,
-					loadOnTransitionStart: true 
-				},
-				pagination: {
-					bulletActiveClass: 'slider-dot_active',
-					bulletClass: 'slider-dot',
-					clickableClass: 'slider-pagination-clickable',
-					el: '.slider-pagination',
-					clickable: true
-				},
-			})
+	// if ($('.product__thumb').length) {
+	// 	$('.product__thumb').each(function() {
+	// 		const productThumb = new Swiper(this, {
+	// 			loop: false,
+	// 			spaceBetween: 10,
+	// 			slidesPerView: 1,
+	// 			watchSlidesProgress: true,
+	// 			watchOverflow: true,
+	// 			preloadImages: false,
+	// 			nested: true,
+	// 			effect: 'fade',
+	// 			fadeEffect: {
+	// 				crossFade: true
+	// 			},
+	// 			lazy: {
+	// 				loadPrevNext: true,
+	// 				elementClass: 'lazyload',
+	// 				enabled: true,
+	// 				loadedClass: 'loaded',
+	// 				checkInView: true,
+	// 				loadOnTransitionStart: true 
+	// 			},
+	// 			pagination: {
+	// 				bulletActiveClass: 'slider-dot_active',
+	// 				bulletClass: 'slider-dot',
+	// 				clickableClass: 'slider-pagination-clickable',
+	// 				el: '.slider-pagination',
+	// 				clickable: true
+	// 			},
+	// 		})
 
-			$(this).on('mouseenter', '.slider-pagination .slider-dot', function() {
-				const index = $(this).index();
-				productThumb.slideTo(index);
-			});
-		});
-	}
+	// 		$(this).on('mouseenter', '.slider-pagination .slider-dot', function() {
+	// 			const index = $(this).index();
+	// 			productThumb.slideTo(index);
+	// 		});
+	// 	});
+	// }
 
 
 	if ($('.first-section').length) {
@@ -744,6 +744,43 @@ $(() => {
 			mainSlider.slideTo(index);
 		});
 	}
+
+
+	// if ($('.qrcod-slider').length) {
+	// 	new Swiper(".qrcod-slider", {
+	// 		loop: false,
+	// 		spaceBetween: 20,
+	// 		slidesPerView: 1,
+	// 		watchSlidesProgress: true,
+	// 		watchOverflow: true,
+	// 		preloadImages: false,
+	// 		lazy: {
+	// 			loadPrevNext: true,
+	// 			elementClass: 'lazyload',
+	// 			enabled: true,
+	// 			loadedClass: 'loaded',
+	// 			checkInView: true,
+	// 			loadOnTransitionStart: true
+	// 		},
+	// 		pagination: {
+	// 			bulletActiveClass: 'slider-dot_active',
+	// 			bulletClass: 'slider-dot',
+	// 			clickableClass: 'slider-pagination-clickable',
+	// 			el: '.slider-pagination',
+	// 			clickable: true
+	// 		},
+	// 		breakpoints: {
+	// 			'320': {
+	// 				spaceBetween: 0,
+	// 				slidesPerView: 'auto',
+	// 			},
+	// 			'1024': {
+	// 				spaceBetween: 20,
+	// 				slidesPerView: 3
+	// 			}
+	// 		}
+	// 	})
+	// }
 
 	// favorite
 	$('body').on('click', '.product-favorite', function (e) {
