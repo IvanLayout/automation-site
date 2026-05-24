@@ -444,7 +444,55 @@
 	{
 		margin-top: 5px;
 	}
+	
 
+	.contacts-maps__wrap
+	{
+		padding: 15px;
+		border-radius: 10px;
+	}
+
+	.contacts-maps__item
+	{
+		width: 100%;
+	}
+
+	.contacts-maps__box-items
+	{
+		margin-top: 6px;
+	}
+
+	.contacts-maps__box-item
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
+	.contacts-gallery__grid 
+	{
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+
+	.contacts-gallery__img 
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.requisites__top
+	{
+		justify-content: space-between;
+	}
+
+
+	.requisites-table tr td
+	{
+		padding: 15px;
+	}
 
 	.footer__logo 
 	{

@@ -7414,6 +7414,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	margin-top: 12px;
 	margin-left: -20px;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .contacts-info__coll
@@ -7566,13 +7568,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: none;
 }
 
-.qrcod-wrap__items
+.qrcod-wrap__items._flex
 {
 	justify-content: space-between;
 	margin: -20px 0 0 -20px;
 }
 
-.qrcod-wrap__item
+.qrcod-wrap__items._flex .qrcod-wrap__item
 {
 	max-width: 180px;
 	width: calc(100%/3 - 20px);
@@ -7728,15 +7730,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .contacts-maps__items
 {
-	margin: -30px 0 0 -30px;
-	justify-content: space-between;
+	margin: -10px 0 0 -45px;
+	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
 }
 
 .contacts-maps__item
 {
-	margin: 30px 0 0 30px;
+	margin: 10px 0 0 45px;
 	font-weight: 500;
 }
 
@@ -7748,20 +7750,20 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .contacts-maps__box-copy
 {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-	flex-wrap: nowrap;
+	position: relative;
+	padding-right: 25px;
+	display: inline-block;
 }
 
 .contacts-maps__copy
 {
+	position: absolute;
+	top: 0;
+	right: 0;
+
 	display: block;
 	width: 20px;
 	height: 20px;
-	margin-left: 5px;
-	margin-top: 1px;
 }
 
 .contacts-maps__copy svg
@@ -7786,6 +7788,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .contacts-maps__socials
 {
 	margin: -6px 0 0 -6px;
+	flex-wrap: nowrap;
 }
 
 .contacts-maps__socials-link
@@ -7908,7 +7911,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	}
 }
 
-.accordion__data
+.contacts-accordion__data
 {
 	padding-top: 12px;
 	padding-bottom: 20px;
@@ -8054,47 +8057,29 @@ input[type=checkbox]:checked + .checkbox__text::after
     border-collapse: collapse;
 }
 
-.requisites-table_marg
+.requisites-table__border
 {
 	margin-top: 24px;
+	border: 1px solid rgba(27, 39, 69, .2);
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .requisites-table tr td
 {
 	padding: 13px 20px;
-	border-top: 1px solid rgba(27, 39, 69, .2);
-	border-left: 1px solid rgba(27, 39, 69, .2);
-	min-height: 72px;
-}
-
-.requisites-table tr:first-child td:first-child
-{
-	border-radius: 10px 0 0 0;
-}
-
-.requisites-table tr:first-child td:last-child
-{
-	border-radius: 0 10px 0 0;
-}
-
-.requisites-table tr:last-child td:first-child
-{
-	border-radius: 0 0 0 10px;
-}
-
-.requisites-table tr:last-child td:last-child
-{
-	border-radius: 0 0 10px 0;
+	border-right: 1px solid rgba(27, 39, 69, .2);
+	border-bottom: 1px solid rgba(27, 39, 69, .2);
 }
 
 .requisites-table tr td:last-child
 {
-	border-right: 1px solid rgba(27, 39, 69, .2);
+	border-right: none;
 }
 
 .requisites-table tr:last-child td
 {
-	border-bottom: 1px solid rgba(27, 39, 69, .2);
+	border-bottom: none;
 }
 
 .requisites-table tr td a

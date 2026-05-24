@@ -264,6 +264,39 @@
 	}
 
 
+	.contacts-info__support-item
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	.contacts-maps__items
+	{
+		margin-left: -18px;
+	}
+
+	.contacts-maps__item
+	{
+		margin-left: 18px;
+	}
+
+	.contacts-maps__box-item
+	{
+		width: calc(100% / 4 - 20px);
+	}
+
+	.contacts-gallery__img-border span
+	{
+		font-size: 12px;
+	}
+
+	.qrcod-wrap
+	{
+		max-width: 750px;
+	}
+
+
 	.footer-menu__flex
 	{
 		margin-left: -30px;
