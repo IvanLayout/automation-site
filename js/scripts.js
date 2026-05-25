@@ -674,9 +674,207 @@ $(() => {
 			},
 			on: {
 				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+					$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+					setHeight( $(swiper.el).find('.product') )
+					setHeight( $(swiper.el).find('.product__name') )
+					setHeight( $(swiper.el).find('.product__box') )
+					setHeight( $(swiper.el).find('.product__desc-items') )
+					setHeight( $(swiper.el).find('.product__prices') )
+
+					$(swiper.el).find('.product').removeClass('_loaded')
+					setTimeout(() => {
+						$(swiper.el).find('.product').addClass('_loaded')
+					}, 100)
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+					setHeight( $(swiper.el).find('.product') )
+					setHeight( $(swiper.el).find('.product__name') )
+					setHeight( $(swiper.el).find('.product__box') )
+					setHeight( $(swiper.el).find('.product__desc-items') )
+					setHeight( $(swiper.el).find('.product__prices') )
+
+					$(swiper.el).find('.product').removeClass('_loaded')
+					setTimeout(() => {
+						$(swiper.el).find('.product').addClass('_loaded')
+					}, 100)
 				}
 			}
+		})
+	}
+
+	if ($('.compare-products__slider').length) {
+		productsCompare = new Swiper('.compare-products__slider', {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1400': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1760': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				}
+			},
+			on: {
+				init: function (swiper) {
+					if ($(swiper.el).length) {
+						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
+
+						$(swiper.el).find('.product').removeClass('_loaded')
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 100)
+					}
+				},
+				resize: function (swiper) {
+					if ($(swiper.el).length) {
+						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
+
+						$(swiper.el).find('.product').removeClass('_loaded')
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 100)
+					}
+				}
+			}
+		})
+
+		compareFeatureSlider = new Swiper('.compare-section__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1400': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1760': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				}
+			},
+			on: {
+				init: compareHeight,
+				resize: compareHeight
+			}
+		})
+
+		productsCompare.controller.control = compareFeatureSlider;
+		compareFeatureSlider.controller.control = productsCompare;
+
+		$('body').on('click', '.product-compare-delete', function (e) {
+			e.preventDefault()
+
+			const productSlide = $(this).closest('.product')
+			const index = productSlide.index()
+
+			if (typeof productsCompare !== 'undefined') {
+				productsCompare.removeSlide(index)
+			}
+
+			if (typeof compareFeatureSlider !== 'undefined') {
+				compareFeatureSlider.removeSlide(index)
+			}
+
+			productsCompare && productsCompare.update()
+			compareFeatureSlider && compareFeatureSlider.update()
+		})
+
+		$('body').on('click', '.compare-feature__open', function (e) {
+			e.preventDefault()
+
+			const $sector = $(this).closest('.compare-feature__sector')
+			const index = $sector.parent().children('.compare-feature__sector').index($sector)
+
+			$sector.toggleClass('_active')
+
+			$('.compare-section__slide').each(function () {
+				$(this).find('> .compare-feature__sector').eq(index).toggleClass('_active')
+			})
 		})
 	}
 
@@ -833,6 +1031,12 @@ $(window).on('load', () => {
 			}
 		})
 	}
+
+
+	$('.products__grid').find('.product').removeClass('_loaded')
+	setTimeout(() => {
+		$('.products__grid').find('.product').addClass('_loaded')
+	}, 100)
 });
 
 
@@ -877,6 +1081,11 @@ $(window).on('resize', () => {
 	if ($('.qrcod-wrap').length){
 		qrcodSlider()
 	}
+
+	$('.products__grid').find('.product').removeClass('_loaded')
+	setTimeout(() => {
+		$('.products__grid').find('.product').addClass('_loaded')
+	}, 100)
 });
 
 
@@ -1068,4 +1277,49 @@ function qrcodSlider(){
 		$('.qrcod-wrap__items').removeClass('swiper-wrapper').addClass('_flex')
 		$('.qrcod-wrap__item').removeClass('swiper-slide')
 	}
+}
+
+
+// Выравнивание в сравнении
+function compareHeight() {
+	$('.compare-feature__item').height('auto')
+	$('.compare-feature__title').height('auto')
+
+	let productFeatures = $('.compare-feature__items'),
+	productFeaturesTitle = $('.compare-feature__sector'),
+	featuresSizes = new Object()
+
+	productFeatures.each(function () {
+		$(this).find('> *').each(function () {
+			if (featuresSizes[$(this).index()]) {
+				if ($(this).outerHeight() > featuresSizes[$(this).index()]) {
+					featuresSizes[$(this).index()] = $(this).outerHeight()
+				}
+			} else {
+				featuresSizes[$(this).index()] = $(this).outerHeight()
+			}
+		})
+	})
+
+	productFeaturesTitle.each(function () {
+		$(this).find('.compare-feature__title').each(function () {
+			if (featuresSizes[$(this).index()]) {
+				if ($(this).outerHeight() > featuresSizes[$(this).index()]) {
+					featuresSizes[$(this).index()] = $(this).outerHeight()
+				}
+			} else {
+				featuresSizes[$(this).index()] = $(this).outerHeight()
+			}
+		})
+	})
+
+	$.each(featuresSizes, (key, data) => {
+		productFeatures.each(function () {
+			$(this).find('> *:eq(' + key + ')').innerHeight(data)
+		})
+
+		productFeaturesTitle.each(function () {
+			$(this).find('.compare-feature__title:eq(' + key + ')').innerHeight(data)
+		})
+	})
 }
