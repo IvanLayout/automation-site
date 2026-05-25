@@ -1033,10 +1033,16 @@ $(window).on('load', () => {
 	}
 
 
-	$('.products__grid').find('.product').removeClass('_loaded')
-	setTimeout(() => {
-		$('.products__grid').find('.product').addClass('_loaded')
-	}, 100)
+	if( $('.products__grid').length ){
+		$('.products__grid').each(function() {
+			productsHeight($(this), parseInt($(this).css('--products_count')))
+		})
+
+		$('.products__grid').find('.product').removeClass('_loaded')
+		setTimeout(() => {
+			$('.products__grid').find('.product').addClass('_loaded')
+		}, 100)
+	}
 });
 
 
@@ -1082,10 +1088,16 @@ $(window).on('resize', () => {
 		qrcodSlider()
 	}
 
-	$('.products__grid').find('.product').removeClass('_loaded')
-	setTimeout(() => {
-		$('.products__grid').find('.product').addClass('_loaded')
-	}, 100)
+	if( $('.products__grid').length ){
+		$('.products__grid').each(function() {
+			productsHeight($(this), parseInt($(this).css('--products_count')))
+		})
+
+		$('.products__grid').find('.product').removeClass('_loaded')
+		setTimeout(() => {
+			$('.products__grid').find('.product').addClass('_loaded')
+		}, 100)
+	}
 });
 
 
@@ -1279,6 +1291,29 @@ function qrcodSlider(){
 	}
 }
 
+
+function productsHeight(context, step) {
+	let start    = 0
+	let finish   = step
+	let products = context.find('.product')
+
+	products.find('product').height('auto')
+	products.find('.product__name').height('auto')
+	products.find('.product__box').height('auto')
+	products.find('.product__desc-items').height('auto')
+	products.find('.product__prices').height('auto')
+
+	for (let i = 0; i < products.length; i++) {
+		setHeight(products.slice(start, finish))
+		setHeight(products.slice(start, finish).find('.product__name'))
+		setHeight(products.slice(start, finish).find('.product__box'))
+		setHeight(products.slice(start, finish).find('.product__desc-items'))
+		setHeight(products.slice(start, finish).find('.product__prices'))
+
+		start  = start + step
+		finish = finish + step
+	}
+}
 
 // Выравнивание в сравнении
 function compareHeight() {
