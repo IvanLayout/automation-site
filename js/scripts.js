@@ -248,6 +248,26 @@ $(() => {
 	// })
 	// commit
 
+	//Ползунки
+	$priceRange = $("#price_range").ionRangeSlider({
+		type     : 'double',
+		min      : 0,
+		max      : 123000,
+		from     : 11,
+		to       : 123000,
+		step     : 1,
+		onChange : function (data) {
+			$('.price_range input.ot').val( data.from.toLocaleString('ru-RU') )
+			$('.price_range input.do').val( data.to.toLocaleString('ru-RU') )
+		}
+	}).data("ionRangeSlider")
+
+	$('.price_range .range__input').keyup(function() {
+		$priceRange.update({
+			from : $('.price_range input.ot').val().replace(/\s/g,''),
+			to : $('.price_range input.do').val().replace(/\s/g,'')
+		})
+	})
 
 	if ($('.services__slider').length) {
 		new Swiper(".services__slider", {

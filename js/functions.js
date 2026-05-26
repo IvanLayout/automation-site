@@ -344,6 +344,60 @@ $(() => {
 
 	// commit
 
+	$('.filter__item-clear').click(function(e) {
+		e.preventDefault()
+
+		const $filterItem = $(this).closest('.filter__item');
+
+		$filterItem.find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
+
+		$filterItem.find('._clear').removeClass('_clear')
+	})
+
+	$('.filter__data').each(function(){
+		if ($(this).find('input[type="checkbox"]:checked, input[type="radio"]:checked').length > 0) {
+			$(this).addClass('_clear');
+		} else {
+			$(this).removeClass('_clear');
+		}
+	})
+
+	$('.checkbox__label, .checkbox-btn__label').click(function(){
+		if ($(this).closest('.filter__data').find('input[type="checkbox"]:checked').length > 0) {
+			$(this).closest('.filter__data').addClass('_clear');
+		} else {
+			$(this).closest('.filter__data').removeClass('_clear');
+		}
+	})
+
+	$('.radio__label').click(function(){
+		if ($(this).closest('.filter__data').find('input[type="radio"]:checked').length > 0) {
+			$(this).closest('.filter__data').addClass('_clear');
+		} else {
+			$(this).closest('.filter__data').removeClass('_clear');
+		}
+	})
+
+	$('.filter__item-more').click(function(e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.filter__data').removeClass('_all')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.filter__data').addClass('_all')
+		}
+	})
+
+	$('.filter__data').each(function(){
+		if ( $(this).find('.checkbox').length > 4 ) {
+			$(this).find('.filter__item-more').addClass('_show')
+		}
+	})
+
 	// Аккордион
 	$('body').on('click', '.accordion__open', function(e) {
 		e.preventDefault()
