@@ -471,6 +471,14 @@ $(window).on('load', () => {
 		}
 	}
 
+	if ( $('.compare-fixed').length ) {
+		if( $(window).scrollTop() > $('.compare-feature').offset().top ) {
+			$('.compare-fixed').addClass('_fix')
+		} else {
+			$('.compare-fixed').removeClass('_fix')
+		}
+	}
+
 	$(window).on('scroll', () => {
 		if ( $('.header__info').length ) {
 			if( $(window).scrollTop() > $('.header__info').offset().top > 0 ) {
@@ -485,8 +493,14 @@ $(window).on('load', () => {
 				$('.inner-news__wrap').addClass('_fix')
 			} else {
 				$('.inner-news__wrap').removeClass('_fix')
+			}
+		}
 
-				// console.log($('.inner-news__wrap').offset().top)
+		if ( $('.compare-fixed').length ) {
+			if( $(window).scrollTop() > $('.compare-feature').offset().top ) {
+				$('.compare-fixed').addClass('_fix')
+			} else {
+				$('.compare-fixed').removeClass('_fix')
 			}
 		}
 	})

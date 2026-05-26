@@ -181,6 +181,28 @@
 		margin-top: 20px;
 	}
 
+
+	.compare-fixed{
+		padding: 22px 0;
+	}
+
+	.compare-product__thumb{
+		width: 72px;
+	}
+
+	.compare-product__prices{
+		width: 100%;
+	}
+
+	.brands__slider .slider-button-next,
+.cats-page__slider .slider-button-next{
+		margin-right: -700px;
+	}
+	.brands__slider .slider-button-prev,
+.cats-page__slider .slider-button-prev
+	{
+		margin-left: -700px;
+	}
 	/* commit */
 
 	.advantages-main__info
@@ -509,7 +531,7 @@
 
 	.brands__item
 	{
-		aspect-ratio: 1 / .65;
+		aspect-ratio: 1 / .605;
 	}
 
 	.brands__img

@@ -1760,13 +1760,16 @@
 	}
 
 
-	.brands__slider .slider-button-prev, 
-	.brands__slider .slider-button-next
+	.brands__slider .slider-button-prev,
+.cats-page__slider .slider-button-prev, 
+	.brands__slider .slider-button-next,
+.cats-page__slider .slider-button-next
 	{
 		display: none;
 	}
 
-	.brands__slider .slider-pagination
+	.brands__slider .slider-pagination,
+.cats-page__slider .slider-pagination
 	{
 		display: flex;
 	}
@@ -2186,9 +2189,12 @@
 
 	.cats-page__item
 	{
-		width: calc(100% / 4 + 1px);
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+
+	.cats-page__grid .cats-page__item{
+		width: calc(100% / 4 + 1px);
 	}
 
 	.cats-page__img 

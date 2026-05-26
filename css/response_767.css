@@ -992,10 +992,13 @@
 
 	.cats-page__item 
 	{
+		border-radius: 10px;
+	}
+
+	.cats-page__grid .cats-page__item{
 		width: calc(100% / 2 - 5px);
 		margin-top: 10px;
 		margin-left: 0;
-		border-radius: 10px;
 	}
 
 

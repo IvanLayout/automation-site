@@ -328,6 +328,52 @@
 	.form-subscribe .form-subscribe__input{
 		font-size: 14px;
 	}
+
+
+	.tabs-container_marg{
+		margin-top: 20px;
+	}
+
+	.compare-product__flex{
+		gap: 10px;
+	}
+
+	.compare-product__thumb {
+		width: 70px;
+	}
+
+	.compare-product__bot{
+		gap: 15px;
+	}
+
+	.compare-feature__title{
+		font-size: 16px;
+	}
+
+	.clear-btn{
+		font-size: 12px;
+	}
+
+	.compare-section__checkbox-slider,
+	.compare-fixed__checkbox-slider{
+		max-width: 181px;
+	}
+
+	.compare-section__checkbox-slider .checkbox-slider__text,
+	.compare-fixed__checkbox-slider .checkbox-slider__text{
+		font-size: 14px;
+		padding-right: 53px;
+	}
+
+	.brands__slider .slider-button-next,
+.cats-page__slider .slider-button-next{
+		margin-right: -600px;
+	}
+	.brands__slider .slider-button-prev,
+.cats-page__slider .slider-button-prev
+	{
+		margin-left: -600px;
+	}
 	/* commit */
 
 	body
