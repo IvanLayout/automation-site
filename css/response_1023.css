@@ -1121,6 +1121,70 @@
 	.section-text__file-download{
 		font-size: 12px;
 	}
+
+	.cats-page__slider .cats-page__item
+	{
+		width: 248px;
+		aspect-ratio: 1 / .6;
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
+
+	.cats-page__slider .cats-page__name{
+		margin-top: 11px;
+		font-size: 12px;
+	}
+
+	.page-brands__links_marg{
+		margin-top: 20px;
+	}
+
+	.page-brands__links{
+		gap: 14px 14px;
+		margin-left: -40px;
+		margin-right: -40px;
+		width: calc(100% + 80px);
+		padding-left: 40px;
+		padding-right: 40px;
+		overflow: hidden;
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		padding-bottom: 15px;
+	}
+
+	.page-brands__link{
+		font-size: 14px;
+		font-weight: 500;
+		flex-shrink: 0;
+		white-space: nowrap;
+	}
+
+	.brands_marg{
+		margin-top: 30px;
+	}
+
+	.search_marg{
+		margin-top: 10px;
+	}
+
+	.search .search__input{
+		font-size: 12px;
+	}
+
+	.page-brands__letter{
+		margin-bottom: 5px;
+	}
+
+	.page-brands__flex{
+		gap: 10px;
+	}
+
+	.page-brands__item{
+		width: 106px;
+		padding-left: 12px;
+		padding-right: 12px;
+		aspect-ratio: 1 / .378;
+	}
 	/* commit */
 
 	body

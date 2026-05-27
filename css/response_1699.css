@@ -195,13 +195,31 @@
 	}
 
 	.brands__slider .slider-button-next,
-.cats-page__slider .slider-button-next{
+	.cats-page__slider .slider-button-next{
 		margin-right: -700px;
 	}
 	.brands__slider .slider-button-prev,
-.cats-page__slider .slider-button-prev
+	.cats-page__slider .slider-button-prev
 	{
 		margin-left: -700px;
+	}
+
+
+	.page-brands__links {
+		gap: 20px 33px;
+	}
+
+	.cats-page__slider .cats-page__item{
+		aspect-ratio: 1/.605;
+	}
+
+	.cats-page__slider .cats-page__img{
+		max-width: 106px;
+	}
+
+
+	.small-title{
+		font-size: 20px;
 	}
 	/* commit */
 
@@ -527,6 +545,10 @@
 	.brands__slider 
 	{
 		margin-top: 18px;
+	}
+
+	.brands__slider_marg{
+		margin-top: 24px;
 	}
 
 	.brands__item

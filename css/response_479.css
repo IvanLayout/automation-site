@@ -139,6 +139,11 @@
 	.section-text__file-download{
 		display: none;
 	}
+
+	.page-brands__item{
+		width: calc(50% - 5px);
+		aspect-ratio: 1 / .397;
+	}
 	/* commit */
 
 	._marg 

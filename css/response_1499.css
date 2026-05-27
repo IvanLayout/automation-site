@@ -374,6 +374,65 @@
 	{
 		margin-left: -600px;
 	}
+
+
+	.page-brands__links {
+		gap: 20px 31px;
+	}
+
+	.page-brands__link{
+		font-size: 16px;
+	}
+
+	.brands_marg{
+		margin-top: 40px;
+	}
+
+	.cats-page_marg{
+		margin-top: 40px;
+	}
+
+	.cats-page__slider_marg{
+		margin-top: 20px;
+	}
+
+	.brands__slider_marg{
+		margin-top: 20px;
+	}
+
+	.cats-page__slider .cats-page__item{
+		padding-top: 23px;
+		padding-bottom: 23px;
+	}
+
+	.cats-page__slider .cats-page__name{
+		margin-top: 20px;
+	}
+
+	.cats-page__slider .cats-page__img{
+		max-width: 86px;
+	}
+
+	.page-brands__links_marg{
+		margin-top: 30px;
+	}
+
+	.search_marg{
+		margin-top: 20px;
+	}
+
+	.page-brands__items_marg{
+		margin-top: 35px;
+	}
+
+	.page-brands__letter{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.search .search__input{
+		font-size: 14px;
+	}
 	/* commit */
 
 	body
@@ -669,11 +728,6 @@
 		line-height: 42px;
 		padding-left: 13px;
 		padding-right: 13px;
-	}
-
-	.brands__item 
-	{
-		aspect-ratio: 1 / .629;
 	}
 
 	.brands__img 

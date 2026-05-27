@@ -98,6 +98,26 @@
         left: 20px;
 		margin-left: 0;
 	}
+
+    .page-brands__links {
+        gap: 16px 20px;
+    }
+
+    .cats-page__slider .cats-page__img{
+        max-width: 62px;
+    }
+
+    .cats-page__slider .cats-page__name{
+        margin-top: 16px;
+    }
+
+    .page-brands__items_marg{
+        margin-top: 30px;
+    }
+
+    .page-brands__item{
+        width: 150px;
+    }
 	/* commit */
 
 
