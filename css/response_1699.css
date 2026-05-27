@@ -221,6 +221,21 @@
 	.small-title{
 		font-size: 20px;
 	}
+
+	.stocks__grid{
+		margin-top: 20px;
+		row-gap: 40px;
+	}
+
+	.stocks__item-info{
+		right: 15px;
+	}
+
+
+	.page-error{
+		padding-top: 55px;
+		padding-bottom: 0;
+	}
 	/* commit */
 
 	.advantages-main__info

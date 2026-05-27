@@ -144,6 +144,61 @@
 		width: calc(50% - 5px);
 		aspect-ratio: 1 / .397;
 	}
+
+	.stocks__grid{
+		margin-left: 0;
+	}
+
+	.stocks__grid .stocks__item{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.stocks__item-name{
+		font-size: 16px;
+	}
+
+	.stocks__item-name br{
+		display: none;
+	}
+
+	.stocks__item-info{
+		top: 20px;
+		right: 20px;
+		line-height: 20px;
+		padding-left: 22px;
+		padding-right: 5px;
+	}
+
+	.stocks__item-info::before{
+		left: 5px;
+		width: 12px;
+		height: 12px;
+		margin-top: -6px;
+	}
+
+
+	.page-error{
+		padding-top: 38px;
+		padding-bottom: 0;
+		margin-bottom: -12px;
+	}
+
+	.page-erro__img img{
+		max-width: 215px;
+	}
+
+	.page-error .page-title{
+		margin-top: 12px;
+	}
+
+	.page-error__btns{
+		margin-top: 30px;
+	}
+
+	.page-error__btn{
+		width: 100%;
+	}
 	/* commit */
 
 	._marg 

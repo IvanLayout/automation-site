@@ -4640,6 +4640,109 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-width: 100%;
 	max-height: 100%;
 }
+
+
+.stocks__grid{
+	margin: 24px 0 0 -20px;
+	row-gap: 50px;
+}
+
+.stocks__grid .stocks__item{
+	margin-left: 20px;
+	width: calc(100%/4 - 20px);
+}
+
+.stocks__item{
+	position: relative;
+}
+
+.stocks__item-info{
+	position: absolute;
+	right: 17px;
+	top: 15px;
+	background: rgba(27, 39, 69, 0.13);
+	border-radius: 3px;
+	padding: 0 5px 0 22px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	z-index: 2;
+}
+
+.stocks__item-info::before{
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../images/ic_imp.svg) 50% no-repeat;
+}
+
+.stocks__item-img{
+	display: block;
+	overflow: hidden;
+	border-radius: 10px;
+	width: 100%;
+	aspect-ratio: 1/.915;
+}
+
+.stocks__item-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.stocks__item-date{
+	margin-top: 15px;
+	color: #737D87;
+	font-size: 14px;
+}
+
+.stocks__item-name{
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.stocks__item-name a{
+	color: currentColor;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+@media (any-hover: hover){
+	.stocks__item-name a:hover{
+		color: #D64923;
+	}
+}
+
+.page-error{
+	padding: 146px 0 46px;
+}
+
+.page-erro__img img{
+	margin: 0 auto;
+	max-width: 414px;
+	display: block;
+	width: 100%;
+}
+
+.page-error .page-title{
+	text-align: center;
+	margin-top: 33px;
+}
+
+.page-error__btns{
+	justify-content: center;
+	gap: 20px;
+	margin-top: 55px;
+}
+
+.page-error__btn{
+	min-width: 199px;
+}
 /*------------
     commit
 ------------*/

@@ -433,6 +433,48 @@
 	.search .search__input{
 		font-size: 14px;
 	}
+
+
+	.stocks__item-date{
+		margin-top: 10px;
+	}
+	
+	.stocks__item-name{
+		font-size: 16px;
+	}
+
+	.stocks__item-info{
+		font-size: 12px;
+		line-height: 17px;
+		padding-left: 18px;
+		padding-right: 4px;
+	}
+
+	.stocks__item-info::before{
+		width: 10px;
+		height: 10px;
+		margin-top: -5px;
+		left: 4px;
+		background-size: contain;
+	}
+
+
+	.page-error{
+		padding-top: 100px;
+		padding-bottom: 30px;
+	}
+
+	.page-erro__img img{
+		max-width: 296px;
+	}
+
+	.page-error .page-title{
+		margin-top: 10px;
+	}
+
+	.page-error__btns{
+		margin-top: 32px;
+	}
 	/* commit */
 
 	body

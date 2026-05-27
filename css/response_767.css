@@ -273,6 +273,16 @@
 	.page-brands__items_marg{
 		margin-top: 35px;
 	}
+
+	.stocks__grid .stocks__item{
+		width: calc(100% / 2 - 10px);
+	}
+
+
+	.page-error{
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
 	/* commit */
 
 	.advantages-main__item

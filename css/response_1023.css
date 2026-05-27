@@ -1185,6 +1185,43 @@
 		padding-right: 12px;
 		aspect-ratio: 1 / .378;
 	}
+
+	.stocks__grid{
+		margin-left: -10px;
+		row-gap: 30px;
+	}
+
+	.stocks__grid .stocks__item{
+		margin-left: 10px;
+		width: calc(100% / 3 - 10px);
+	}
+
+	.stocks__item-date{
+		font-size: 12px;
+	}
+
+	.stocks__item-name{
+		font-size: 14px;
+	}
+
+
+	.page-error{
+		padding-top: 140px;
+		padding-bottom: 100px;
+	}
+
+	.page-error .page-title{
+		margin-top: 16px;
+	}
+
+	.page-error__btns{
+		margin-top: 24px;
+		gap: 10px;
+	}
+
+	.page-error__btn{
+		min-width: 140px;
+	}
 	/* commit */
 
 	body
