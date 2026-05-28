@@ -271,6 +271,28 @@ $(() => {
 		})
 	}
 
+	if ( $("#price_range2").length ) {
+		$priceRange = $("#price_range2").ionRangeSlider({
+			type     : 'double',
+			min      : 0,
+			max      : 123000,
+			from     : 11,
+			to       : 123000,
+			step     : 1,
+			onChange : function (data) {
+				$('.price_range2 input.ot').val( data.from.toLocaleString('ru-RU') )
+				$('.price_range2 input.do').val( data.to.toLocaleString('ru-RU') )
+			}
+		}).data("ionRangeSlider")
+
+		$('.price_range2 .range__input').keyup(function() {
+			$priceRange.update({
+				from : $('.price_range2 input.ot').val().replace(/\s/g,''),
+				to : $('.price_range2 input.do').val().replace(/\s/g,'')
+			})
+		})
+	}
+
 	if ($('.services__slider').length) {
 		new Swiper(".services__slider", {
 			loop: false,

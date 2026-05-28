@@ -343,6 +343,22 @@ $(() => {
 	})
 
 	// commit
+	$('body').on('click', '.filter__all', function (e) {
+		e.preventDefault()
+
+		$('.filter-big').addClass('_show')
+
+		$('body').addClass('_filter-open')
+	})
+
+	$('body').on('click', '.filter-big__overlay, .filter-big__close', function (e) {
+		e.preventDefault()
+
+		$('.filter-big').removeClass('_show')
+
+		$('body').removeClass('_filter-open')
+	})
+
 
 	$('.filter__item-clear').click(function(e) {
 		e.preventDefault()
@@ -414,6 +430,21 @@ $(() => {
 
 			parent.addClass('_active')
 			parent.find('.accordion__data').slideDown(300)
+		}
+	})
+
+	// Аккордион простой
+	$('body').on('click', '.accord__open', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.accord__item')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.accord__data').slideUp(300)
+		} else {
+			parent.addClass('_active')
+			parent.find('.accord__data').slideDown(300)
 		}
 	})
 

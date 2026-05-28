@@ -2747,12 +2747,27 @@
 					<div class="filter-big__title">Все фильтры в Датчики предельного уровня</div>
 
 					<form action="" class="form">
+						<div class="filter__search _flex">
+							<input type="text" value="" placeholder="Поиск по фильтрам" class="filter__search-input">
+							<button type="submit" class="filter__search-submit">
+								<svg>
+									<use xlink:href="images/sprite.svg#lupa"></use>
+								</svg>
+							</button>
+						</div>
+
 						<div class="filter-big__cols _flex">
 							<div class="filter-big__col">
-								<div class="filter__item">
-									<div class="filter__title">Наличие</div>
+								<div class="filter__item accord__item">
+									<div class="filter__title accord__open">
+										Наличие
 
-									<div class="filter__data">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow4"></use>
+										</svg>
+									</div>
+
+									<div class="filter__data accord__data">
 										<div class="checkbox">
 											<label class="checkbox__label">
 												<input type="checkbox" name="">
@@ -2993,21 +3008,59 @@
 							<div class="filter-big__col">
 								<div class="filter__item">
 									<div class="filter__item-wrap _flex">
-										<div class="filter__title">Максимальное рабочее давление, бар</div>
+										<div class="filter__title">Максимальное рабочее <br>давление, бар</div>
 
 										<button type="button" class="filter__item-clear">Сбросить</button>
 									</div>
 
-									<div class="range price_range">
+									<div class="range price_range2">
 										<div class="range__flex _flex">
 											<input type="text" name="" value="" placeholder="от 11" class="range__input ot">
 											<input type="text" name="" value="" placeholder="до 123 000" class="range__input do">
 										</div>
 
-										<input type="text" id="price_range" name="price_range" value="">
+										<input type="text" id="price_range2" name="price_range" value="">
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__title">
+										<a href="/">Наличие</a>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__title">
+										<a href="/">Товары со скидкой</a>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__title">
+										<a href="/">Тип оборудования</a>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__title">
+										<a href="/">Принцип действия</a>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__title">
+										<a href="/">Метод взаимодействия со средой</a>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__title">
+										<a href="/">Диапазон измерения, мм</a>
 									</div>
 								</div>
 							</div>
+						</div>
+
+						<div class="filter__bot-btns _flex">
+							<button type="submit" class="filter__submit btn-red">Показать 1000 товаров</button>
+
+							<button type="reset" class="filter__reset reset-btn btn-border">
+								<span>сбросить Все фильтры</span>
+							</button>
 						</div>
 					</form>
 				</div>
