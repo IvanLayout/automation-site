@@ -9643,11 +9643,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	}
 }
 
-._filter-open
-{
-    overflow: hidden;
-}
-
 
 .filter-big
 {
@@ -9846,6 +9841,132 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 		color: #D64923;
 	}
 }
+
+.filter-open
+{
+	display: none;
+}
+
+.sorting 
+{
+	justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+	flex-wrap: nowrap;
+	padding-bottom: 17px;
+	border-bottom: 1px solid rgba(27, 39, 69, .2);
+}
+
+.sorting__views
+{
+    justify-content: space-between;
+	margin-left: 30px;
+	flex-shrink: 0;
+
+    width: 43px;
+    height: 19px;
+}
+
+.sorting__views-btn
+{
+    color: rgba(115, 125, 135, .2);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 19px;
+    height: 19px;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.sorting__views-btn svg
+{
+    display: block;
+
+    width: 19px;
+    height: 19px;
+
+    fill: currentColor;
+}
+
+@media (any-hover: hover)
+{
+    .sorting__views-btn:hover
+    {
+        color: rgba(115, 125, 135, 1);
+    }
+}
+
+.sorting__views-btn.active
+{
+    color: #319ACE;
+}
+
+.mini-modal__sorting
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+}
+
+.mini-modal__btn-sorting
+{
+	display: none;
+}
+
+.sorting__title
+{
+	flex-shrink: 0;
+}
+
+.mini-modal__modal-sorting
+{
+	position: relative;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.sorting__items
+{
+	margin: -10px 0 0 -6px;
+}
+
+.sorting__item
+{
+	margin: 10px 0 0 20px;
+}
+
+.sorting__item a
+{
+	color: rgba(27, 39, 69, .5);
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .sorting__item a:hover
+	{
+		color: rgba(27, 39, 69, 1);
+	}
+}
+
+.sorting__item a.active
+{
+	color: #D64923;
+}
+
 /*------------
 @media (any-hover: hover)
 {

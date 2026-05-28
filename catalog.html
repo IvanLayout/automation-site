@@ -2329,7 +2329,49 @@
 								</form>
 							</aside>
 
-							<div class="content__center"></div>
+							<div class="content__center">
+								<div class="sorting _flex">
+									<div class="mini-modal mini-modal__sorting">
+										<button type="button" class="mini-modal__btn mini-modal__btn-sorting">
+											По популярности
+										</button>
+
+										<div class="sorting__title">Сортировать по:</div>
+
+										<div class="mini-modal__modal mini-modal__modal-sorting">
+											<div class="sorting__items _flex">
+												<div class="sorting__item">
+													<a class="active">цене</a>
+												</div>
+												<div class="sorting__item">
+													<a href="/">популярности</a>
+												</div>
+												<div class="sorting__item">
+													<a href="/">отзывам</a>
+												</div>
+												<div class="sorting__item">
+													<a href="/">рейтингу</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="sorting__views _flex">
+										<a class="sorting__views-btn active">
+											<svg>
+												<use xlink:href="images/sprite.svg#view_grid"></use>
+											</svg>
+										</a>
+										<a href="/" class="sorting__views-btn">
+											<svg>
+												<use xlink:href="images/sprite.svg#view_list"></use>
+											</svg>
+										</a>
+									</div>
+
+									<button type="button" class="filter-open">Фильтры</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
