@@ -1222,6 +1222,31 @@
 	.page-error__btn{
 		min-width: 140px;
 	}
+
+
+	.big-sorting__open{
+		line-height: 34px;
+	}
+
+	.big-sorting__modal{
+		min-width: 200px;
+	}
+
+	.big-sorting__more{
+		font-size: 12px;
+	}
+
+	.big-sorting__clear{
+		font-size: 12px;
+	}
+
+	.big-sorting_marg{
+		margin-top: -14px;
+	}
+
+	.big-sorting{
+		gap: 10px;
+	}
 	/* commit */
 
 	body

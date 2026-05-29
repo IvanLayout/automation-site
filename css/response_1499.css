@@ -475,6 +475,53 @@
 	.page-error__btns{
 		margin-top: 32px;
 	}
+
+	.big-sorting__open{
+		line-height: 36px;
+	}
+
+	.big-sorting__modal{
+		min-width: 222px;
+		padding: 10px 10px 14px;
+	}
+
+	.big-sorting__data-wrap{
+		width: calc(100% + 20px);
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		max-height: 290px;
+	}
+
+	.big-sorting__modal .search{
+		margin-bottom: 10px;
+	}
+
+	.big-sorting__data-bot{
+		margin-top: 16px;
+	}
+
+	.big-sorting .checkbox__text{
+		font-size: 12px;
+		line-height: 1.3;
+		padding-left: 21px;
+	}
+
+	.big-sorting .checkbox__text::before{
+		width: 15px;
+		height: 15px;
+	}
+
+	.big-sorting .checkbox__text::after{
+		width: 15px;
+		height: 15px;
+		background-size: 10px auto;
+	}
+
+	.big-sorting .checkbox__label{
+		min-height: 15px;
+	}
 	/* commit */
 
 	body
