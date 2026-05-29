@@ -7820,6 +7820,61 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     often-search
 ------------*/
 
+.often-search__title
+{
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.often-search__items
+{
+	margin-top: 30px;
+}
+
+.often-search__item + .often-search__item
+{
+	margin-top: 30px;
+}
+
+.often-search__item._hide
+{
+	display: none;
+}
+
+.often-search__item._show
+{
+	display: block;
+}
+
+.often-search__tag-name
+{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.often-search__open
+{
+	margin-top: 30px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.often-search__open span + span
+{
+	display: none;
+}
+
+.often-search__open._active span
+{
+	display: none;
+}
+
+.often-search__open._active span + span
+{
+	display: block;
+}
+
 .search-tags
 {
 	gap: 10px;
@@ -7864,12 +7919,22 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	order: 5;
 }
 
-.search-tags__open._active
+.search-tags__open span > span + span
 {
-	display: none !important;
+	display: none;
 }
 
-.search-tags__open span
+.search-tags__open._active span > span
+{
+	display: none;
+}
+
+.search-tags__open._active span > span + span
+{
+	display: block;
+}
+
+.search-tags__open > span
 {
 	display: inline-block;
 	padding-left: 25px;

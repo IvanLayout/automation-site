@@ -467,6 +467,36 @@ $(() => {
 	})
 
 	// Показать все теги
+	$('body').on('click', '.search-tags__open', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.search-tags').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.search-tags').find('._hide').addClass('_show')
+		}
+	})
+
+	// Показать все теги
+	$('body').on('click', '.often-search__open', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.often-search__items').find('.often-search__item._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.often-search__items').find('.often-search__item._hide').addClass('_show')
+		}
+	})
+
+
 
 	$('body').on('click', '.inner-news__open-all', function(e) {
 		e.preventDefault()
