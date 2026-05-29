@@ -10145,6 +10145,20 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 /*------------
+    review-products
+------------*/
+
+.review-products__slider .slider-pagination
+{
+	display: none;
+}
+
+.review-products__mob-btn
+{
+	display: none;
+	margin-top: 20px;
+}
+/*------------
 @media (any-hover: hover)
 {
     
