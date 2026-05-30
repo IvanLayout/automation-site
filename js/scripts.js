@@ -1498,6 +1498,7 @@ function productsHeight(context, step) {
 	products.find('product').height('auto')
 	products.find('.product__name').height('auto')
 	products.find('.product__box').height('auto')
+	products.find('.product__block').height('auto')
 	products.find('.product__desc-items').height('auto')
 	products.find('.product__prices').height('auto')
 
@@ -1505,6 +1506,7 @@ function productsHeight(context, step) {
 		setHeight(products.slice(start, finish))
 		setHeight(products.slice(start, finish).find('.product__name'))
 		setHeight(products.slice(start, finish).find('.product__box'))
+		setHeight(products.slice(start, finish).find('.product__block'))
 		setHeight(products.slice(start, finish).find('.product__desc-items'))
 		setHeight(products.slice(start, finish).find('.product__prices'))
 

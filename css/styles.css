@@ -8618,6 +8618,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	}
 }
 
+.product__block
+{
+	display: flex;
+	flex-direction: column;
+}
+
 .product__desc-items
 {
 	margin-top: 16px;
@@ -8685,6 +8691,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	font-size: 20px;
 	font-weight: 500;
+	margin-top: auto;
 }
 
 .product__bot
