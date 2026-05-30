@@ -10543,15 +10543,156 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     review-products
 ------------*/
 
+.review-products__slider
+{
+	margin-top: 24px;
+}
+
 .review-products__slider .slider-pagination
 {
 	display: none;
+}
+
+.review-products__item
+{
+	padding: 30px;
+	border-radius: 10px;
+	border: 1px solid rgba(27, 39, 69, .2);
+	height: auto;
+}
+
+.review-products__box
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.review-products__info
+{
+	width: calc(100% - 153px);
+	max-width: 330px;
+}
+
+.review-products__top
+{
+	align-items: center;
+	align-content: center;
+}
+
+.review-products__rating
+{
+	position: relative;
+	padding-left: 20px;
+	font-weight: 500;
+}
+
+.review-products__rating::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+
+	display: block;
+
+	width: 15px;
+	height: 15px;
+
+	margin-top: -10px;
+
+	background: url(../images/ic_star.svg) 50%/contain no-repeat;
+}
+
+.review-products__rev-val
+{
+	margin-left: 15px;
+	color: #737D87;
+}
+
+.review-products__rev-val a
+{
+	color: #737D87;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.review-products__name
+{
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.review-products__name a
+{
+	text-decoration: none;
+	color: currentColor;
+	border-bottom: 1px solid currentColor;
+	color: currentColor;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .review-products__rev-val a:hover
+	{
+		color: #D64923;
+	}
+
+	.review-products__name a:hover
+	{
+		border-color: transparent;
+	}
+}
+
+.review-products__data-name
+{
+	margin-top: 24px;
+	font-weight: 500;
+}
+
+.review-products__img
+{
+	flex-shrink: 0;
+	margin-left: 30px;
+	height: 123px;
+	width: 123px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+	text-decoration: none;
+}
+
+.review-products__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .review-products__mob-btn
 {
 	display: none;
 	margin-top: 20px;
+}
+
+.review-products__desc
+{
+	margin-top: 16px;
+	color: rgba(27, 39, 69, .7);
+	max-width: 472px;
+
+	max-height: 115px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
 }
 /*------------
 @media (any-hover: hover)

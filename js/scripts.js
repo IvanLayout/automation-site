@@ -525,6 +525,46 @@ $(() => {
 		})
 	}
 
+	if ($('.review-products__slider').length) {
+		new Swiper(".review-products__slider", {
+			loop: false,
+			spaceBetween: 0,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 0,
+					slidesPerView: 'auto',
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				}
+			}
+		})
+	}
+
 	if ($('.cats-page__slider').length) {
 		new Swiper(".cats-page__slider", {
 			loop: false,
