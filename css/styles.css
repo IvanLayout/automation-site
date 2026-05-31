@@ -8815,7 +8815,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 24px;
 }
 
-.products__slider .slider-pagination
+.products__slider > .slider-pagination
 {
 	display: none;
 }
