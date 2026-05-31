@@ -509,6 +509,12 @@ $(() => {
 	
 		content.slideToggle(300)
 	})
+
+	$('body').on('click', '.info-delete__close', function(e) {
+		e.preventDefault()
+	
+		$(this).closest('.info-delete').remove()
+	})
 })
 
 

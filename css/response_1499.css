@@ -662,6 +662,51 @@
 	.imp-info__colr-title{
 		margin-bottom: 15px;
 	}
+
+
+	.empty-section__desc{
+		margin-top: 16px;
+	}
+
+	.empty-section__btn{
+		margin-top: 24px;
+	}
+
+
+	.info-delete{
+		max-width: 895px;
+	}
+
+	.info-delete__btn{
+		margin-top: 10px;
+	}
+
+
+	.header-small{
+		padding: 32px 0;
+	}
+
+	.header-small__logo img{
+		width: 191px;
+	}
+
+	.header-small__back{
+		width: 200px;
+	}
+
+	.header-small__adres-btn{
+		padding-left: 17px;
+	}
+
+	.header-small__adres{
+		width: 200px;
+	}
+
+	.header-small__adres-marker{
+		width: 12px;
+		height: 16px;
+		margin-top: -8px;
+	}
 	/* commit */
 
 	body
