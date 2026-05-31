@@ -1300,6 +1300,60 @@ $(window).on('load', () => {
 			$('.products__grid').find('.product').addClass('_loaded')
 		}, 100)
 	}
+
+
+	//
+	$('body').on('click', '.amount__btn_minus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+
+		let input = parent.find('input')
+		let inputVal = parseFloat(input.val())
+		let minimum = parseFloat(input.data('minimum'))
+		let step = parseFloat(input.data('step'))
+
+		if (inputVal > minimum) {
+			input.val(inputVal - step)
+
+			parent.find('.amount__btn_plus').prop("disabled", false)
+		}
+
+		if (inputVal-1 == minimum) {
+			$(this).prop("disabled", true)
+		}
+	})
+
+	$('body').on('click', '.amount__btn_plus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+
+		let input = parent.find('input')
+		let inputVal = parseFloat(input.val())
+		let maximum = parseFloat(input.data('maximum'))
+		let step = parseFloat(input.data('step'))
+
+		if (inputVal < maximum) {
+			input.val(inputVal + step)
+
+			parent.find('.amount__btn_minus').prop("disabled", false)
+		}
+
+		if (inputVal+1 == maximum) {
+			$(this).prop("disabled", true)
+		}
+	})
+
+	$('.amount__input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
+
+		setTimeout(() => {
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
+		})
+	})
 });
 
 

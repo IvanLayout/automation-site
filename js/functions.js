@@ -457,6 +457,10 @@ $(() => {
 		})
 	})
 
+	$('[inputmode="numeric"]').inputmask('numeric', {
+		showMaskOnHover: false
+	})
+
 
 	$('body').on('click', '.main-tags__open', function(e) {
 		e.preventDefault()
@@ -514,6 +518,12 @@ $(() => {
 		e.preventDefault()
 	
 		$(this).closest('.info-delete').remove()
+	})
+
+	$('body').on('click', '.promo-wrap__open', function(e) {
+		e.preventDefault()
+	
+		$(this).closest('.promo-wrap').addClass('_active')
 	})
 })
 

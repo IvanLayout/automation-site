@@ -1456,6 +1456,61 @@
 	.empty-section__btn .btn-red{
 		min-width: 129px;
 	}
+
+
+	.page-cart{
+		padding: 30px 0 20px;
+	}
+
+	.page-cart__flex{
+		margin-top: 24px;
+		flex-wrap: wrap;
+	}
+
+	.page-cart__colr{
+		width: 100%;
+	}
+
+	.cart-total__item + .cart-total__item{
+		margin-top: 5px;
+	}
+
+	.cart-total__bord{
+		margin-top: 4px;
+		margin-bottom: 5px;
+	}
+
+	.promo-wrap__open{
+		font-size: 12px;
+	}
+
+	.page-cart__info{
+		margin-top: 10px;
+	}
+
+	.page-cart__info-desc{
+		font-size: 12px;
+	}
+
+	.page-cart__info-wrap{
+		margin-top: 20px;
+	}
+
+	.page-cart__info-wrap + .page-cart__info-wrap{
+		margin-top: 15px;
+	}
+
+	.page-cart__title{
+		font-size: 14px;
+	}
+
+	.page-cart__col{
+		max-width: 184px;
+	}
+
+	.page-cart__item-name{
+		font-size: 12px;
+	}
 	/* commit */
 
 	body

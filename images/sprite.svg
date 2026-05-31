@@ -65,6 +65,11 @@
 		<path d="M10 6.5V11.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
 
+	<symbol xmlns="http://www.w3.org/2000/svg" id="delete2" viewBox="0 0 17 17">
+		<path d="M2.125 4.25H3.54167H14.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M13.4596 4.2513V14.168C13.4596 14.5437 13.3104 14.904 13.0447 15.1697C12.779 15.4354 12.4187 15.5846 12.043 15.5846H4.95964C4.58391 15.5846 4.22358 15.4354 3.9579 15.1697C3.69222 14.904 3.54297 14.5437 3.54297 14.168V4.2513M5.66797 4.2513V2.83464C5.66797 2.45891 5.81722 2.09858 6.0829 1.8329C6.34858 1.56722 6.70891 1.41797 7.08464 1.41797H9.91797C10.2937 1.41797 10.654 1.56722 10.9197 1.8329C11.1854 2.09858 11.3346 2.45891 11.3346 2.83464V4.2513" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+
 	<symbol xmlns="http://www.w3.org/2000/svg" id="big-plus" viewBox="0 0 24 24">
 		<path d="M12 5V19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M5 12H19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,6 +78,14 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" id="big-plus" viewBox="0 0 24 24">
 		<path d="M12 5V19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M5 12H19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 12 2">
+		<path d="M10.75 0.749999L5.75 0.75L0.75 0.75" stroke-width="1.5" stroke-linecap="round"/>
+	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 12 12">
+		<path d="M5.75 0.75V5.75M5.75 10.75V5.75M5.75 5.75H10.75M5.75 5.75H0.75" stroke-width="1.5" stroke-linecap="round"/>
 	</symbol>
 
 	<symbol xmlns="http://www.w3.org/2000/svg" id="cart2" viewBox="0 0 17 16">

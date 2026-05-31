@@ -306,6 +306,15 @@
 	.empty-section__img{
 		width: 208px;
 	}
+
+
+	.page-cart__colr{
+		width: 28.5%;
+	}
+
+	.page-cart{
+		padding-bottom: 40px;
+	}
 	/* commit */
 
 	.advantages-main__info
