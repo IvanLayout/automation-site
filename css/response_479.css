@@ -298,6 +298,64 @@
 	.payments .text-block * + h3{
 		margin-top: 20px;
 	}
+
+
+	.info-delete{
+		padding: 12px 26px 12px 16px;
+		gap: 10px;
+		margin-bottom: 40px;
+	}
+
+	.info-delete__img{
+		width: 64px;
+	}
+
+	.info-delete__btn{
+		margin-top: 8px;
+	}
+
+	.info-delete__close{
+		right: 2px;
+		top: 2px;
+	}
+
+	.empty-section{
+		padding-bottom: 40px;
+	}
+
+	.empty-section__flex{
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+	}
+
+	.empty-section__img{
+		width: 170px;
+		aspect-ratio: auto;
+	}
+
+	.empty-section__box{
+		width: 100%;
+	}
+
+	.empty-section .page-title{
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.empty-section__desc{
+		margin-top: 10px;
+		text-align: center;
+		max-width: none;
+	}
+
+	.empty-section__btn{
+		margin-top: 10px;
+	}
+
+	.empty-section__btn .btn-red{
+		width: 100%;
+	}
 	/* commit */
 
 	._marg 

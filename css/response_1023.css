@@ -1382,6 +1382,80 @@
 	.imp-info__mail{
 		font-size: 14px;
 	}
+
+	.header-small__back-btn{
+		padding-left: 28px;
+	}
+
+	.header-small__back-btn svg{
+		width: 18px;
+		height: 11px;
+		margin-top: -5.5px;
+	}
+
+	.header-small__back {
+		width: 160px;
+	}
+
+	.header-small__adres{
+		width: 160px;
+	}
+
+
+	.empty-section{
+		padding: 20px 0;
+	}
+
+	.info-delete{
+		margin-bottom: 20px;
+		max-width: none;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-left: 4px;
+		gap: 6px;
+	}
+
+	.info-delete__img{
+		width: 54px;
+	}
+
+	.info-delete__btn{
+		margin-top: 6px;
+		font-size: 12px;
+	}
+
+	.empty-section__flex{
+		gap: 26px;
+	}
+
+	.empty-section__img{
+		width: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		aspect-ratio: 1;
+	}
+
+	.empty-section__img img{
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.empty-section__desc{
+		margin-top: 10px;
+		max-width: 396px;
+	}
+
+	.empty-section__btn{
+		margin-top: 14px;
+	}
+
+	.empty-section__btn .btn-red{
+		min-width: 129px;
+	}
 	/* commit */
 
 	body

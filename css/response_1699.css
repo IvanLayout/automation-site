@@ -288,6 +288,24 @@
 	.imp-info__subtitle{
 		max-width: 600px;
 	}
+
+
+	.info-delete{
+		margin-bottom: 50px;
+	}
+
+
+	.empty-section{
+		padding-bottom: 50px;
+	}
+
+	.empty-section__flex{
+		gap: 20px;
+	}
+
+	.empty-section__img{
+		width: 208px;
+	}
 	/* commit */
 
 	.advantages-main__info

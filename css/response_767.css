@@ -325,6 +325,56 @@
 	.imp-info ul li + li{
 		margin-top: 32px;
 	}
+
+
+	.header-small{
+		padding: 22px 0;
+	}
+
+	.header-small__back{
+		width: 24px;
+	}
+	
+	.header-small__back-btn{
+		font-size: 0;
+		width: 24px;
+		height: 24px;
+		padding: 0;
+	}
+
+	.header-small__back-btn svg{
+		width: 24px;
+		height: 15px;
+		margin-top: -7.5px;
+	}
+
+	.header-small__logo img{
+		width: 164px;
+	}
+
+	.header-small__adres{
+		width: 24px;
+	}
+
+	.header-small__adres-btn{
+		font-size: 0;
+		width: 24px;
+		height: 24px;
+		display: block;
+		padding: 0;
+	}
+
+	.header-small__adres-marker{
+		width: 16px;
+		height: 20px;
+		left: auto;
+		right: 0;
+		margin-top: -10px;
+	}
+
+	.empty-section__flex {
+		gap: 20px;
+	}
 	/* commit */
 
 	.advantages-main__item

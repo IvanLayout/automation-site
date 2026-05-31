@@ -1483,6 +1483,122 @@ button
 .header__small .header__list-item{
 	line-height: 40px;
 }
+
+
+.header-small{
+	padding: 40px 0;
+	box-shadow: 0 -4px 8px 0 rgba(55, 55, 55, 0.04), 0 -33px 20px 0 rgba(55, 55, 55, 0.01), 0 -93px 26px 0 rgba(55, 55, 55, 0), 0 3px 6px 0 rgba(55, 55, 55, 0.02), 0 11px 11px 0 rgba(55, 55, 55, 0.02), 0 26px 15px 0 rgba(55, 55, 55, 0.01), 0 46px 18px 0 rgba(55, 55, 55, 0), 0 72px 20px 0 rgba(55, 55, 55, 0);
+	background: #fff;
+	position: relative;
+	z-index: 10;
+}
+
+.header-small__flex{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.header-small__back{
+	width: 224px;
+    line-height: 29px;
+}
+
+.header-small__back-btn{
+	position: relative;
+    line-height: 29px;
+
+    color: currentColor;
+
+    display: block;
+
+    padding-left: 34px;
+
+    text-decoration: none;
+	max-width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+	.header-small__back-btn:hover{
+		color: #D64923;
+	}
+}
+
+.header-small__back-btn svg{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 24px;
+	height: 15px;
+	margin-top: -7.5px;
+	fill: currentColor;
+}
+
+.header-small__adres
+{
+    line-height: 29px;
+
+	color: #737D87;
+	width: 224px;
+	text-align: right;
+}
+
+.header-small__adres-btn
+{
+    position: relative;
+
+    color: currentColor;
+
+    display: inline-block;
+
+    padding-left: 21px;
+
+    text-decoration: none;
+	max-width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .header-small__adres-btn:hover
+    {
+        color: #D64923;
+    }
+}
+
+.header-small__adres-marker
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 20px;
+    margin-top: -10px;
+
+    fill: currentColor;
+}
+
+.header-small__logo a{
+	display: block;
+}
+
+.header-small__logo img{
+	display: block;
+	max-width: 100%;
+}
 /*------------
     BTNS
 ------------*/
@@ -5541,6 +5657,120 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .imp-info__colr-title{
 	margin-bottom: 20px;
+}
+
+
+.empty-section{
+	padding: 50px 0 55px;
+	background-color: #F6F8FB;
+}
+
+.info-delete{
+	max-width: 1061px;
+	background: #fff;
+	border-radius: 10px;
+	border-left: 8px solid #D64923;
+	position: relative;
+	padding: 12px 50px 12px 16px;
+	flex-wrap: nowrap;
+	gap: 10px;
+	position: relative;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 70px;
+}
+
+.info-delete__img{
+	width: 64px;
+	flex-shrink: 0;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.info-delete__img img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.info-delete__btn{
+	margin-top: 5px;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #319ACE;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+	.info-delete__btn:hover{
+		color: #D64923;
+	}
+}
+
+.info-delete__close{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 20px;
+	height: 20px;
+	color: #737D87;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+	.info-delete__close:hover{
+		color: #D64923;
+	}
+}
+
+.info-delete__close svg{
+	display: block;
+	width: 10px;
+	height: 10px;
+	stroke: currentColor;
+}
+
+.empty-section__flex{
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	gap: 40px;
+}
+
+.empty-section__img{
+	width: 230px;
+	flex-shrink: 0;
+}
+
+.empty-section__img img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.empty-section__desc{
+	max-width: 637px;
+	margin-top: 24px;
+	color: rgba(27, 39, 69, 0.8);
+}
+
+.empty-section__btn{
+	margin-top: 32px;
+}
+
+.empty-section__btn .btn-red{
+	min-width: 199px;
 }
 /*------------
     commit
