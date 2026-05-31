@@ -528,8 +528,8 @@ $(() => {
 	if ($('.review-products__slider').length) {
 		new Swiper(".review-products__slider", {
 			loop: false,
-			spaceBetween: 0,
-			slidesPerView: 'auto',
+			spaceBetween: 10,
+			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -553,9 +553,9 @@ $(() => {
 				clickable: true
 			},
 			breakpoints: {
-				'320': {
-					spaceBetween: 0,
-					slidesPerView: 'auto',
+				'768': {
+					spaceBetween: 10,
+					slidesPerView: 3
 				},
 				'1024': {
 					spaceBetween: 20,
@@ -778,8 +778,8 @@ $(() => {
 	if ($('.products__slider').length) {
 		new Swiper(".products__slider", {
 			loop: false,
-			spaceBetween: 20,
-			slidesPerView: 1,
+			spaceBetween: 12,
+			slidesPerView: 2,
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -803,11 +803,19 @@ $(() => {
 				clickable: true
 			},
 			breakpoints: {
+				'480': {
+					spaceBetween: 12,
+					slidesPerView: 2,
+				},
 				'768': {
-					spaceBetween: 48,
-					slidesPerView: 5,
+					spaceBetween: 12,
+					slidesPerView: 3,
 				},
 				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4,
+				},
+				'1200': {
 					spaceBetween: 20,
 					slidesPerView: 5,
 				},
@@ -1180,6 +1188,17 @@ $(() => {
 			mainSlider.slideTo(index);
 		});
 	}
+
+	// bell
+	$('body').on('click', '.product-bell', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
 
 
 	// favorite

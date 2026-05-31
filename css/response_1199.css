@@ -318,6 +318,23 @@
 		max-width: 750px;
 	}
 
+	.product-big .get-consultation__info 
+	{
+		width: 70%;
+	}
+
+
+	.filter.filter-big__wrap
+	{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.filter-big__title
+	{
+		font-size: 24px;
+	}
+
 
 	.footer-menu__flex
 	{

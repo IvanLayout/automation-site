@@ -343,7 +343,7 @@ $(() => {
 	})
 
 	// commit
-	$('body').on('click', '.filter__all', function (e) {
+	$('body').on('click', '.filter-open', function (e) {
 		e.preventDefault()
 
 		$('.filter-big').addClass('_show')
@@ -351,7 +351,7 @@ $(() => {
 		$('body').addClass('_filter-open')
 	})
 
-	$('body').on('click', '.filter-big__overlay, .filter-big__close', function (e) {
+	$('body').on('click', '.filter-big__overlay, .filter-close', function (e) {
 		e.preventDefault()
 
 		$('.filter-big').removeClass('_show')
