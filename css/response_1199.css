@@ -47,6 +47,28 @@
 	.banner-info__imp{
 		margin-top: 32px;
 	}
+
+
+	.faq__accordion-open{
+		padding-top: 14px;
+		padding-bottom: 14px;
+
+		font-size: 14px;
+	}
+
+
+	.text-block * + h2 {
+		margin-top: 40px;
+	}
+
+	.text-block h2{
+		font-size: 24px;
+	}
+
+
+	.delivery__partner-link{
+		font-size: 12px;
+	}
 	/* commit */
 
 	.slider-button-prev, 

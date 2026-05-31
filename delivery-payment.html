@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Автоматизация</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1699.css" media="(max-width: 1699px)">
+		<link rel="stylesheet" href="css/response_1499.css" media="(max-width: 1499px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header">
+					<div class="header__top">
+						<div class="header__top-mob">
+							<div class="cont">
+								<button type="button" class="header__top-close">
+									<svg>
+										<use xlink:href="images/sprite.svg#close"></use>
+									</svg>
+								</button>
+
+								<div class="header__top-logo">
+									<a href="/">
+										<img src="images/logo_small.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont _flex">
+							<div class="header__adres">
+								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
+									<svg class="header__adres-marker">
+										<use xlink:href="images/sprite.svg#marker"></use>
+									</svg>
+									Москва
+								</button>
+							</div>
+
+							<div class="header__iso">
+								<a href="/" class="header__iso-link">
+									<span class="header__iso-icon">
+										<img src="images/iso.png" alt="">
+									</span>
+									<span>Сертификат ISO</span>
+								</a>
+							</div>
+
+							<nav class="header__list _flex">
+								<div class="header__list-item">
+									<a href="/" class="header__list-link _sub">
+										О компании
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
+
+									<div class="header__list-submenu">
+										<div>
+											<a href="/">О компании</a>
+										</div>
+										<div>
+											<a href="/">Наши клиенты</a>
+										</div>
+										<div>
+											<a href="/">Почему мы</a>
+										</div>
+										<div>
+											<a href="/">Служба качества</a>
+										</div>
+										<div>
+											<a href="/">Производители</a>
+										</div>
+										<div>
+											<a href="/">Компания в лицах</a>
+										</div>
+										<div>
+											<a href="/">Вакансии</a>
+										</div>
+										<div>
+											<a href="/">Акции</a>
+										</div>
+										<div>
+											<a href="/">Партнёрам</a>
+										</div>
+										<div>
+											<a href="/">Отзывы</a>
+										</div>
+									</div>
+								</div>
+								<div class="header__list-item">
+									<a href="/" class="header__list-link">Как купить?</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/" class="header__list-link _sub">
+										Услуги
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
+
+									<div class="header__list-submenu">
+										<div>
+											<a href="/">О компании</a>
+										</div>
+										<div>
+											<a href="/">Наши клиенты</a>
+										</div>
+										<div>
+											<a href="/">Почему мы</a>
+										</div>
+										<div>
+											<a href="/">Служба качества</a>
+										</div>
+										<div>
+											<a href="/">Производители</a>
+										</div>
+										<div>
+											<a href="/">Компания в лицах</a>
+										</div>
+										<div>
+											<a href="/">Вакансии</a>
+										</div>
+										<div>
+											<a href="/">Акции</a>
+										</div>
+										<div>
+											<a href="/">Партнёрам</a>
+										</div>
+										<div>
+											<a href="/">Отзывы</a>
+										</div>
+									</div>
+								</div>
+								<div class="header__list-item">
+									<a href="/" class="header__list-link">Блог</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/" class="header__list-link">Доставка и оплата</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/" class="header__list-link">Контакты</a>
+								</div>
+								<div class="header__list-item header__list-item_mob">
+									<a href="/" class="header__list-link">
+										<span>
+											Избранное
+
+											<span class="header__list-number">999</span>
+										</span>
+									</a>
+								</div>
+								<div class="header__list-item header__list-item_mob">
+									<a href="/" class="header__list-link">
+										<span>
+											Сравнение
+
+											<span class="header__list-number">999</span>
+										</span>
+									</a>
+								</div>
+							</nav>
+
+							<div class="header__contacts _flex">
+								<div class="header__phone">
+									<a href="tel:+88043337039">8 (804) 333–70–39</a>
+								</div>
+								<div class="header__mail">
+									<a href="mailto:info176@rusautomation.ru">info176@rusautomation.ru</a>
+								</div>
+							</div>
+
+							<div class="header__messengers _flex">
+								<a href="/" class="header__messengers-link">
+									<img data-src="images/ic_mess1.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+								<a href="/" class="header__messengers-link">
+									<img data-src="images/ic_mess2.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__mob">
+						<div class="cont _flex">
+							<button type="button" class="mob-menu-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+
+							<div class="header__adres">
+								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
+									<svg class="header__adres-marker">
+										<use xlink:href="images/sprite.svg#marker"></use>
+									</svg>
+									Москва
+								</button>
+							</div>
+
+							<div class="header__iso">
+								<a href="/" class="header__iso-link">
+									<span class="header__iso-icon">
+										<img src="images/iso.png" alt="">
+									</span>
+								</a>
+							</div>
+
+							<div class="header__logo">
+								<a href="/">
+									<img src="images/logo_small.svg" alt="">
+								</a>
+							</div>
+
+							<div class="header__contacts _flex">
+								<div class="header__lg">
+									<a href="/"></a>
+								</div>
+								<div class="header__mail">
+									<a href="mailto:info176@rusautomation.ru"></a>
+								</div>
+								<div class="header__phone">
+									<a href="tel:+88043337039"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__info">
+						<div class="header__info-wrap">
+							<div class="cont _flex">
+								<div class="header__logo">
+									<a href="/">
+										<img src="images/logo.svg" alt="">
+									</a>
+								</div>
+
+								<div class="header-catalog">
+									<button type="button" class="header-catalog__open">
+										<span class="header-catalog__open-burger">
+											<span></span>
+											<span></span>
+											<span></span>
+										</span>
+										Каталог
+									</button>
+
+									<div class="header-catalog__block">
+										<div class="cont">
+											<div class="catalog-head">
+												<div class="catalog-head__top _flex">
+													<button type="button" class="catalog-head__back">
+														<svg>
+															<use xlink:href="images/sprite.svg#arrow_back"></use>
+														</svg>
+													</button>
+													
+													<button type="button" class="catalog-head__close">
+														<svg>
+															<use xlink:href="images/sprite.svg#close"></use>
+														</svg>
+													</button>
+												</div>
+												<div data-title="Каталог товаров" class="catalog-head__title">Каталог товаров</div>
+												<div class="header__search">
+													<div class="header__search-field _flex">
+														<input type="text" value="" placeholder="Микроволновый рефлексный датчик..." class="header__search-input">
+
+														<button type="submit" class="header__search-submit">
+															<svg>
+																<use xlink:href="images/sprite.svg#lupa"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+
+											<div class="header-catalog__wrap">
+												<div class="header-catalog__bg">
+													<div class="header-menu">
+													<div class="header-menu__item header-menu__item_all _active-pc">
+														<a href="/" class="header-menu__link _sub">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Датчики уровня</span>
+																<svg class="header-menu__link-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+																</svg>
+															</span>
+														</a>
+
+														<div class="header-submenu">
+															<div class="header-submenu__title">Датчики уровня</div>
+
+															<div class="header-submenu__flex _flex">
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link _sub">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Частотные преобразователи</span>
+																<svg class="header-menu__link-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+																</svg>
+															</span>
+														</a>
+
+														<div class="header-submenu">
+															<div class="header-submenu__title">Частотные преобразователи</div>
+
+															<div class="header-submenu__flex _flex">
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link _sub">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Индикаторы уровня</span>
+																<svg class="header-menu__link-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+																</svg>
+															</span>
+														</a>
+
+														<div class="header-submenu">
+															<div class="header-submenu__title">Индикаторы уровня</div>
+
+															<div class="header-submenu__flex _flex">
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Решения по автоматизации</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Шкафы управления</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link _sub">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Устройства плавного пуска</span>
+																<svg class="header-menu__link-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+																</svg>
+															</span>
+														</a>
+
+														<div class="header-submenu">
+															<div class="header-submenu__title">Устройства плавного пуска</div>
+
+															<div class="header-submenu__flex _flex">
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+																<div class="header-submenu__col">
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики предельного уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Сигнализаторы сыпучих материалов 2048 <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Датчики уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ёмкостные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Ротационные датчики уровня <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link">Поплавковые датчики уровня <span>(12200)</span></a>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Определение границ раздела сред <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Уровнемеры для сыпучих материалов <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="header-submenu__item">
+																	<a href="/" class="header-submenu__link _sub">Реле контроля уровня жидкости <span>(12200)</span></a>
+
+																	<div class="header-submenu__sub">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы сыпучих материалов <span>(12200)</span></a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="header-submenu__sub-link">Сигнализаторы жидкости <span>(12200)</span></a>
+																		</div>
+																	</div>
+																</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Расходомеры</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Измерительные приборы</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Промавтоматика</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Пневматическое оборудование</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Датчики положения и перемещения</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Программируемые логические контроллеры</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Термометрия</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">ТермометАсинхронные электродвигатели</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Сервопривод</span>
+															</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-flex">
+																<span class="header-menu__link-icon">
+																<img data-src="images/ic_cat.png" src="images/img_plug.png" alt="" class="lazyload">
+																</span>
+																<span class="header-menu__link-name">Датчики параметров жидкостирия</span>
+															</span>
+														</a>
+													</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="header__search">
+									<div class="header__search-wrap">
+										<button type="button" class="header__search-close">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow_back"></use>
+											</svg>
+										</button>
+
+										<div class="header__search-flex _flex">
+											<div class="mini-modal mini-modal__select">
+												<button type="button" class="mini-modal__btn mini-modal__btn-select">
+													Везде
+
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow3"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal__modal mini-modal__modal-select">
+													<div class="header-select">
+														<div>
+															<a href="/">Везде</a>
+														</div>
+														<div>
+															<a href="/">О&nbsp;компании</a>
+														</div>
+														<div>
+															<a href="/">Наши клиенты</a>
+														</div>
+														<div>
+															<a href="/">Почему мы</a>
+														</div>
+														<div>
+															<a href="/">Служба качества</a>
+														</div>
+														<div>
+															<a href="/">Производители</a>
+														</div>
+														<div>
+															<a href="/">Компания в&nbsp;лицах</a>
+														</div>
+														<div>
+															<a href="/">Вакансии</a>
+														</div>
+														<div>
+															<a href="/">Акции</a>
+														</div>
+														<div>
+															<a href="/">Партнёрам</a>
+														</div>
+														<div>
+															<a href="/">Отзывы</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="header__search-field _flex">
+												<input type="text" value="" placeholder="Микроволновый рефлексный датчик уровня HHK-703–4" id="header__search-input" class="header__search-input">
+
+												<button type="submit" class="header__search-submit">
+													<svg>
+														<use xlink:href="images/sprite.svg#lupa"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="header__search-mob">
+										<div class="you-search">
+											<div class="you-search__box">
+												<div class="you-search__title">Вы искали</div>
+
+												<div class="you-search__history">
+													<div class="you-search__history-product">
+														<a href="/" class="you-search__history-name">Микроволновый рефлексный датчик</a>
+													</div>
+												</div>
+
+												<button type="button" class="you-search__history-btn">Очистить историю поиска</button>
+											</div>
+
+											<div class="you-search__box">
+												<div class="you-search__title">Просмотренные товары</div>
+												
+												<div class="products-view">
+													<div class="products-view__item _flex">
+														<a href="/" class="products-view__img">
+															<img data-src="images/tmp/cats_img1.png" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+
+														<div class="products-view__info">
+															<div class="products-view__logo">
+																<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</div>
+
+															<div class="products-view__name">
+																<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
+															</div>
+
+															<div class="products-view__prices">
+																<div class="products-view__price-old">1 396 ₽ /шт</div>
+
+																<div class="products-view__price">1 396 ₽ /шт</div>
+															</div>
+														</div>
+													</div>
+													<div class="products-view__item _flex">
+														<a href="/" class="products-view__img">
+															<img data-src="images/tmp/cats_img1.png" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+
+														<div class="products-view__info">
+															<div class="products-view__logo">
+																<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</div>
+
+															<div class="products-view__name">
+																<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
+															</div>
+
+															<div class="products-view__prices">
+																<div class="products-view__price-old">1 396 ₽ /шт</div>
+
+																<div class="products-view__price">1 396 ₽ /шт</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a href="tel:+88043337039" class="header__info-phone"></a>
+
+								<div class="header__btns _flex">
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg width="20" height="20">
+												<use xlink:href="images/sprite.svg#stock"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Акции</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-number">10</span>
+										<span class="header__btn-icon">
+											<svg width="20" height="20">
+												<use xlink:href="images/sprite.svg#favorite"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Избранное</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg width="20" height="20">
+												<use xlink:href="images/sprite.svg#compare"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Сравнение</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-number">100</span>
+										<span class="header__btn-icon">
+											<svg width="20" height="20">
+												<use xlink:href="images/sprite.svg#cart"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Корзина</span>
+									</a>
+									<button type="button" data-content="#modal-login" class="header__btn modal-btn">
+										<span class="header__btn-icon">
+											<svg width="20" height="20">
+												<use xlink:href="images/sprite.svg#user"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Войти</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="overlay-catalog"></div>
+						</div>
+					</div>
+
+					<div class="header__bot">
+						<div class="cont">
+							<div class="header__cats swiper swiper_visible">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Датчики уровня</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Частотные преобразователи</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Индикаторы уровня</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Решения по автоматизации</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Шкафы управления</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Устройства плавного пуска</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Расходомеры</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Датчики уровня</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Частотные преобразователи</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Принцип работы</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Как подключить</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">В чем различие</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Сравнить</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Частотные преобразователи</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Принцип работы</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Как подключить</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">В чем различие</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/" class="header__cats-link">Сравнить</a>
+									</div>
+								</div>
+								<button type="button" class="slider-button-prev">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow2"></use>
+									</svg>
+								</button>
+								<button type="button" class="slider-button-next">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow2"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="overlay"></div>
+
+				<!-- End Шапка -->
+
+				<div class="breadcrumbs">
+					<div class="cont">
+						<div class="breadcrumbs__wrap">
+							<a href="/">Главная</a> <span class="breadcrumbs_sep">/</span> Доставка и оплата
+						</div>
+					</div>
+				</div>
+
+				
+				<section class="section-top">
+					<div class="cont">
+						<h1 class="page-title">Доставка и оплата</h1>
+					</div>
+				</section>
+
+				<section class="delivery _marg">
+					<div class="cont">
+						<div class="main-title">Доставка</div>
+
+						<div class="delivery__text-block text-block text-block_dark">
+							<p>
+								Доставка оборудование осуществляется транспортной компанией или курьерской службой. Отправляем товары ежедневно.
+							</p>
+							<p>
+								Рекомендуем услуги нашего партнёра — ТК «Деловые линии». Перевозчик работает по всей России. Доставка до терминала в городе отправления — бесплатно. Оплата перевозки в городе заказчика до терминала ТК «Деловые линии» или до двери осуществляется за счёт покупателя.
+							</p>
+							<p>
+								Клиент может выбрать другую транспортную или курьерскую службу после согласования с менеджером «РусАвтоматизации». Передадим груз с помощью любой удобной для вас компании. Сроки и стоимость доставки зависят от тарифов конкретного перевозчика.
+							</p>
+						</div>
+
+						<div class="delivery__partners">
+							<div class="small-title">Наши основные партнёры</div>
+
+							<div class="delivery__partners-grid">
+								<div class="delivery__partner _flex">
+									<div class="delivery__partner-icon">
+										<img data-src="images/tmp/delivery_partner1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="delivery__partner-box">
+										<div class="delivery__partner-name">Деловые Линии</div>
+										<div class="delivery__partner-links _flex">
+											<a href="/" class="delivery__partner-link">Отследить груз</a>
+											<a href="/" class="delivery__partner-link">Уточнить условия</a>
+										</div>
+									</div>
+								</div>
+								<div class="delivery__partner _flex">
+									<div class="delivery__partner-icon">
+										<img data-src="images/tmp/delivery_partner2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="delivery__partner-box">
+										<div class="delivery__partner-name">СDEK</div>
+										<div class="delivery__partner-links _flex">
+											<a href="/" class="delivery__partner-link">Отследить груз</a>
+											<a href="/" class="delivery__partner-link">Уточнить условия</a>
+										</div>
+									</div>
+								</div>
+								<div class="delivery__partner _flex">
+									<div class="delivery__partner-icon">
+										<img data-src="images/tmp/delivery_partner3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="delivery__partner-box">
+										<div class="delivery__partner-name">ПЭК:</div>
+										<div class="delivery__partner-links _flex">
+											<a href="/" class="delivery__partner-link">Отследить груз</a>
+											<a href="/" class="delivery__partner-link">Уточнить условия</a>
+										</div>
+									</div>
+								</div>
+								<div class="delivery__partner _flex">
+									<div class="delivery__partner-icon">
+										<img data-src="images/tmp/delivery_partner4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="delivery__partner-box">
+										<div class="delivery__partner-name">КСЕ</div>
+										<div class="delivery__partner-links _flex">
+											<a href="/" class="delivery__partner-link">Отследить груз</a>
+											<a href="/" class="delivery__partner-link">Уточнить условия</a>
+										</div>
+									</div>
+								</div>
+								<div class="delivery__partner _flex">
+									<div class="delivery__partner-icon">
+										<img data-src="images/tmp/delivery_partner5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="delivery__partner-box">
+										<div class="delivery__partner-name">VOZOVOZ</div>
+										<div class="delivery__partner-links _flex">
+											<a href="/" class="delivery__partner-link">Отследить груз</a>
+											<a href="/" class="delivery__partner-link">Уточнить условия</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="payments _marg">
+					<div class="cont">
+						<div class="main-title">Оплата</div>
+
+						<div class="payments__text-block text-block">
+							<p>
+								Работаем с юридическими и физическими лицами.
+							</p>
+						</div>
+
+						<div class="payments__tabs-container tabs-container">
+							<div class="tabs tabs-icon"> 
+								<div class="tabs-icon__flex _flex">
+									<button type="button" data-content="#tab1" data-level="level1" class="tabs-icon__btn tabs__button_js _active">
+										<span class="tabs-icon__icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_pay1"></use>
+											</svg>
+										</span>
+										<span class="tabs-icon-name">Для юридических лиц</span>
+									</button>
+									<button type="button" data-content="#tab2" data-level="level1" class="tabs-icon__btn tabs__button_js">
+										<span class="tabs-icon__icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_pay2"></use>
+											</svg>
+										</span>
+										<span class="tabs-icon-name">Для физических лиц</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="tab-content level1 _active" data-id="#tab1">
+								<div class="text-block">
+									<h4>Оплата для юридических лиц: Безналичный расчет</h4>
+
+									<ol>
+										<li>Оформите заказ на сайте.</li>
+										<li>Получите счет: Автоматически сформируется счет. Наш менеджер свяжется с вами для подтверждения заказа и согласования условий поставки. В счете-договоре будут указаны все детали: товары, стоимость, условия доставки.</li>
+										<li>Срок действия счета: 3 дня. Если оплата задерживается, свяжитесь с менеджером для обновления или получения нового счета.</li>
+									</ol>
+
+									<h4>Доставка:</h4>
+
+									<ul>
+										<li>Оплата доставки: Всегда оплачивается покупателем при получении оборудования.</li>
+										<li>Стандартная доставка: Автоматически предполагается перевозка компанией «Деловые линии» до ближайшего терминала клиента. Доставка до терминала транспортной компании в городе отправления — бесплатно.</li>
+										<li>Альтернативные способы доставки: Укажите ваши пожелания в комментарии к заказу или свяжитесь с менеджером. Мы скорректируем счет-договор.</li>
+									</ul>
+									
+									<h4>Консультация и нестандартные условия:</h4>
+
+									<p>
+										Нужна помощь менеджера, инженера или особые условия покупки/доставки? Звоните: <b>8 (804) 333-42-65</b> Пишите: <a href="/">info32@rusautomation.ru</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="tab-content level1" data-id="#tab2">
+								<div class="text-block">
+									<h4>Оплата онлайн: Банковской картой</h4>
+
+									<ul>
+										<li><b>Простой заказ:</b> Оформите товар на сайте.</li>
+										<li><b>Безопасная оплата:</b> После оформления заказа нажмите на платежную кнопку. Вы будете перенаправлены на защищенную страницу АО «АЛЬФА-БАНК» для ввода данных вашей карты.</li>
+										<li><b>Принимаем карты:</b> VISA, MasterCard, МИР.</li>
+									</ul>
+
+									<h4>Доставка:</h4>
+
+									<ul>
+										<li>Расчет стоимости: После заказа вы получите ссылку для расчета стоимости доставки до вашего адреса.</li>
+										<li>Оплата доставки: Оплачивается покупателем при получении товара.</li>
+										<li>Транспортная компания: Отправляем оборудование СДЭК (до терминала или до двери).</li>
+									</ul>
+
+									<h4>Безопасность Платежей:</h4>
+
+									<ul>
+										<li>Современные методы защиты: Оплата осуществляется через АО «АЛЬФА-БАНК» с соблюдением всех правил международных платежных систем.</li>
+										<li>Конфиденциальность данных: Все данные передаются по защищенным каналам связи.</li>
+										<li>Защита карты: Для завершения оплаты может потребоваться ввод кода безопасности из СМС, полученного от вашего банка.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="text-block _marg">
+							<h2>Условия оплаты</h2>
+
+							<ul>
+								<li>Оформите заказ на сайте, после чего автоматически сформируется счёт. После оформления заказа наш менеджер свяжется с вами в ближайшее время для подтверждения заказа и согласования условий поставки.</li>
+								<li>В счёте-договоре будут указаны товары, их стоимость и информация по доставке.</li>
+								<li>Доставка всегда оплачивается покупателем при получении оборудования и на сумму заказа не влияет.</li>
+								<li>В автоматическом режиме предполагается стандартная перевозка компанией «Деловые лини» до ближайшего терминала клиента. Доставка до терминала транспортной компании в городе отправления осуществляется бесплатно.</li>
+								<li>Минимальная сумма заказа — 1 900 ₽</li>
+							</ul>
+
+							<h2>Возможные причины отказа в платеже</h2>
+
+							<p>
+								Если ваш платеж не прошел, проверьте следующие моменты:
+							</p>
+
+							<p>
+								<b>Тип карты:</b> Убедитесь, что ваша банковская карта предназначена для онлайн-платежей (уточните в вашем банке).
+								<br>
+								<b>Баланс:</b> Проверьте достаточность средств на карте (информация доступна в вашем банке).
+								<br>
+								<b>Корректность данных:</b> Введены ли верно номер карты, срок действия и CVV/CVC-код.
+								<br>
+								<b>Срок действия карты:</b> Убедитесь, что карта не истекла (срок действия указан на лицевой стороне карты, для деталей обратитесь в ваш банк).
+							</p>
+
+							<p>
+								<b>Служба поддержки по вопросам оплаты:</b> По любым вопросам, связанным с оплатой банковской картой или работой сайта:
+							</p>
+
+							<p>
+								<b>Телефон:</b> 8 (804) 333-42-65
+							</p>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="imp-info _marg">
+					<div class="cont">
+						<div class="imp-info__wrap">
+							<div class="imp-info__line _flex">
+								<div class="imp-info__coll">
+									<ul>
+										<li>
+											Если вам нужен другой способ отправки оборудования, укажите это в комментарии к заказу или свяжитесь с менеджером по телефону:
+											<span>Мы скорректируем счёт-договор с учётом новых условий доставки.</span>
+										</li>
+										<li>
+											Счёт действителен в течение 3 дней. Если вы решили оплатить заказ позже, позвоните менеджеру по номеру:
+											<span>Мы обновим текущий счёт или выставим новый.</span>
+										</li>
+									</ul>
+								</div>
+								<div class="imp-info__colr">
+									<div class="imp-info__hone">
+										<a href="tel:88045551294">8 (804) 555–12–94</a>
+									</div>
+								</div>
+							</div>
+							<div class="imp-info__line _flex">
+								<div class="imp-info__coll">
+									<div class="imp-info__title">Заказать консультацию</div>
+
+									<div class="imp-info__subtitle">Если вам нужна консультация менеджера, инженера или необходимы нестандартные условия покупки и доставки:</div>
+
+									<div class="imp-info__contacts _flex">
+										<a href="tel:88045551294" class="imp-info__tel">8 (804) 555–12–94</a>
+										<a href="mailto:info81@rusautomation.ru" class="imp-info__mail">info81@rusautomation.ru.</a>
+									</div>
+								</div>
+								<div class="imp-info__colr">
+									<div class="imp-info__colr-title">Или оставьте заявку</div>
+
+									<div class="imp-info__btn">
+										<button type="button" class="btn-red">Заказать консультацию</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont">
+					<div class="footer__cols">
+						<div class="footer__coll left">
+							<div class="footer__logo">
+								<img src="images/logo_white.svg" alt="">
+							</div>
+						</div>
+
+						<div class="footer__colr right">
+							<div class="footer-menu">
+								<div class="footer-menu__flex _flex">
+									<div class="footer-menu__col">
+										<div class="footer-menu__title">
+											<a href="/">Каталог продукции</a>
+										</div>
+
+										<div class="footer-menu__list">
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Датчики уровня</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Частотные преобразователи</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Датчики положения и перемещения</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Редукторы и мотор-редукторы</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Промавтоматика</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Термометрия</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Датчики давления</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Энкодеры</a>
+											</div>
+										</div>
+
+										<div class="footer-menu__link-more">
+											<a href="/" class="btn-arrow btn-arrow_white">
+												<span>
+													Смотреть все
+			
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow"></use>
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="footer-menu__col">
+										<div class="footer-menu__title">
+											<a href="/">Услуги</a>
+										</div>
+
+										<div class="footer-menu__list">
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Автоматизация</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Подбор</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Шкафы управления</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Шеф-монтаж</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Разработка</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Программирование</a>
+											</div>
+										</div>
+									</div>
+									<div class="footer-menu__col">
+										<div class="footer-menu__title">
+											<a href="/">Наши проекты</a>
+										</div>
+
+										<div class="footer-menu__list">
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Индикаторы уровня</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Датчики уровня жидкости</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Датчики уровня сыпучих</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Расходомеры</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Влагомеры</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Конвейерная безопасность</a>
+											</div>
+										</div>
+									</div>
+									<div class="footer-menu__col">
+										<div class="footer-menu__title">
+											<a href="/">О компании</a>
+										</div>
+
+										<div class="footer-menu__list">
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Контакты</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Реквизиты</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Обратная связь</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Отзывы</a>
+											</div>
+										</div>
+									</div>
+									<div class="footer-menu__col">
+										<div class="footer-menu__title">
+											<a href="/">Помощь</a>
+										</div>
+
+										<div class="footer-menu__list">
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Доставка</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Оплата</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Гарантии</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Новости</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Статьи</a>
+											</div>
+											<div class="footer-menu__item">
+												<a href="/" class="footer-menu__link">Вопрос-ответ</a>
+											</div>
+										</div>
+									</div>
+									<div class="footer-menu__col footer-menu__col-big">
+										<div class="footer__blocks _flex">
+											<div class="footer__box">
+												<div class="footer__socials-items _flex">
+													<div class="footer__socials-item">
+														<div class="footer__socials-title">Соцсети</div>
+						
+														<div class="footer__socials _flex">
+															<a href="/" target="_blank" class="footer__socials-link">
+																<img data-src="images/ic_soc1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" target="_blank" class="footer__socials-link">
+																<img data-src="images/ic_soc2.png" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" target="_blank" class="footer__socials-link">
+																<img data-src="images/ic_soc3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+													</div>
+						
+													<div class="footer__socials-item">
+														<div class="footer__socials-title">Видеохостинги</div>
+						
+														<div class="footer__socials _flex">
+															<a href="/" target="_blank" class="footer__socials-link">
+																<img data-src="images/ic_soc4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" target="_blank" class="footer__socials-link">
+																<img data-src="images/ic_soc5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" target="_blank" class="footer__socials-link">
+																<img data-src="images/ic_soc6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="footer__box">
+												<div class="footer__socials-item">
+													<div class="footer__socials-title">Мы на маркетплейсах</div>
+					
+													<div class="footer__socials footer__socials_marg _flex">
+														<a href="/" target="_blank" class="footer__socials-link">
+															<img data-src="images/ic_soc7.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+														<a href="/" target="_blank" class="footer__socials-link">
+															<img data-src="images/ic_soc8.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+														<a href="/" target="_blank" class="footer__socials-link">
+															<img data-src="images/ic_soc9.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+														<a href="/" target="_blank" class="footer__socials-link">
+															<img data-src="images/ic_soc10.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__coll footer__coll_marg left">
+							<div class="footer__contacts">
+								<div class="footer__phone">
+									<a href="tel:+74997046510">8 (804) 333–70–64</a>
+								</div>
+								<div class="footer__contacts-desc">(обращение по общим вопросам)</div>
+								<div class="footer__email">Email: <a href="mailto:info41@rusautomation.ru">info41@rusautomation.ru</a></div>
+							</div>
+
+							<div class="footer__subscribe">
+								<div class="footer__subscribe-desc">Подписаться на новости</div>
+
+								<div class="footer__subscribe-btn">
+									<a href="/" class="btn-border btn-border_white">Подписаться на новости</a>
+								</div>
+							</div>
+
+							<div class="footer__rating">
+								<img data-src="images/yandex_rating.jpg" src="images/img_plug.png" alt="" class="footer__rating-img lazyload">
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="footer-menu__mob-soc">
+							<div class="footer__blocks _flex">
+								<div class="footer__box">
+									<div class="footer__socials-items _flex">
+										<div class="footer__socials-item">
+											<div class="footer__socials-title">Соцсети</div>
+			
+											<div class="footer__socials _flex">
+												<a href="/" target="_blank" class="footer__socials-link">
+													<img data-src="images/ic_soc1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+												<a href="/" target="_blank" class="footer__socials-link">
+													<img data-src="images/ic_soc2.png" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+												<a href="/" target="_blank" class="footer__socials-link">
+													<img data-src="images/ic_soc3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+											</div>
+										</div>
+			
+										<div class="footer__socials-item">
+											<div class="footer__socials-title">Видеохостинги</div>
+			
+											<div class="footer__socials _flex">
+												<a href="/" target="_blank" class="footer__socials-link">
+													<img data-src="images/ic_soc4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+												<a href="/" target="_blank" class="footer__socials-link">
+													<img data-src="images/ic_soc5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+												<a href="/" target="_blank" class="footer__socials-link">
+													<img data-src="images/ic_soc6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+								<div class="footer__box">
+									<div class="footer__socials-item">
+										<div class="footer__socials-title">Мы на маркетплейсах</div>
+		
+										<div class="footer__socials footer__socials_marg _flex">
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc7.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc8.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc9.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc10.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__soc-mob">
+						<div class="footer__blocks _flex">
+							<div class="footer__box">
+								<div class="footer__socials-items _flex">
+									<div class="footer__socials-item">
+										<div class="footer__socials-title">Соцсети</div>
+		
+										<div class="footer__socials _flex">
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc2.png" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+		
+									<div class="footer__socials-item">
+										<div class="footer__socials-title">Видеохостинги</div>
+		
+										<div class="footer__socials _flex">
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="footer__socials-link">
+												<img data-src="images/ic_soc6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__box">
+								<div class="footer__socials-item">
+									<div class="footer__socials-title">Мы на маркетплейсах</div>
+	
+									<div class="footer__socials footer__socials_marg _flex">
+										<a href="/" target="_blank" class="footer__socials-link">
+											<img data-src="images/ic_soc7.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+										<a href="/" target="_blank" class="footer__socials-link">
+											<img data-src="images/ic_soc8.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+										<a href="/" target="_blank" class="footer__socials-link">
+											<img data-src="images/ic_soc9.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+										<a href="/" target="_blank" class="footer__socials-link">
+											<img data-src="images/ic_soc10.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__info">
+						<div class="footer__info-desc">Компания «РусАвтоматизация» – российский эксперт в сфере комплексной автоматизации производств с 2011 г. (производитель и поставщик оборудования, консультант по подбору, проектировщик и изготовитель комплексного АСУ ТП). На сайте rusautomation.ru предоставлен полный каталог продукции компании: контрольно-измерительные приборы, уровнемеры, датчики. ИНН: 7449104752, ОГРН: 1117449004133.</div>
+
+						<div class="footer__info-desc">Предложения и замечания по работе сайта пишите: <a href="mailto:info@rusautomation.ru">info@rusautomation.ru</a></div>
+
+						<div class="footer__bot _flex">
+							<div class="footer__copy">&copy;2011–2025 год. Все права защищены. Средства автоматизации. Официальный сайт РусАвтоматизация</div>
+
+							<div class="footer__links _flex">
+								<div class="footer__links-link">
+									<a href="/">Политика конфиденциальности</a>
+								</div>
+								<div class="footer__links-link footer__links-link_none">
+									<a href="/">Политика Cookie</a>
+								</div>
+								<div class="footer__links-link footer__links-link_none">
+									<a href="/">Согласие на рекламу</a>
+								</div>
+							</div>
+
+							<div class="footer__creator">
+								<a href="/" class="footer__creator-img">
+									<img src="images/logo_creator.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

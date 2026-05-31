@@ -205,6 +205,11 @@
 		margin-top: 16px;
 	}
 
+	.text-block h2{
+		font-size: 36px;
+		margin-bottom: 16px;
+	}
+
 	.text-block h3{
 		font-size: 20px;
 	}
@@ -521,6 +526,141 @@
 
 	.big-sorting .checkbox__label{
 		min-height: 15px;
+	}
+
+
+	.faq__accordion-open{
+		padding-top: 19px;
+		padding-bottom: 19px;
+
+		font-size: 16px;
+	}
+
+	.faq__accordion-data{
+		padding-bottom: 19px;
+	}
+
+
+	.main-form__flex{
+		margin-top: 20px;
+	}
+
+	.main-form__coll{
+		width: calc(44% - 20px);
+		max-width: 437px;
+	}
+
+	.main-form__items{
+		margin-top: 50px;
+	}
+
+	.main-form__item{
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+
+	.main-form__colr{
+		width: 56%;
+	}
+
+
+	.section-top + ._marg{
+		margin-top: 30px;
+	}
+
+	.delivery__text-block{
+		margin-top: 16px;
+		max-width: 997px;
+	}
+
+	.delivery__partners{
+		margin-top: 25px;
+	}
+
+	.delivery__partners-grid{
+		margin-top: 16px;
+	}
+
+	.delivery__partner{
+		padding: 15px;
+		gap: 16px;
+	}
+
+	.delivery__partner-icon{
+		width: 150px;
+		height: 70px;
+		padding: 8px;
+	}
+
+	.delivery__partner-name{
+		font-size: 16px;
+	}
+
+	.delivery__partner-links{
+		margin-top: 12px;
+	}
+
+	.payments__text-block{
+		margin-top: 16px;
+	}
+
+	.payments .text-block{
+		max-width: 945px;
+	}
+
+
+	.payments__tabs-container{
+		margin-top: 30px;
+	}
+
+	.tabs-icon{
+		margin-bottom: 30px;
+	}
+
+	.tabs-icon__btn{
+		padding-bottom: 17px;
+		font-size: 14px;
+	}
+
+	.text-block h4{
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+
+	.imp-info__line{
+		padding: 20px 30px;
+		min-height: 170px;
+		gap: 33px;
+	}
+
+	.imp-info__colr{
+		width: 26%;
+	}
+
+	.imp-info__hone{
+		font-size: 20px;
+	}
+
+	.imp-info__title{
+		font-size: 20px;
+	}
+
+	.imp-info__subtitle{
+		margin-top: 16px;
+		max-width: 414px;
+	}
+
+	.imp-info__tel{
+		font-size: 16px;
+	}
+
+	.imp-info__mail{
+		font-size: 16px;
+	}
+
+	.imp-info__colr-title{
+		margin-bottom: 15px;
 	}
 	/* commit */
 

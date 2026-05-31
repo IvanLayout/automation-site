@@ -134,6 +134,10 @@
 		margin-top: 32px;
 	}
 
+	.text-block h2{
+		font-size: 40px;
+	}
+
 	.text-block h3{
 		font-size: 24px;
 		margin-bottom: 16px;
@@ -249,6 +253,40 @@
 
 	.page-text__heade-btns{
 		width: 100%;
+	}
+
+	.main-form__colr {
+		width: 50%;
+		max-width: 690px;
+	}
+
+	.delivery__partners-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.text-block * + h4{
+		margin-top: 30px;
+	}
+
+
+	.imp-info__line{
+		gap: 40px;
+	}
+
+	.imp-info__line + .imp-info__line{
+		margin-top: 20px;
+	}
+
+	.imp-info ul li + li{
+		margin-top: 20px;
+	}
+	
+	.imp-info__colr{
+		width: 21.33%;
+	}
+
+	.imp-info__subtitle{
+		max-width: 600px;
 	}
 	/* commit */
 
