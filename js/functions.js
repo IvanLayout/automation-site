@@ -525,6 +525,23 @@ $(() => {
 	
 		$(this).closest('.promo-wrap').addClass('_active')
 	})
+
+	$('.checkbox__label_all').on('click', function () {
+
+        let isChecked = $(this).find('input[type="checkbox"]').prop('checked');
+
+        $('.cart-table input[type="checkbox"]').prop('checked', isChecked);
+    });
+
+    $('.cart-table .checkbox__label').on('click', function () {
+
+        let allChecked =
+            $('.cart-table input[type="checkbox"]').length ===
+            $('.cart-table input[type="checkbox"]:checked').length;
+
+        $('.checkbox__label_all input[type="checkbox"]').prop('checked', allChecked);
+    });
+
 })
 
 
