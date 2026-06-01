@@ -881,6 +881,11 @@
 	.page-title._big{
 		font-size: 36px;
 	}
+
+
+	.clear-btn b{
+		display: none;
+	}
 	/* commit */
 
 	.advantages-main__item

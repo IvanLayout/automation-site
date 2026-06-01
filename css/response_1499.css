@@ -357,6 +357,7 @@
 
 	.clear-btn{
 		font-size: 12px;
+		padding-left: 23px;
 	}
 
 	.compare-section__checkbox-slider,
@@ -954,6 +955,25 @@
 
 	.products__grid._big{
 		margin-top: 0;
+	}
+
+	.favorite-page .clear-btn{
+		font-size: 14px;
+	}
+
+
+	.promotion-info .text-block{
+		max-width: 878px;
+	}
+
+	.text-block h1,
+	.text-block .title{
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	.promotion-info__bot{
+		margin-top: 20px;
 	}
 	/* commit */
 

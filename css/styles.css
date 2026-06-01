@@ -4170,15 +4170,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	display: inline-block;
 	padding-left: 28px;
 	position: relative;
+	text-align: left;
 }
 
 .clear-btn svg{
 	position: absolute;
 	left: 0;
 	top: 50%;
-	width: 16px;
-	height: 16px;
-	margin-top: -8px;
+	width: 18px;
+	height: 18px;
+	margin-top: -9px;
 	fill: none;
 	stroke: #D64923;
 }
@@ -4187,6 +4188,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	.clear-btn:hover{
 		color: #D64923;
 	}
+}
+
+.clear-btn b{
+	font-weight: 600;
 }
 
 .compare-products{
@@ -6876,6 +6881,31 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .empty-page__btn{
 	text-align: center;
 	margin-top: 32px;
+}
+
+.favorite-page__top{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+.promotion-info__date{
+	color: rgba(27, 39, 69, 0.5);
+	margin-bottom: 16px;
+}
+
+.promotion-info .text-block{
+	max-width: 1125px;
+}
+
+.promotion-info .text-block ul{
+	margin-top: 0;
+}
+
+.promotion-info__bot{
+	margin-top: 40px;
 }
 /*------------
     commit
@@ -10089,6 +10119,10 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	margin-top: 30px;
 }
 
+.products_marg2{
+	margin-top: 53px;
+}
+
 .products__grid
 {
 	align-items: stretch;
@@ -12207,8 +12241,8 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .sorting 
 {
 	justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
+    align-content: center;
+    align-items: center;
 	flex-wrap: nowrap;
 	padding-bottom: 17px;
 	border-bottom: 1px solid rgba(27, 39, 69, .2);

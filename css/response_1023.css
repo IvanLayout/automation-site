@@ -1711,6 +1711,34 @@
 	.products__grid._big{
 		--products_count: 3;
 	}
+
+
+	.promotion-info__date{
+		margin-bottom: 10px;
+	}
+
+	.text-block h1,
+	.text-block .title {
+		font-size: 36px;
+		line-height: 1.1;
+		margin-bottom: 16px;
+	}
+
+	.products_marg2{
+		margin-top: 44px;
+	}
+
+	.promotion-info .text-block p{
+		margin-bottom: 12px;
+	}
+
+	.promotion-info .text-block ul{
+		margin-bottom: 12px;
+	}
+
+	.promotion-info .text-block ol{
+		margin-bottom: 12px;
+	}
 	/* commit */
 
 	body
@@ -3115,6 +3143,10 @@
 	.mini-modal__sorting
 	{
 		order: 2;
+	}
+
+	.sorting_inner .mini-modal__sorting{
+		order: 0;
 	}
 
 	.filter-open
