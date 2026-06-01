@@ -61,6 +61,7 @@ $(() => {
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
 			$('.mini-modal__modal').removeClass('_active')
+			$('.mini-over').removeClass('_show')
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		} else {
@@ -70,6 +71,9 @@ $(() => {
 			$('.mini-modal__modal').removeClass('_active')
 			parent.find('.mini-modal__modal').addClass('_active')
 
+			if( $(this).hasClass('mini-modal__btn_over') ) {
+				$('.mini-over').addClass('_show')
+			}
 
 			if (is_touch_device()) $('body').css('cursor', 'pointer')
 		}
@@ -79,6 +83,7 @@ $(() => {
 	$(document).click((e) => {
 		if ( !e.target.closest('.mini-modal') ) {
 			$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+			$('.mini-over').removeClass('_show')
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
@@ -102,6 +107,7 @@ $(() => {
 		e.preventDefault()
 
 		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+			$('.mini-over').removeClass('_show')
 
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
@@ -501,7 +507,6 @@ $(() => {
 	})
 
 
-
 	$('body').on('click', '.inner-news__open-all', function(e) {
 		e.preventDefault()
 	
@@ -542,6 +547,75 @@ $(() => {
         $('.checkbox__label_all input[type="checkbox"]').prop('checked', allChecked);
     });
 
+
+	$('body').on('click', '.pade-checkout__less', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.pade-checkout__sector').find('.pade-checkout__block').slideDown()
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.pade-checkout__sector').find('.pade-checkout__block').slideUp()
+		}
+	})
+
+	$('.radio-big__label_buyer').on('click', function () {
+		let thisEl = $(this);
+		let $radio = $(this).find('input[type="radio"]');
+
+		setTimeout(() => {
+			if ($radio.is(':checked')) {
+				let targetForm = $(thisEl).data('form')
+
+				$(thisEl).closest('.pade-checkout__sector').find('.pade-checkout__buyer').removeClass('_show')
+
+				$(targetForm).addClass('_show')
+			}
+		}, 0)
+	});
+
+	$('.radio-big__label_delivery').on('click', function () {
+		let thisEl = $(this);
+		let $radio = $(this).find('input[type="radio"]');
+
+		setTimeout(() => {
+			if ($radio.is(':checked')) {
+				let targetForm = $(thisEl).data('delivery')
+
+				$(thisEl).closest('.pade-checkout__sector').find('.delivery-info__box').removeClass('_show')
+
+				$(targetForm).addClass('_show')
+			}
+		}, 0)
+	});
+
+	$('#city-input').on('input', function () {
+		let value = $(this).val().trim()
+
+		if (value.length > 0) {
+			$(this).closest('.select-city__wrap').addClass('_active')
+		} else {
+			$(this).closest('.select-city__wrap').removeClass('_active')
+		}
+	});
+
+	$('.select-city__close').on('click', function () {
+		$('#city-input').val('')
+		$(this).closest('.select-city__wrap').removeClass('_active')
+	});
+
+	$('.select-city__list-item').on('click', function () {
+		let city = $(this).text().trim()
+
+		$('#city-input').val(city)
+		$(this).closest('.select-city__wrap').removeClass('_active')
+		$(this).closest('.select-city').addClass('_hide')
+		$(this).closest('.pade-checkout__sector').find('.delivery-info').addClass('_show')
+		$(this).closest('.pade-checkout__sector').find('.delivery-info__title').text(city)
+	});
 })
 
 

@@ -1511,6 +1511,55 @@
 	.page-cart__item-name{
 		font-size: 12px;
 	}
+
+
+	.pade-checkout__number{
+		font-size: 14px;
+	}
+
+	.pade-checkout__title{
+		font-size: 14px;
+	}
+
+	.pade-checkout__radio{
+		gap: 10px;
+	}
+
+	.pade-checkout__radio._flex .radio-big{
+		width: calc(50% - 5px);
+		max-width: none;
+	}
+
+	.radio-big__text{
+		margin-top: 10px;
+		width: calc(100% + 26px);
+		margin-right: -26px;
+	}
+
+	.page-cart_checkout{
+		padding-bottom: 40px;
+	}
+
+
+	.radio-big__box{
+		padding: 12px 47px 12px 14px;
+	}
+
+	.radio-big__title{
+		font-size: 14px;
+	}
+
+	.radio-big__box::before{
+		right: 14px;
+	}
+
+	.form-gray .form-gray__textarea{
+		font-size: 12px;
+	}
+
+	.form-gray .form-gray__input{
+		font-size: 12px;
+	}
 	/* commit */
 
 	body

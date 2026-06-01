@@ -69,6 +69,18 @@
 	.delivery__partner-link{
 		font-size: 12px;
 	}
+
+	.cart-table__sum{
+        font-size: 16px;
+    }
+
+    .cart-table__price{
+        font-size: 16px;
+    }
+
+    .cart-table__oldprice{
+        font-size: 12px;
+    }
 	/* commit */
 
 	.slider-button-prev, 

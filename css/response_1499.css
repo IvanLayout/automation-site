@@ -713,6 +713,10 @@
 		padding-top: 40px;
 	}
 
+	.page-cart_checkout{
+		padding-bottom: 60px;
+	}
+
 	.page-cart__colr {
 		width: 28.25%;
 	}
@@ -805,7 +809,7 @@
 	}
 
 	.cart-table__price{
-		font-style: 20px;
+		font-size: 20px;
 	}
 
 	.cart-table__oldprice{
@@ -832,6 +836,112 @@
 
 	.cart-table__btns{
 		margin-top: 20px;
+	}
+
+	.checkout__agree .checkbox__text{
+		font-size: 12px;
+	}
+
+	.radio-big__box{
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	.radio-big__title{
+		font-size: 16px;
+	}
+
+	.form-gray .form-gray__input{
+		font-size: 14px;
+	}
+
+	.form-gray__line{
+		margin-bottom: 10px;
+	}
+
+	.form-gray__col {
+		width: calc(50% - 5px);
+	}
+
+	.pade-checkout__radio_marg{
+		margin-bottom: 20px;
+	}
+
+	.select-city__title{
+		margin-bottom: 16px;
+	}
+
+	.pade-checkout__radio._grid{
+		gap: 10px;
+	}
+
+	.radio-big__box._pad {
+		padding-top: 14px;
+		padding-bottom: 14px;
+		padding-right: 46px;
+		padding-left: 14px;
+		min-height: 114px;
+	}
+
+	.radio-big__box._pad::before{
+		top: 14px;
+	}
+
+	.radio-big__text{
+		margin-top: 5px;
+	}
+
+	.mini-modal__modal_img{
+		left: 50%;
+		margin-left: -108px;
+	}
+
+	.radio-line__text{
+		margin-top: 5px;
+		font-size: 12px;
+	}
+
+	.radio-line__box{
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	.radio-line__box::before{
+		top: 14px;
+	}
+
+	.delivery-info__time{
+		font-size: 12px;
+	}
+
+	.delivery-info__price{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.pade-checkout__title{
+		font-size: 16px;
+	}
+
+	.form-gray__adres-flex{
+		margin-left: -10px;
+	}
+
+	.form-gray__adres-flex .form-gray__line {
+		width: calc(100% / 6 - 6px);
+		margin-left: 10px;
+	}
+
+	.form-gray .form-gray__textarea{
+		font-size: 14px;
+	}
+
+	.cart-table__checkout .cart-table__thumb {
+		width: 114px;
+	}
+
+	.delivery-info__box-title{
+		font-size: 16px;
 	}
 	/* commit */
 

@@ -574,6 +574,186 @@
 		width: 16px;
 		height: 16px;
 	}
+
+
+	.pade-checkout__sector{
+		position: relative;
+	}
+
+	.pade-checkout__number{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 27px;
+		line-height: 27px;
+		font-size: 12px;
+	}
+
+	.pade-checkout__sector::before{
+		display: none;
+	}
+
+	.pade-checkout__top{
+		padding-left: 37px;
+		min-height: 27px;
+	}
+
+	.pade-checkout__less{
+		font-size: 12px;
+	}
+
+	.cart-table__checkout .cart-table__thumb {
+		width: 55px;
+	}
+
+	.cart-table__checkout .cart-table__info{
+		padding-right: 0;
+	}
+
+	.cart-table .cart-table__sum{
+		padding-left: 60px;
+		width: 100%;
+		text-align: left;
+		font-size: 14px;
+	}
+
+	.cart-table__checkout .cart-table__prices{
+		order: 2;
+	}
+
+	.pade-checkout__sector{
+		padding-bottom: 10px;
+	}
+
+	.form-gray__col{
+		width: 100%;
+	}
+
+	.form-gray__col + .form-gray__col{
+		margin-top: 10px;
+	}
+
+	.radio-big__box{
+		padding: 11px 32px 11px 9px;
+	}
+	
+	.radio-big__title{
+		font-size: 12px;
+	}
+
+	.radio-big__box::before{
+		width: 15px;
+		height: 15px;
+		right: 9px;
+		top: 12px;
+	}
+
+	.select-city__title{
+		margin-bottom: 10px;
+	}
+
+	.form-gray .form-gray__input{
+		height: 40px;
+	}
+
+	.pade-checkout__radio._grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.pade-checkout__radio_pay._grid {
+		grid-template-columns: 1fr;
+	}
+
+	.radio-big__box._pad{
+		padding-right: 32px;
+		min-height: 134px;
+	}
+
+	.pade-checkout__radio_pay._grid .radio-big__box._pad{
+		min-height: 91px;
+	}
+
+	.radio-big__box._pad .radio-big__title{
+		font-size: 14px;
+	}
+
+	.radio-big__box._pad .radio-big__text {
+		margin-top: 5px;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.pade-checkout__radio_pay._grid .radio-big__text{
+		margin-top: 10px;
+	}
+
+	.mini-modal__modal_img{
+		position: fixed;
+		left: 0;
+		top: auto;
+		bottom: 0;
+		width: 100%;
+		padding: 16px 38px 20px 20px;
+		margin-left: 0;
+		z-index: 121;
+	}
+
+	.mini-modal__close{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		color: #737D87;
+		width: 20px;
+		height: 20px;
+		top: 10px;
+		right: 15px;
+		position: absolute;
+	}
+
+	.mini-modal__close svg{
+		display: block;
+		width: 12px;
+		height: 12px;
+		stroke: currentColor;
+	}
+
+	.mini-over._show{
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		cursor: pointer;
+	}
+
+	.select-city__list{
+		top: 100%;
+	}
+
+	.radio-line__box::before{
+		width: 15px;
+		height: 15px;
+	}
+
+	input[type=radio]:checked + .radio-line__box::before{
+		border-width: 4px;
+	}
+
+	input[type=radio]:checked + .radio-big__box::before{
+		border-width: 4px;
+	}
+
+	.form-gray__adres{
+		margin-top: 32px;
+	}
+
+	.form-gray__adres-flex .form-gray__line{
+		width: 100%;
+	}
+
+	.delivery-info__box-title{
+		font-size: 14px;
+	}
 	/* commit */
 
 	.advantages-main__item

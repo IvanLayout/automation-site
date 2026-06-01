@@ -315,6 +315,22 @@
 	.page-cart{
 		padding-bottom: 40px;
 	}
+
+	.page-cart_checkout{
+		padding-bottom: 100px;
+	}
+
+	.pade-checkout__radio._grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.select-city__wrap{
+		width: 100%;
+	}
+
+	.delivery-info__title{
+		margin-bottom: 20px;
+	}
 	/* commit */
 
 	.advantages-main__info
