@@ -348,6 +348,13 @@
 	}
 
 
+	.banner-info_main .banner-info__box
+	{
+		padding-top: 35px;
+		padding-bottom: 48px;
+	}
+
+
 	.footer-menu__flex
 	{
 		margin-left: -30px;

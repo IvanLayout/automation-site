@@ -1825,6 +1825,28 @@
 		padding-right: 30px;
 	}
 
+	.banner-info_main .banner-info__box
+	{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.banner-info_main .main-title
+	{
+		font-size: 28px;
+	}
+
+	.banner-info__box-w 
+	{
+		max-width: 570px;
+	}
+
+	.banner-info_main .banner-info__img 
+	{
+		width: 570px;
+	}
+
+
 	.often-search__tag-name
 	{
 		margin-bottom: 15px;

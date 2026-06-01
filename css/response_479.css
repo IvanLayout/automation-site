@@ -66,7 +66,8 @@
 		background: linear-gradient(180deg, rgba(245, 245, 247, 0) 0%, #f5f5f7 100%);
 	}
 
-	.banner-info__box{
+	.banner-info__box,
+	.banner-info_main .banner-info__box{
 		width: 100%;
 		padding: 0 0 24px;
 	}
@@ -868,7 +869,8 @@
 		padding-right: 0;
 	}
 	
-	.product-big .banner-info__img
+	.product-big .banner-info__img,
+	.banner-info_main .banner-info__img
 	{
 		width: 100%;
 	}

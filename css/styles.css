@@ -7500,6 +7500,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     banner-info
 ------------*/
 
+.banner-info_main .banner-info__box
+{
+	padding-bottom: 60px;
+}
+
 .banner-info__box-w
 {
 	max-width: 970px;

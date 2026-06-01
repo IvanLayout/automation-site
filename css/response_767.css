@@ -164,7 +164,8 @@
 		flex-direction: row;
 	}
 
-	.banner-info__box {
+	.banner-info__box,
+	.banner-info_main .banner-info__box {
 		padding: 30px 0;
 		width: 67%;
 	}

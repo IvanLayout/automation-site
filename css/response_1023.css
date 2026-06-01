@@ -3352,9 +3352,25 @@
 		margin-top: 22px;
 	}
 
-	.product-big .banner-info__img 
+	.product-big .banner-info__img,
+	.banner-info_main .banner-info__img
 	{
 		width: 38%;
+	}
+
+	.banner-info_main .main-title 
+	{
+		font-size: 24px;
+	}
+
+	.banner-info_main .banner-info__box
+	{
+		max-width: 440px;
+	}
+
+	.banner-info_main .banner-info__btn
+	{
+		margin-top: 24px;
 	}
 
 

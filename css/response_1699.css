@@ -989,6 +989,12 @@
 	}
 
 
+	.banner-info__box-w
+	{
+		max-width: 840px;
+	}
+
+
 	.often-search__title
 	{
 		font-size: 20px;
