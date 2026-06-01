@@ -4069,13 +4069,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	}
 }
 
-
-.page-compare
-{
-    display: none;
+.compare-products_mob{
+	display: none;
 }
 
-.compare-feature_mob
+.compare-feature__mob
 {
     display: none;
 }
@@ -4313,7 +4311,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	cursor: grab;
 }
 
-.compare-section__slider .compare-feature__title{
+.compare-section__slider .compare-feature__title,
+.compare-section__slider2 .compare-feature__title,
+.compare-section__slider3 .compare-feature__title{
 	opacity: 0;
 }
 
