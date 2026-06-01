@@ -331,6 +331,10 @@
 	.delivery-info__title{
 		margin-bottom: 20px;
 	}
+
+	.adres-mini{
+		margin-left: -700px;
+	}
 	/* commit */
 
 	.advantages-main__info

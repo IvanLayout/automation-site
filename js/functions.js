@@ -107,9 +107,16 @@ $(() => {
 		e.preventDefault()
 
 		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
-			$('.mini-over').removeClass('_show')
+		$('.mini-over').removeClass('_show')
 
 		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
+	$('body').on('click', '.adres-over, [data-adres-close]', function(e) {
+		e.preventDefault()
+
+		$('.adres-mini').removeClass('_show')
+		$('.adres-over').removeClass('_show')
 	})
 
 	
@@ -592,6 +599,21 @@ $(() => {
 		}, 0)
 	});
 
+	$('#cities-search').on('input', function () {
+		let value = $(this).val().trim()
+
+		if (value.length > 0) {
+			$(this).closest('.modal-search__field').addClass('_active')
+		} else {
+			$(this).closest('.modal-search__field').removeClass('_active')
+		}
+	});
+
+	$('.modal-search__close').on('click', function () {
+		$('#cities-search').val('')
+		$(this).closest('.modal-search__field').removeClass('_active')
+	});
+
 	$('#city-input').on('input', function () {
 		let value = $(this).val().trim()
 
@@ -675,6 +697,11 @@ $(window).on('load', () => {
 
 	if ($('.main-tags_blog').length){
 		hideExtraTags()
+	}
+
+	if ($('.adres-mini').length){
+		$('.adres-mini').addClass('_show')
+		$('.adres-over').addClass('_show')
 	}
 })
 

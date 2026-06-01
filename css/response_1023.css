@@ -1739,6 +1739,53 @@
 	.promotion-info .text-block ol{
 		margin-bottom: 12px;
 	}
+
+	.adres-mini{
+		width: 253px;
+		left: 40px;
+		top: 58px;
+	}
+
+	.adres-mini__btns{
+		margin-top: 16px;
+	}
+
+	.btn-blue{
+		font-size: 12px;
+	}
+
+	.adres-mini__link{
+		font-size: 12px;
+	}
+
+	.modal-search .modal-search__input{
+		font-size: 14px;
+	}
+
+	.cart-small__top{
+		margin-bottom: 5px;
+	}
+
+	.cart-small__bot{
+		margin-top: 10px;
+	}
+
+	.cart-small__delete{
+		right: 0;
+	}
+
+	.cart-small__name {
+		padding-right: 42px;
+	}
+
+	.cart-small__oldprice{
+		font-size: 12px;
+		margin-bottom: 1px;
+	}
+
+	.cart-small__price{
+		font-size: 16px;
+	}
 	/* commit */
 
 	body

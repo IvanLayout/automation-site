@@ -892,7 +892,7 @@
 		margin-top: 5px;
 	}
 
-	.mini-modal__modal_img{
+	.mini-modal__modal_imp{
 		left: 50%;
 		margin-left: -108px;
 	}
@@ -974,6 +974,67 @@
 
 	.promotion-info__bot{
 		margin-top: 20px;
+	}
+
+	.adres-mini{
+		margin-left: -600px;
+	}
+
+
+	.modal__box{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.modal__title{
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+
+	.modal-addres__detect{
+		margin-top: 16px;
+	}
+
+	.modal-cities{
+		max-width: 356px;
+	}
+
+	.modal-cities__item{
+		padding-top: 10px;
+	}
+
+	.modal__btn{
+		bottom: -30px;
+	}
+
+	.modal-search .modal-search__input{
+		font-size: 16px;
+	}
+
+	.cart-small__thumb{
+		width: 88px;
+	}
+
+	.cart-small__prices{
+		min-width: 125px;
+	}
+
+	.modal__title span{
+		font-size: 14px;
+	}
+
+	.modal-cart__total{
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.cart-small__item{
+		gap: 20px;
+		padding-bottom: 14px;
+	}
+
+	.cart-small__item + .cart-small__item{
+		margin-top: 15px;
 	}
 	/* commit */
 

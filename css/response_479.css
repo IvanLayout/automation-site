@@ -387,6 +387,41 @@
 	.products__grid._big{
 		margin-top: 10px;
 	}
+
+	.adres-mini{
+		top: 100%;
+		width: calc(100% - 40px);
+	}
+
+	.adres-mini__btns{
+		margin-top: 10px;
+	}
+
+
+	.modal{
+		border-radius: 0;
+	}
+
+	.modal.modal-cart{
+		border-radius: 0;
+	}
+
+	.modal__box{
+		padding-left: 20px;
+		padding-right: 20px;
+		height: auto;
+		max-height: 100%;
+		align-self: flex-start;
+	}
+
+	.f-button.is-close-button{
+		top: 10px;
+	}
+
+	.modal-cities{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 	/* commit */
 
 	._marg 

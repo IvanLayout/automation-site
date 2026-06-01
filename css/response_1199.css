@@ -85,6 +85,11 @@
 	.products__grid._big{
 		--products_count: 4;
 	}
+
+	.adres-mini{
+		margin-left: 0;
+		left: 20px;
+	}
 	/* commit */
 
 	.slider-button-prev, 
