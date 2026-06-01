@@ -330,11 +330,6 @@
 		max-width: 750px;
 	}
 
-	.product-big .get-consultation__info 
-	{
-		width: 70%;
-	}
-
 
 	.filter.filter-big__wrap
 	{
@@ -345,6 +340,11 @@
 	.filter-big__title
 	{
 		font-size: 24px;
+	}
+
+	.product-big .banner-info__img 
+	{
+		width: 50%;
 	}
 
 

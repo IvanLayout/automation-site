@@ -844,33 +844,6 @@
 		font-size: 16px;
 	}
 
-	
-	.get-consultation
-	{
-		padding-top: 80%;
-		padding-bottom: 26px;
-	}
-
-	.get-consultation__bg
-	{
-		width: calc(100% - 40px);
-		left: 20px;
-	}
-
-	.get-consultation__bg img 
-	{
-		
-		border-radius: 10px;
-		object-position: 0 0;
-	}
-
-	.get-consultation__info
-	{
-		max-width: 100%;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
 
 	.comp-projects__item
 	{

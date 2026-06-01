@@ -1733,29 +1733,6 @@
 	}
 
 
-	.get-consultation
-	{
-		padding-top: 36px;
-		padding-bottom: 48px;
-	}
-
-	.get-consultation__info
-	{
-		width: 100%;
-		max-width: 433px;
-	}
-
-	.get-consultation__desc
-	{
-		font-size: 12px;
-	}
-
-	.get-consultation__bg img
-	{
-		object-position: 88%;
-	}
-
-
 	.comp-projects__item
 	{
 		border-radius: 5px;
@@ -3213,28 +3190,33 @@
 		margin-left: -28px;
 		margin-right: -40px;
 		border-radius: 0;
-		padding-bottom: 48px;
 	}
 
-	.get-consultation__cont
+	.banner-info__cont
 	{
 		padding-left: 40px;
 		padding-right: 40px;
 	}
 
-	.product-big .main-title
+	.product-big .banner-info__box
 	{
-		font-size: 24px;
+		max-width: 440px;
+		padding-bottom: 49px;
 	}
 
-	.product-big .get-consultation__desc 
+	.product-big .banner-info__desc
 	{
-		margin-top: 12px;
+		margin-top: 13px;
 	}
 
-	.product-big .get-consultation__bg img
+	.product-big .banner-info__btn
 	{
-		border-radius: 0;
+		margin-top: 22px;
+	}
+
+	.product-big .banner-info__img 
+	{
+		width: 38%;
 	}
 
 

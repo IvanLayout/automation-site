@@ -419,12 +419,6 @@
 	}
 
 
-	.get-consultation__desc
-	{
-		max-width: 653px;
-		margin-top: 18px;
-	}
-
 
 	.comp-projects__title
 	{
@@ -975,20 +969,23 @@
 		margin-top: 0;
 	}
 
-	.products__grid .product-big
+	.product-big .banner-info__box
 	{
-		padding-top: 34px;
+		padding-top: 30px;
 		padding-bottom: 30px;
+
+		max-width: 650px;
 	}
 
-	.product-big .get-consultation__info 
+	.product-big .banner-info__desc,
+	.product-big .banner-info__btn
 	{
-		width: 65%;
+		margin-top: 25px;
 	}
 
-	.product-big .get-consultation__desc 
+	.product-big .banner-info__img 
 	{
-		margin-top: 30px;
+		width: 470px;
 	}
 
 

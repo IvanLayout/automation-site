@@ -410,11 +410,6 @@
 	}
 
 
-	.get-consultation__btn .btn-red
-	{
-		width: 100%;
-	}
-
 	.slider-pagination.slider-pagination_number
 	{
 		font-size: 12px;
@@ -841,6 +836,34 @@
 		line-height: 42px;
 		margin-top: 10px;
 		width: 100%;
+	}
+
+
+	.products__grid .product-big 
+	{
+		width: calc(100% - 40px);
+		margin-left: 20px;
+		margin-bottom: 10px;
+		margin-right: 0;
+		border-radius: 10px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.product-big .banner-info__img
+	{
+		width: 100%;
+	}
+
+	.product-big .banner-info__box
+	{
+		padding-bottom: 26px;
+	}
+
+	.banner-info__cont
+	{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 

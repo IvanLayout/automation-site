@@ -1015,21 +1015,6 @@
 		padding-bottom: 18px;
 	}
 
-
-	.get-consultation
-	{
-		padding-top: 80px;
-		padding-bottom: 80px;
-	}
-
-	.get-consultation__desc
-	{
-		font-size: 14px;
-		max-width: 504px;
-		margin-top: 12px;
-	}
-
-
 	.comp-projects__slider 
 	{
 		margin-top: 20px;
@@ -1816,27 +1801,28 @@
 		font-size: 16px;
 	}
 
-
-	.products__grid .product-big
+	.product-big .banner-info__box
 	{
+		max-width: 400px;
 		padding-top: 36px;
 		padding-bottom: 36px;
 	}
 
-	.get-consultation__cont
+	.product-big .banner-info__desc, 
+	.product-big .banner-info__btn 
+	{
+		margin-top: 17px;
+	}
+
+	.product-big .banner-info__img 
+	{
+		width: 600px;
+	}
+
+	.banner-info__cont
 	{
 		padding-left: 30px;
 		padding-right: 30px;
-	}
-
-	.product-big .get-consultation__info 
-	{
-		width: 46%;
-	}
-
-	.product-big .get-consultation__desc 
-	{
-		margin-top: 18px;
 	}
 
 	.often-search__tag-name
