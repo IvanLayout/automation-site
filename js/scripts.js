@@ -1394,6 +1394,29 @@ $(() => {
 		}
 	})
 
+	$('body').on('click', '.product-favorite-delete', function (e) {
+		e.preventDefault()
+
+		const $grid = $(this).closest('.products__grid')
+
+		$(this).closest('.product').remove()
+
+		$grid.each(function () {
+			console.log('asd')
+
+			productsHeight(
+				$(this),
+				parseInt($(this).css('--products_count'))
+			)
+		})
+
+		$grid.find('.product').removeClass('_loaded')
+
+		setTimeout(() => {
+			$grid.find('.product').addClass('_loaded')
+		}, 100)
+	})
+
 
 	// compare
 	$('body').on('click', '.product-compare', function (e) {
@@ -1790,7 +1813,7 @@ function productsHeight(context, step) {
 	let finish   = step
 	let products = context.find('.product')
 
-	products.find('product').height('auto')
+	products.height('auto')
 	products.find('.product__name').height('auto')
 	products.find('.product__box').height('auto')
 	products.find('.product__block').height('auto')

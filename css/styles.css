@@ -6861,6 +6861,22 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	z-index: 120;
 	transition: visibility .2s linear, opacity .2s linear;
 }
+
+.empty-page__img img{
+	display: block;
+	max-width: 230px;
+	margin: 0 auto;
+}
+
+.empty-page__title{
+	text-align: center;
+	margin-top: 34px;
+}
+
+.empty-page__btn{
+	text-align: center;
+	margin-top: 32px;
+}
 /*------------
     commit
 ------------*/
@@ -10082,6 +10098,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	--products_count: 4;
 }
 
+.products__grid._big{
+	--products_count: 5;
+	margin-top: 4px;
+}
+
 .products__grid .product
 {
 	width: calc(100%/var(--products_count) - 20px);
@@ -10597,6 +10618,10 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	opacity: 0;
 }
 
+.favorite-page .product__btns{
+	opacity: 1;
+}
+
 .product__compare
 {
 	width: 20px;
@@ -10631,6 +10656,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: 20px;
 	height: 17px;
 	position: relative;
+}
+
+.product__favorite.product-favorite-delete{
+	margin-top: 0;
+	margin-bottom: 16px;
 }
 
 .product__favorite::before
@@ -10705,11 +10735,13 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 }
 
 .product__favorite._active svg
+.product-favorite-delete svg
 {
 	fill: #D64923;
 }
 
-.product__favorite._active::before
+.product__favorite._active::before,
+.product-favorite-delete::before
 {
 	opacity: 1;
 }

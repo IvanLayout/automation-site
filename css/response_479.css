@@ -375,6 +375,18 @@
 	.compare-section__slider3 .compare-feature__item{
 		padding-left: 5px;
 	}
+
+	.empty-page__btn{
+		margin-top: 24px;
+	}
+
+	.empty-page__btn .btn-red{
+		width: 271px;
+	}
+
+	.products__grid._big{
+		margin-top: 10px;
+	}
 	/* commit */
 
 	._marg 

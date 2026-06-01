@@ -1698,6 +1698,19 @@
 	.compare-feature__item::before{
 		display: none;
 	}
+
+
+	.empty-page__title{
+		margin-top: 20px;
+	}
+
+	.empty-page__btn{
+		margin-top: 16px;
+	}
+
+	.products__grid._big{
+		--products_count: 3;
+	}
 	/* commit */
 
 	body
@@ -3229,6 +3242,11 @@
 		margin-top: 8px;
 		width: 13px;
 		height: 12px;
+	}
+
+	.product__favorite.product__favorite-delete{
+		margin-top: 0;
+		margin-bottom: 8px;
 	}
 
 	.product__favorite::before

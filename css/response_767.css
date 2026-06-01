@@ -382,7 +382,7 @@
 		padding: 20px 0 30px;
 	}
 
-	.page-cart .page-title{
+	.page-title._big{
 		font-size: 36px;
 	}
 
@@ -872,6 +872,14 @@
 	.compare-fixed__checkbox-slider{
 		width: 100%;
 		max-width: none;
+	}
+
+	.products__grid._big{
+		--products_count: 2;
+	}
+
+	.page-title._big{
+		font-size: 36px;
 	}
 	/* commit */
 

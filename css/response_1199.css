@@ -81,6 +81,10 @@
     .cart-table__oldprice{
         font-size: 12px;
     }
+
+	.products__grid._big{
+		--products_count: 4;
+	}
 	/* commit */
 
 	.slider-button-prev, 
