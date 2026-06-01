@@ -1008,6 +1008,139 @@ $(() => {
 			}
 		})
 
+		productsCompare2 = new Swiper('.compare-products__slider2', {
+			loop: false,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			on: {
+				init: function (swiper) {
+					if ($(swiper.el).length) {
+						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
+
+						$(swiper.el).find('.product').removeClass('_loaded')
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 100)
+
+						let lengthSlide = $(swiper.el).find('.swiper-slide.product').length
+
+						$(swiper.el).find('.slider-number__active').text(swiper.realIndex + 1)
+
+						$(swiper.el).find('.slider-number__all').text(lengthSlide)
+					}
+				},
+				resize: function (swiper) {
+					if ($(swiper.el).length) {
+						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
+
+						$(swiper.el).find('.product').removeClass('_loaded')
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 100)
+					}
+				},
+				slideChange: function (swiper){
+					$(swiper.el).find('.slider-number__active').text(swiper.realIndex + 1)
+				}
+			}
+		})
+		productsCompare3 = new Swiper('.compare-products__slider3', {
+			loop: false,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			on: {
+				init: function (swiper) {
+					if ($(swiper.el).length) {
+						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
+
+						$(swiper.el).find('.product').removeClass('_loaded')
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 100)
+
+						let lengthSlide = $(swiper.el).find('.swiper-slide.product').length
+
+						$(swiper.el).find('.slider-number__active').text(swiper.realIndex + 1)
+
+						$(swiper.el).find('.slider-number__all').text(lengthSlide)
+					}
+				},
+				resize: function (swiper) {
+					if ($(swiper.el).length) {
+						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
+
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
+
+						$(swiper.el).find('.product').removeClass('_loaded')
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 100)
+					}
+				},
+				slideChange: function (swiper){
+					$(swiper.el).find('.slider-number__active').text(swiper.realIndex + 1)
+				}
+			}
+		})
+
 		compareFeatureSlider = new Swiper('.compare-section__slider', {
 			loop: false,
 			watchSlidesProgress: true,
@@ -1060,9 +1193,58 @@ $(() => {
 			}
 		})
 
+		compareFeatureSlider2 = new Swiper('.compare-section__slider2', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 1,
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			on: {
+				init: compareHeight,
+				resize: compareHeight
+			}
+		})
+
+		compareFeatureSlider3 = new Swiper('.compare-section__slider3', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 1,
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			on: {
+				init: compareHeight,
+				resize: compareHeight
+			}
+		})
+
 		productsCompare.controller.control = [compareFeatureSlider, productsCompareFix];
 		compareFeatureSlider.controller.control = productsCompare;
 		productsCompareFix.controller.control = productsCompare;
+
+		productsCompare2.controller.control = compareFeatureSlider2;
+		compareFeatureSlider2.controller.control = productsCompare2;
+		productsCompare3.controller.control = compareFeatureSlider3;
+		compareFeatureSlider3.controller.control = productsCompare3;
 
 		$('body').on('click', '.product-compare-delete', function (e) {
 			e.preventDefault()
@@ -1636,6 +1818,7 @@ function compareHeight() {
 	let productFeatures = $('.compare-feature__items'),
 	productFeaturesTitle = $('.compare-feature__sector'),
 	featuresSizes = new Object()
+	featuresSizes2 = new Object()
 
 	productFeatures.each(function () {
 		$(this).find('> *').each(function () {
@@ -1651,12 +1834,12 @@ function compareHeight() {
 
 	productFeaturesTitle.each(function () {
 		$(this).find('.compare-feature__title').each(function () {
-			if (featuresSizes[$(this).index()]) {
-				if ($(this).outerHeight() > featuresSizes[$(this).index()]) {
-					featuresSizes[$(this).index()] = $(this).outerHeight()
+			if (featuresSizes2[$(this).index()]) {
+				if ($(this).outerHeight() > featuresSizes2[$(this).index()]) {
+					featuresSizes2[$(this).index()] = $(this).outerHeight()
 				}
 			} else {
-				featuresSizes[$(this).index()] = $(this).outerHeight()
+				featuresSizes2[$(this).index()] = $(this).outerHeight()
 			}
 		})
 	})
@@ -1665,7 +1848,9 @@ function compareHeight() {
 		productFeatures.each(function () {
 			$(this).find('> *:eq(' + key + ')').innerHeight(data)
 		})
+	})
 
+	$.each(featuresSizes2, (key, data) => {
 		productFeaturesTitle.each(function () {
 			$(this).find('.compare-feature__title:eq(' + key + ')').innerHeight(data)
 		})
