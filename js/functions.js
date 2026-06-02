@@ -437,6 +437,31 @@ $(() => {
 
 		$(this).closest('.filter-use').remove()
 	})
+	
+
+	$('.filter input:not(.filter__search-input)').change(function() {
+		const $input = $(this);
+		let heigh = $input.height()
+		let inputOffsetTop = 0;
+		if ( $input.attr('type') === 'checkbox' || $input.attr('type') === 'radio' ) {
+			inputOffsetTop = $input.closest('label').offset().top;
+
+			heigh = $input.closest('label').height()
+		} else {
+			inputOffsetTop = $input.offset().top;
+		}
+		
+		const containerOffsetTop = $input.closest('.filter').offset().top;
+
+		const relativeOffset = inputOffsetTop - containerOffsetTop;
+
+		if( !$('.filter-filter').hasClass('_show') ){
+			$('.filter-filter').addClass('_show')
+		}
+
+		$('.filter-filter').css('top', relativeOffset + heigh/2)
+	})
+	
 
 	// Аккордион
 	$('body').on('click', '.accordion__open', function(e) {

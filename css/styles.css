@@ -12106,6 +12106,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .aside-filter 
 {
     width: 299px;
+	position: relative;
 }
 
 .content__center
@@ -13114,7 +13115,77 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     }
 }
 
+/*------------
+    filter-filter
+------------*/
 
+.filter-filter
+{
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 100%;
+
+    visibility: hidden;
+
+    margin-top: -45px;
+    padding: 13px 15px;
+	width: 195px;
+
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 10px;
+    background: #fff;
+
+    transition: .2s linear;
+	box-shadow: 0 4px 7px 0 rgba(155, 155, 155, 0.25);
+}
+
+.filter-filter._show
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+.filter-filter::before
+{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -11px;
+
+    margin-top: -8px;
+
+    border-top: 8px solid transparent;
+    border-right: 11px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-radius: 16px 0 0 16px;
+
+    transition: border .2s linear;
+}
+
+.filter-filter__val
+{
+	text-align: center;
+	font-size: 12px;
+}
+
+.filter-filter__btn
+{
+	margin-top: 9px;
+	line-height: 36px;
+	width: 100%;
+}
+
+@media (any-hover: hover)
+{
+    
+}
 /*------------
 @media (any-hover: hover)
 {
