@@ -943,6 +943,18 @@
 	.delivery-info__box-title{
 		font-size: 16px;
 	}
+
+	.empty-page__img img{
+		max-width: 164px;
+	}
+
+	.empty-page__btn{
+		margin-top: 20px;
+	}
+
+	.products__grid._big{
+		margin-top: 0;
+	}
 	/* commit */
 
 	body
