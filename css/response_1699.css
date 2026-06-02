@@ -1059,6 +1059,12 @@
 	}
 
 
+	.products__list-data
+	{
+		padding-right: 30px;
+	}
+
+
 	.footer
 	{
 		padding-top: 44px;

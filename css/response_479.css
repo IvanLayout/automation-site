@@ -935,6 +935,59 @@
 	}
 
 
+	.products__list .product__wrap
+	{
+		padding-top: 50px;
+	}
+
+	.products__list .product__img
+	{
+		width: 62.5%;
+	}
+
+	.products__list .product__logo, 
+	.products__list .product__logo a 
+	{
+		height: 14px;
+	}
+
+	.products__list .product__name
+	{
+		margin-top: 12px;
+	}
+
+	.products__list-features
+	{
+		display: none;
+	}
+
+	.products__list .product__price
+	{
+		font-size: 16px;
+	}
+
+	.products__list .product__price-old
+	{
+		font-size: 12px;
+		margin-top: 9px;
+	}
+
+	.products__list .product__bot
+	{
+		padding-top: 20px;
+	}
+
+	.products__list .product__bot .btn-red
+	{
+		line-height: 35px;
+	}
+
+	.products__list-buy
+	{
+		margin-top: 20px;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;

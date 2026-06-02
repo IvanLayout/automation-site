@@ -10373,6 +10373,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	margin: 20px 0 0 20px;
 }
 
+.products__list .product + .product
+{
+	margin-top: 20px;
+}
+
 .products__grid .product-big
 {
 	width: calc(100% - 20px);
@@ -10630,6 +10635,12 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .products__list .product__desc-items
 {
 	text-align: center;
+	margin-top: 25px;
+}
+
+.products__list-data .product__desc-items
+{
+	display: none;
 }
 
 .product__desc-item
@@ -11160,6 +11171,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	top: 2px;
 }
 
+.products__list .product__copy span
+{
+	display: none;
+}
+
 .products__list-features
 {
 	margin-top: 18px;
@@ -11201,13 +11217,13 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	margin-top: 14px;
 }
 
-.product__favorite::before
+.products__list .product__favorite::before
 {
 	width: 24px;
 	height: 22px;
 }
 
-.product__favorite svg
+.products__list .product__favorite svg
 {
 	width: 24px;
 	height: 22px;

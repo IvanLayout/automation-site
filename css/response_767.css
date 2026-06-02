@@ -1912,6 +1912,150 @@
 	}
 
 
+	.products__list .product__wrap
+	{
+		padding: 26px 20px 30px;
+	}
+
+	.products__list .stikers
+	{
+		position: relative;
+		top: 0;
+		left: 0;
+
+		order: 2;
+	}
+
+	.stikers__flex
+	{
+		display: flex;
+	}
+
+	.products__list .product__btns
+	{
+		position: relative;
+		top: 0;
+		right: 0;
+		margin-left: 0;
+
+		order: 3;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		width: 36px;
+		gap: 10px;
+	}
+
+	.products__list .product__favorite
+	{
+		margin-top: 0;
+	}
+
+	.products__list .product__compare
+	{
+		border-color: #082638;
+		order: 2;
+	}
+
+	.products__list .product__compare svg,
+	.products__list .product__favorite svg
+	{
+		fill: #082638;
+	}
+
+	.products__list .product__copy
+	{
+		width: 100%;
+		margin-top: 10px;
+		color: #737D87;
+	}
+
+	.products__list .product__copy span
+	{
+		display: inline-block;
+	}
+
+	.products__list .product__desc-items
+	{
+		display: none;
+	}
+
+	.products__list-data .product__desc-items
+	{
+		display: block;
+		text-align: left;
+		margin-top: 5px;
+	}
+
+	.products__list .product__desc-item + .product__desc-item
+	{
+		margin-top: 5px;
+	}
+
+	.products__list-features 
+	{
+		margin-top: 5px;
+	}
+
+	.products__list-wrap
+	{
+		width: 100%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.products__list .product__thumb
+	{
+		order: 1;
+		margin-bottom: 24px;
+	}
+
+	.products__list .product__img
+	{
+		width: 45%;
+		aspect-ratio: 1;
+	}
+
+	.products__list-data
+	{
+		margin-left: 0;
+		width: 100%;
+		margin-top: 15px;
+		flex-wrap: wrap;
+	}
+
+	.products__list-info
+	{
+		width: 100%;
+	}
+
+	.products__list-buy
+	{
+		width: 100%;
+		margin-top: 15px;
+		margin-left: 0;
+		padding-top: 0;
+	}
+
+	.products__list .product__price-old
+	{
+		width: auto;
+		margin-top: 15px;
+	}
+
+	.products__list .product__box
+	{
+		margin-top: 10px;
+	}
+	
+
 
 	.footer
 	{

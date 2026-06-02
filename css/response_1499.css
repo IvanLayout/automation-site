@@ -1998,6 +1998,118 @@
 	}
 
 
+	.products__list .product__wrap
+	{
+		padding-left: 40px;
+	}
+
+	.products__list .stikers
+	{
+		left: 40px;
+	}
+
+	.products__list .product__desc-item
+	{
+		font-size: 12px;
+	}
+
+	.products__list-wrap 
+	{
+		width: 176px;
+	}
+
+	.products__list .product__thumb
+	{
+		padding-top: 0;
+		padding-bottom: 77px;
+	}
+
+	.products__list .product__img 
+	{
+		width: 82.4%;
+	}
+
+	.products__list .product__desc-items
+	{
+		margin-top: 13px;
+	}
+
+	.products__list .product__btns
+	{
+		right: 37px;
+	}
+
+	.products__list-data
+	{
+		margin-left: 48px;
+		width: calc(100% - 226px);
+	}
+
+	.products__list .product__name 
+	{
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.products__list .product__box 
+	{
+		margin-top: 9px;
+	}
+
+	.products__list .product__review-val
+	{
+		padding-left: 17px;
+	}
+
+	.products__list .product__review-val::before
+	{
+		width: 11px;
+		height: 11px;
+	}
+
+	.products__list .product__review-link
+	{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+
+	.products__list .product__copy 
+	{
+		margin-left: 30px;
+	}
+
+	.products__list .product__copy-btn 
+	{
+		font-size: 12px;
+	}
+
+	.products__list-features
+	{
+		margin-top: 22px;
+		font-size: 12px;
+	}
+
+	.products__list-features div + div 
+	{
+		margin-top: 10px;
+	}
+
+	.products__list .product__price
+	{
+		font-size: 20px;
+	}
+
+	.products__list .product__price-old
+	{
+		font-size: 16px;
+	}
+
+	.products__list .product__bot 
+	{
+		padding-top: 15px;
+	}
+
+
 	.footer
 	{
 		padding-top: 40px;

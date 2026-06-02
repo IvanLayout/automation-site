@@ -150,6 +150,38 @@
 	}
 
 
+	.products__list .product__wrap
+	{
+		padding-left: 30px;
+	}
+
+	.products__list .stikers 
+	{
+		left: 30px;
+	}
+
+	.products__list .product__btns 
+	{
+		right: 30px;
+	}
+
+	.products__list-info 
+	{
+		width: calc(100% - 260px);
+	}
+
+	.products__list-buy
+	{
+		width: 230px;
+	}
+
+	.products__list .product__price-old
+	{
+		width: 100%;
+		margin-top: 5px;
+	}
+
+
 	.footer__colr 
 	{
 		width: calc(100% - 290px);

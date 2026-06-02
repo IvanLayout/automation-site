@@ -364,6 +364,64 @@
 	}
 
 
+	.products__list .product__wrap
+	{
+		padding-right: 60px;
+	}
+
+	.products__list-data
+	{
+		padding-right: 0;
+		margin-left: 30px;
+		width: calc(100% - 206px);
+	}
+
+	.products__list .product__btns 
+	{
+		right: 20px;
+	}
+
+	.products__list-buy 
+	{
+		width: 200px;
+	}
+
+	.products__list-info 
+	{
+		width: calc(100% - 230px);
+	}
+
+	.products__list .product__btns
+	{
+		width: 20px;
+	}
+
+	.products__list .product__compare
+	{
+		width: 20px;
+		height: 20px;
+	}
+
+	.products__list .product__compare svg
+	{
+		width: 9px;
+		height: 9px;
+	}
+
+	.products__list .product__favorite,
+	.products__list .product__favorite svg
+	{
+		width: 20px;
+		height: 18px;
+	}
+
+	.products__list .product__favorite::before 
+	{
+		width: 20px;
+		height: 18px;
+	}
+
+
 	.footer-menu__flex
 	{
 		margin-left: -30px;
