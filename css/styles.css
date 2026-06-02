@@ -10444,6 +10444,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	align-items: flex-start;
 	align-content: flex-start;
 	flex-wrap: wrap;
+	pointer-events: all;
 
 	padding: 30px 80px 30px 30px;
 }
@@ -11223,6 +11224,33 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	height: 11px;
 
 	fill: #737D87;
+}
+
+@media (any-hover: hover)
+{
+    .product__compare:hover,
+	.products__list .product__compare:hover
+	{
+		background: #D64923;
+		border-color: #D64923;
+	}
+
+	.product__compare:hover svg,
+	.products__list .product__compare:hover svg
+	{
+		fill: #fff;
+	}
+}
+
+.products__list .product__compare._active
+{
+	background: #D64923;
+	border-color: #D64923;
+}
+
+.products__list .product__compare._active svg
+{
+	fill: #fff;
 }
 
 .products__list .product__favorite
