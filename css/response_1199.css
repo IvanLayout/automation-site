@@ -329,7 +329,7 @@
 		width: calc(100% / 4 - 20px);
 	}
 
-	.contacts-gallery__img-border span
+	.contacts-gallery__count span
 	{
 		font-size: 12px;
 	}

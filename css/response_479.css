@@ -754,7 +754,8 @@
 		margin-left: -10px;
 	}
 
-	.contacts-gallery__img 
+	.contacts-gallery__img,
+	.contacts-gallery__count
 	{
 		width: calc(100% / 2 - 10px);
 		margin-top: 10px;

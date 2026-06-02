@@ -1036,6 +1036,11 @@
 	.cart-small__item + .cart-small__item{
 		margin-top: 15px;
 	}
+
+	.about-brand__logo{
+		width: 127px;
+		height: 34px;
+	}
 	/* commit */
 
 	body

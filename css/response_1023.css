@@ -1786,6 +1786,30 @@
 	.cart-small__price{
 		font-size: 16px;
 	}
+
+
+	.text-spoller{
+		margin-top: 16px;
+	}
+
+	.text-spoller__more{
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	.about-brand__top{
+		gap: 16px;
+	}
+
+
+	.stocks__slider .slider-button-prev,
+	.stocks__slider .slider-button-next{
+		display: none;
+	}
+
+	.stocks__slider .slider-pagination{
+		display: flex;
+	}
 	/* commit */
 
 	body
@@ -3088,7 +3112,8 @@
 		margin-left: -15px;
 	}
 
-	.contacts-gallery__img
+	.contacts-gallery__img,
+	.contacts-gallery__count
 	{
 		width: calc(100% / 4 - 15px);
 		margin-top: 15px;

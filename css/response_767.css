@@ -886,6 +886,19 @@
 	.cart-small__prices{
 		min-width: 1px;
 	}
+
+	.text-spoller__wrap{
+		max-height: 98px;
+	}
+
+	.about-brand__logo{
+		width: 98px;
+		height: 26px;
+	}
+
+	.contacts-gallery__img:nth-child(n + 6){
+		display: none;
+	}
 	/* commit */
 
 	.advantages-main__item
@@ -1769,7 +1782,8 @@
 		font-size: 14px;
 	}
 
-	.contacts-gallery__img
+	.contacts-gallery__img,
+	.contacts-gallery__count
 	{
 		width: calc(100% / 2 - 15px);
 	}
