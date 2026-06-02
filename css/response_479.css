@@ -1015,6 +1015,19 @@
 	}
 
 
+	.filter-use__link
+	{
+		padding-left: 6px;
+		padding-right: 6px;
+		line-height: 24px;
+	}
+
+	.filter-use__clear
+	{
+		line-height: 26px;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;

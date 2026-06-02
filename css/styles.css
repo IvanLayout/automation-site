@@ -12732,6 +12732,8 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	flex-wrap: nowrap;
 	padding-bottom: 17px;
 	border-bottom: 1px solid rgba(27, 39, 69, .2);
+
+	width: 100%;
 }
 
 .sorting__views
@@ -13011,6 +13013,107 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
 }
+
+
+/*------------
+    filter-use
+------------*/
+
+.filter-use
+{
+	width: 100%;
+}
+
+.filter-use + .sorting
+{
+	margin-top: 30px;
+}
+
+.filter-use__title
+{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.filter-use__flex
+{
+    margin: -15px 0 0 -20px;
+}
+
+.filter-use__item
+{
+    margin: 15px 0 0 20px;
+}
+
+.filter-use__clear
+{
+    color: #737D87;
+    font-size: 14px;
+    line-height: 32px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .filter-use__clear:hover
+    {
+        color: #D64923;
+    }
+}
+
+.filter-use__link
+{
+    color: #D64923;
+    line-height: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    padding: 0 10px;
+
+    text-align: left;
+    white-space: nowrap;
+    text-decoration: none;
+
+    border-radius: 3px;
+    background: transparent;
+	border: 1px solid #D64923;
+
+    transition: background .2s linear, color .2s linear;
+}
+
+.filter-use__link svg
+{
+    flex-shrink: 0;
+	display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+
+    stroke: currentColor;
+	transition: stroke .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .filter-use__link:hover
+    {
+        background: #D64923;
+		color: #fff;
+    }
+}
+
 
 /*------------
 @media (any-hover: hover)

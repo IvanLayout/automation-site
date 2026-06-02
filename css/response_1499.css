@@ -2110,6 +2110,25 @@
 	}
 
 
+	.filter-use__title
+	{
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+
+	.filter-use__flex
+	{
+		margin-left: -16px;
+		margin-top: -10px;
+	}
+
+	.filter-use__item
+	{
+		margin-left: 16px;
+		margin-top: 10px;
+	}
+
+
 	.footer
 	{
 		padding-top: 40px;

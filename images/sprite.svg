@@ -12,6 +12,11 @@
 		<path d="M10.5 0.5L0.5 10.5" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M0.5 0.5L10.5 10.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="close2" viewBox="0 0 12 12">
+		<path d="M9 3L3 9" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M3 3L9 9" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 	
 	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow_back" viewBox="0 0 10 15">
 		<path d="M9.45056 15L10 14L1.08056 8.33335V6.66666L10 1L9.45056 0L2.38419e-07 5.99999V9.00001L9.45056 15Z"/>

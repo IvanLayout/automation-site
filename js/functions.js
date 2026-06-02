@@ -424,6 +424,20 @@ $(() => {
 		}
 	})
 
+	// Ваш выбор
+
+	$('body').on('click', '.filter-use__link', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use__item').remove()
+	})
+
+	$('body').on('click', '.filter-use__clear', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use').remove()
+	})
+
 	// Аккордион
 	$('body').on('click', '.accordion__open', function(e) {
 		e.preventDefault()

@@ -2056,6 +2056,27 @@
 	}
 	
 
+	.content__center-top
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+
+	.filter-use
+	{
+		order: 2;
+		margin-top: 20px;
+	}
+
+	.filter-use + .sorting
+	{
+		margin-top: 0;
+	}
+
 
 	.footer
 	{
