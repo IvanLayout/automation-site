@@ -1810,6 +1810,80 @@
 	.stocks__slider .slider-pagination{
 		display: flex;
 	}
+
+	.aside-list{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.aside-list__title{
+		display: none;
+	}
+
+	.aside-list__items{
+		margin: 0 -40px;
+		width: calc(100% + 80px);
+		padding: 0 40px;
+		overflow: hidden;
+		overflow-x: auto;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		gap: 16px;
+		border: none;
+	}
+
+	.aside-list__items::-webkit-scrollbar{
+		display: none;
+	}
+
+	.aside-list__item{
+		white-space: nowrap;
+	}
+
+	.aside-list__item + .aside-list__item{
+		margin-top: 0;
+	}
+
+	.about-brand__items{
+		margin-top: 20px;
+	}
+
+	.about-brand__item{
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
+
+	.about-brand__icon{
+		height: 43px;
+	}
+
+	.about-brand__text{
+		margin-top: 15px;
+		font-size: 14px;
+	}
+
+	.gallery__grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.gallery__item:first-child {
+		grid-column: span 2;
+	}
+
+	.gallery__img{
+		aspect-ratio: 1/.67;
+	}
+
+	.gallery__count-box{
+		aspect-ratio: 1/.67;
+	}
+
+	.gallery__item:first-child .gallery__img {
+		aspect-ratio: 1;
+	}
 	/* commit */
 
 	body

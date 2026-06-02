@@ -422,6 +422,10 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+
+	.gallery__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	/* commit */
 
 	._marg 

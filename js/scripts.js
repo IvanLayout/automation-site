@@ -884,16 +884,18 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
-					setHeight( $(swiper.el).find('.product') )
-					setHeight( $(swiper.el).find('.product__name') )
-					setHeight( $(swiper.el).find('.product__box') )
-					setHeight( $(swiper.el).find('.product__desc-items') )
-					setHeight( $(swiper.el).find('.product__prices') )
-
 					$(swiper.el).find('.product').removeClass('_loaded')
 					setTimeout(() => {
-						$(swiper.el).find('.product').addClass('_loaded')
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__desc-items') )
+						setHeight( $(swiper.el).find('.product__prices') )
 					}, 100)
+
+					setTimeout(() => {
+						$(swiper.el).find('.product').addClass('_loaded')
+					}, 150)
 				},
 				resize: function (swiper) {
 					$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
@@ -1037,29 +1039,30 @@ $(() => {
 					if ($(swiper.el).length) {
 						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
-						setHeight( $(swiper.el).find('.product') )
-						setHeight( $(swiper.el).find('.product__name') )
-						setHeight( $(swiper.el).find('.product__box') )
-						setHeight( $(swiper.el).find('.product__desc-items') )
-						setHeight( $(swiper.el).find('.product__prices') )
-
 						$(swiper.el).find('.product').removeClass('_loaded')
 						setTimeout(() => {
+							setHeight( $(swiper.el).find('.product') )
+							setHeight( $(swiper.el).find('.product__name') )
+							setHeight( $(swiper.el).find('.product__box') )
+							setHeight( $(swiper.el).find('.product__desc-items') )
+							setHeight( $(swiper.el).find('.product__prices') )
 							$(swiper.el).find('.product').addClass('_loaded')
 						}, 100)
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 150)
 					}
 				},
 				resize: function (swiper) {
 					if ($(swiper.el).length) {
 						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
+						$(swiper.el).find('.product').removeClass('_loaded')
 						setHeight( $(swiper.el).find('.product') )
 						setHeight( $(swiper.el).find('.product__name') )
 						setHeight( $(swiper.el).find('.product__box') )
 						setHeight( $(swiper.el).find('.product__desc-items') )
 						setHeight( $(swiper.el).find('.product__prices') )
-
-						$(swiper.el).find('.product').removeClass('_loaded')
 						setTimeout(() => {
 							$(swiper.el).find('.product').addClass('_loaded')
 						}, 100)
@@ -1095,16 +1098,18 @@ $(() => {
 					if ($(swiper.el).length) {
 						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
-						setHeight( $(swiper.el).find('.product') )
-						setHeight( $(swiper.el).find('.product__name') )
-						setHeight( $(swiper.el).find('.product__box') )
-						setHeight( $(swiper.el).find('.product__desc-items') )
-						setHeight( $(swiper.el).find('.product__prices') )
-
 						$(swiper.el).find('.product').removeClass('_loaded')
 						setTimeout(() => {
+							setHeight( $(swiper.el).find('.product') )
+							setHeight( $(swiper.el).find('.product__name') )
+							setHeight( $(swiper.el).find('.product__box') )
+							setHeight( $(swiper.el).find('.product__desc-items') )
+							setHeight( $(swiper.el).find('.product__prices') )
 							$(swiper.el).find('.product').addClass('_loaded')
 						}, 100)
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 150)
 
 						let lengthSlide = $(swiper.el).find('.swiper-slide.product').length
 
@@ -1117,13 +1122,12 @@ $(() => {
 					if ($(swiper.el).length) {
 						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
+						$(swiper.el).find('.product').removeClass('_loaded')
 						setHeight( $(swiper.el).find('.product') )
 						setHeight( $(swiper.el).find('.product__name') )
 						setHeight( $(swiper.el).find('.product__box') )
 						setHeight( $(swiper.el).find('.product__desc-items') )
 						setHeight( $(swiper.el).find('.product__prices') )
-
-						$(swiper.el).find('.product').removeClass('_loaded')
 						setTimeout(() => {
 							$(swiper.el).find('.product').addClass('_loaded')
 						}, 100)
@@ -1161,16 +1165,18 @@ $(() => {
 					if ($(swiper.el).length) {
 						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
-						setHeight( $(swiper.el).find('.product') )
-						setHeight( $(swiper.el).find('.product__name') )
-						setHeight( $(swiper.el).find('.product__box') )
-						setHeight( $(swiper.el).find('.product__desc-items') )
-						setHeight( $(swiper.el).find('.product__prices') )
-
 						$(swiper.el).find('.product').removeClass('_loaded')
 						setTimeout(() => {
+							setHeight( $(swiper.el).find('.product') )
+							setHeight( $(swiper.el).find('.product__name') )
+							setHeight( $(swiper.el).find('.product__box') )
+							setHeight( $(swiper.el).find('.product__desc-items') )
+							setHeight( $(swiper.el).find('.product__prices') )
 							$(swiper.el).find('.product').addClass('_loaded')
 						}, 100)
+						setTimeout(() => {
+							$(swiper.el).find('.product').addClass('_loaded')
+						}, 150)
 
 						let lengthSlide = $(swiper.el).find('.swiper-slide.product').length
 
@@ -1183,13 +1189,12 @@ $(() => {
 					if ($(swiper.el).length) {
 						$(swiper.el).find('.product, .product__name, .product__box, .product__desc-items, .product__prices').height('auto')
 
+						$(swiper.el).find('.product').removeClass('_loaded')
 						setHeight( $(swiper.el).find('.product') )
 						setHeight( $(swiper.el).find('.product__name') )
 						setHeight( $(swiper.el).find('.product__box') )
 						setHeight( $(swiper.el).find('.product__desc-items') )
 						setHeight( $(swiper.el).find('.product__prices') )
-
-						$(swiper.el).find('.product').removeClass('_loaded')
 						setTimeout(() => {
 							$(swiper.el).find('.product').addClass('_loaded')
 						}, 100)

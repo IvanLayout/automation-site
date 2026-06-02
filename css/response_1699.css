@@ -343,6 +343,38 @@
 	.stocks__slider{
 		margin-top: 20px;
 	}
+
+	.content__flex_marg{
+		margin-top: 24px;
+	}
+
+	.aside-list__item{
+		font-size: 12px;
+	}
+
+
+	.about-brand__item{
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.about-brand__text{
+		margin-top: 26px;
+	}
+
+	.about-brand__text br{
+		display: inline;
+	}
+
+
+	.gallery__grid {
+		grid-template-columns: repeat(6, 1fr);
+		margin-top: 20px;
+	}
+
+	.gallery__item:first-child {
+		grid-column: span 4;
+	}
 	/* commit */
 
 	.advantages-main__info

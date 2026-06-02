@@ -90,6 +90,15 @@
 		margin-left: 0;
 		left: 20px;
 	}
+
+	.gallery__grid {
+		grid-template-columns: repeat(5, 1fr);
+		gap: 10px;
+	}
+
+	.gallery__item:first-child {
+		grid-column: span 3;
+	}
 	/* commit */
 
 	.slider-button-prev, 

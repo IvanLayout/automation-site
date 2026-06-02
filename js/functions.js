@@ -692,6 +692,18 @@ $(() => {
 	
 		$(this).addClass('_hide')
 	})
+
+	if ($('.gallery__grid').length){
+		updateGalleryCount2();
+	}
+
+	$('body').on('click', '.gallery__count', function(e) {
+		e.preventDefault()
+
+		$(this).closest('.gallery__grid').addClass('_all')
+	
+		$(this).addClass('_hide')
+	})
 })
 
 
@@ -774,6 +786,10 @@ $(window).on('resize', function() {
 
 	if ($('.contacts-gallery__grid').length){
 		updateGalleryCount();
+	}
+
+	if ($('.gallery__grid').length){
+		updateGalleryCount2();
 	}
 })
 
@@ -880,6 +896,23 @@ function updateGalleryCount() {
 			$grid.find('.contacts-gallery__count b').text(hiddenCount);
 		} else {
 			$grid.find('.contacts-gallery__count').addClass('_hide')
+		}
+	});
+}
+
+function updateGalleryCount2() {
+	$('.gallery__grid').each(function () {
+		const $grid = $(this);
+		
+
+		const hiddenCount = $grid
+			.find('.gallery__img:hidden')
+			.length;
+
+		if (hiddenCount > 0) {
+			$grid.find('.gallery__count b').text(hiddenCount);
+		} else {
+			$grid.find('.gallery__count').addClass('_hide')
 		}
 	});
 }
