@@ -3387,14 +3387,9 @@
 		margin-top: 12px;
 	}
 
-	.product__copy-btn
-	{
-		padding-right: 15px;
-	}
-
 	.product__copy-btn svg
 	{
-		top: 2px;
+		top: 1px;
 		width: 10px;
 		height: 10px;
 	}

@@ -987,6 +987,23 @@
 		margin-top: 20px;
 	}
 
+	.products__list .product__pick-up
+	{
+		line-height: 31px;
+	}
+
+	.products__list .product__note-click
+	{
+		width: 35px;
+		height: 35px;
+	}
+
+	.product__note-click svg
+	{
+		width: 16px;
+		height: 21px;
+	}
+
 
 	.footer__logo 
 	{

@@ -182,6 +182,12 @@
 	}
 
 
+	.products__list .product__bot-flex
+	{
+		gap: 10px;
+	}
+
+
 	.footer__colr 
 	{
 		width: calc(100% - 290px);
