@@ -906,15 +906,25 @@
 	}
 
 
+	.product-big
+	{
+		border-radius: 10px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.products__grid .product-big 
 	{
 		width: calc(100% - 40px);
 		margin-left: 20px;
 		margin-bottom: 10px;
 		margin-right: 0;
-		border-radius: 10px;
-		padding-left: 0;
-		padding-right: 0;
+	}
+
+	.products__list .product-big 
+	{
+		width: 100%;
+		margin-left: 0;
 	}
 	
 	.product-big .banner-info__img,

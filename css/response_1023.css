@@ -3438,13 +3438,22 @@
 		height: 35px;
 	}
 
+	.product-big
+	{
+		border-radius: 0;
+	}
 
 	.products__grid .product-big
 	{
 		width: calc(100% + 68px);
 		margin-left: -28px;
 		margin-right: -40px;
-		border-radius: 0;
+	}
+
+	.products__list .product-big
+	{
+		width: calc(100% + 80px);
+		margin-left: -40px;
 	}
 
 	.banner-info__cont

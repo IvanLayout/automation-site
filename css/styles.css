@@ -10373,17 +10373,21 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	margin: 20px 0 0 20px;
 }
 
-.products__list .product + .product
+.products__list > * + *
 {
 	margin-top: 20px;
+}
+
+.product-big
+{
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .products__grid .product-big
 {
 	width: calc(100% - 20px);
 	margin: 20px 0 0 20px;
-	border-radius: 10px;
-	overflow: hidden;
 }
 
 .products__slider
