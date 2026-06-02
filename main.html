@@ -42,6 +42,25 @@
 			<div class="main">
 				<!-- Шапка -->
 				<header class="header">
+					<div class="adres-mini">
+						<button data-adres-close class="mini-modal__close">
+							<svg>
+								<use xlink:href="images/sprite.svg#close"></use>
+							</svg>
+						</button>
+						<div class="adres-mini__title">
+							Ваш город Москва?
+						</div>
+
+						<div class="adres-mini__btns _flex">
+							<button data-adres-close class="btn-blue adres-mini__btn">Да, верно</button>
+
+							<button type="button" class="adres-mini__link modal-btn" data-content="#modal-addres">Нет, другой</button>
+						</div>
+					</div>
+					
+					<div class="adres-over"></div>
+
 					<div class="header__top">
 						<div class="header__top-mob">
 							<div class="cont">
@@ -61,7 +80,7 @@
 
 						<div class="cont _flex">
 							<div class="header__adres">
-								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
+								<button type="button" class="header__adres-btn modal-btn" data-content="#modal-addres">
 									<svg class="header__adres-marker">
 										<use xlink:href="images/sprite.svg#marker"></use>
 									</svg>
@@ -1872,7 +1891,7 @@
 										</span>
 										<span class="header__btn-name">Сравнение</span>
 									</a>
-									<a href="/" class="header__btn">
+									<button type="button" class="header__btn modal-btn" data-content="#modal-cart">
 										<span class="header__btn-number">100</span>
 										<span class="header__btn-icon">
 											<svg width="20" height="20">
@@ -1880,7 +1899,7 @@
 											</svg>
 										</span>
 										<span class="header__btn-name">Корзина</span>
-									</a>
+									</button>
 									<button type="button" data-content="#modal-login" class="header__btn modal-btn">
 										<span class="header__btn-icon">
 											<svg width="20" height="20">
@@ -1971,6 +1990,58 @@
 				</header>
 
 				<div class="overlay"></div>
+
+				<div class="fix-btns">
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#home"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Главная</span>
+					</a>
+					<button type="button" class="fix-btns__btn open-catalog-mob">
+						<span class="fix-btns__btn-icon">
+							<svg class="fix-btns__btn-catalog">
+								<use xlink:href="images/sprite.svg#ic_catalog"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Каталог</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#favorite"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">999</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
+					<button type="button" class="fix-btns__btn open-user-info">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#user"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Профиль</span>
+					</button>
+					<button type="button" class="fix-btns__btn modal-btn" data-content="#modal-cart">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#cart"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">999</span>
+
+						<span class="fix-btns__btn-name">Корзина</span>
+					</button>
+				</div>
 				<!-- End Шапка -->
 
 				<section class="first-section first-section_marg">
@@ -2467,7 +2538,7 @@
 								<div class="banner-info__desc">Подберём и поможем внедрить оборудование и программное обеспечение для систем автоматизации в любой отрасли промышленности.</div>
 
 								<div class="banner-info__btn">
-									<a href="/" class="btn-red">Получить консультацию</a>
+									<button type="button" class="btn-red modal-btn" data-content="#modal-callbacks">Получить консультацию</button>
 								</div>
 							</div>
 						</div>
@@ -4148,6 +4219,350 @@
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<div id="modal-addres" class="modal modal-addres">
+			<div class="modal__box">
+				<div class="modal__title">Выберите ваш город</div>
+
+				<form action="" class="modal-search">
+					<div class="modal-search__field">
+						<input type="text" value="" placeholder="Введите название своего города" id="cities-search" class="modal-search__input">
+						<button type="button" class="modal-search__close">
+							<svg>
+								<use xlink:href="images/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+
+				<div class="modal-addres__detect">
+					<a href="/" class="modal-addres__detect-link">Определить автоматически</a>
+				</div>
+
+				<div class="modal-cities">
+					<div class="modal-cities__item">
+						<a class="modal-cities__link active">Москва</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Санкт-Петербург</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Новосибирск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Екатеринбург</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Нижний Новгород</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Казань</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Челябинск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Омск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Москва</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Санкт-Петербург</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Новосибирск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Екатеринбург</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Нижний Новгород</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Казань</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Челябинск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Омск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Самара</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Ростов‑на-Дону</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Уфа</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Красноярск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Пермь</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Воронеж</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Волгоград</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Краснодар</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Самара</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Ростов‑на-Дону</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Уфа</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Красноярск</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Пермь</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Воронеж</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Волгоград</a>
+					</div>
+					<div class="modal-cities__item">
+						<a href="/" class="modal-cities__link">Краснодар</a>
+					</div>
+				</div>
+
+				<div class="modal__btn">
+					<a href="/" class="btn-red btn-red_big">Выбрать</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-cart" class="modal modal-cart">
+			<div class="modal__box">
+				<div class="modal__title">Корзина <span>3 шт</span></div>
+
+				<div class="cart-small">
+					<div class="cart-small__item _flex">
+						<div class="cart-small__thumb">
+							<a href="/" class="cart-small__img">
+								<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+						</div>
+						<div class="cart-small__info">
+							<button type="button" class="cart-small__delete">
+								<svg>
+									<use xlink:href="images/sprite.svg#delete2"></use>
+								</svg>
+							</button>
+
+							<div class="cart-small__top _flex">
+								<a href="/" class="cart-small__brand">
+									<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+
+								<div class="cart-small__stickers">
+									<div class="cart-small__sticker cart-small__sticker_blue">
+										<span>- 23%</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="cart-small__name">
+								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
+							</div>
+
+							<div class="cart-small__code">Артикул: IL–LAA-N0300/200/250/250–010–50/25-FB-G1/2</div>
+
+							<div class="cart-small__bot _flex">
+								<div class="cart-small__prices">
+									<div class="cart-small__oldprice">1 396 ₽ /шт</div>
+									<div class="cart-small__price">1 396 ₽ /шт</div>
+								</div>
+
+								<div class="amount cart-small__amount">
+									<div class="amount__val _flex">
+										<button type="button" class="amount__btn amount__btn_minus">
+											<svg>
+												<use xlink:href="images/sprite.svg#minus"></use>
+											</svg>
+										</button>
+
+										<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+
+										<button type="button" class="amount__btn amount__btn_plus">
+											<svg>
+												<use xlink:href="images/sprite.svg#plus"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart-small__item _flex">
+						<div class="cart-small__thumb">
+							<a href="/" class="cart-small__img">
+								<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+						</div>
+						<div class="cart-small__info">
+							<button type="button" class="cart-small__delete">
+								<svg>
+									<use xlink:href="images/sprite.svg#delete2"></use>
+								</svg>
+							</button>
+
+							<div class="cart-small__top _flex">
+								<a href="/" class="cart-small__brand">
+									<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+
+								<div class="cart-small__stickers">
+									<div class="cart-small__sticker cart-small__sticker_blue">
+										<span>- 23%</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="cart-small__name">
+								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
+							</div>
+
+							<div class="cart-small__code">Артикул: IL–LAA-N0300/200/250/250–010–50/25-FB-G1/2</div>
+
+							<div class="cart-small__bot _flex">
+								<div class="cart-small__prices">
+									<div class="cart-small__oldprice">1 396 ₽ /шт</div>
+									<div class="cart-small__price">1 396 ₽ /шт</div>
+								</div>
+
+								<div class="amount cart-small__amount">
+									<div class="amount__val _flex">
+										<button type="button" class="amount__btn amount__btn_minus">
+											<svg>
+												<use xlink:href="images/sprite.svg#minus"></use>
+											</svg>
+										</button>
+
+										<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+
+										<button type="button" class="amount__btn amount__btn_plus">
+											<svg>
+												<use xlink:href="images/sprite.svg#plus"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart-small__item _flex">
+						<div class="cart-small__thumb">
+							<a href="/" class="cart-small__img">
+								<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+						</div>
+						<div class="cart-small__info">
+							<button type="button" class="cart-small__delete">
+								<svg>
+									<use xlink:href="images/sprite.svg#delete2"></use>
+								</svg>
+							</button>
+
+							<div class="cart-small__top _flex">
+								<a href="/" class="cart-small__brand">
+									<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+
+								<div class="cart-small__stickers">
+									<div class="cart-small__sticker cart-small__sticker_blue">
+										<span>- 23%</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="cart-small__name">
+								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
+							</div>
+
+							<div class="cart-small__code">Артикул: IL–LAA-N0300/200/250/250–010–50/25-FB-G1/2</div>
+
+							<div class="cart-small__bot _flex">
+								<div class="cart-small__prices">
+									<div class="cart-small__oldprice">1 396 ₽ /шт</div>
+									<div class="cart-small__price">1 396 ₽ /шт</div>
+								</div>
+
+								<div class="amount cart-small__amount">
+									<div class="amount__val _flex">
+										<button type="button" class="amount__btn amount__btn_minus">
+											<svg>
+												<use xlink:href="images/sprite.svg#minus"></use>
+											</svg>
+										</button>
+
+										<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+
+										<button type="button" class="amount__btn amount__btn_plus">
+											<svg>
+												<use xlink:href="images/sprite.svg#plus"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal-cart__total">Итого: 13 280 ₽</div>
+
+				<div class="modal__btn">
+					<a href="/" class="btn-red btn-red_big">В корзину</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-callbacks" class="modal">
+			<div class="modal__box">
+				<div class="modal__title">Заказать звонок</div>
+
+				<form action="" class="form-gray modal__form-gray">
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="tel" value="" name="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form-gray__input">
+						</div>
+					</div>
+					<div class="checkbox form__agree form__agree_marg">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">
+								Я <a href="/">соглашаюсь</a> на получение рекламных предложений, а также рассылок рекламного характера, в том числе полезных материалов.
+							</span>
+						</label>
+					</div>
+
+					<div class="form__agree">Заполняя поля и нажимая кнопку «Отправить», вы подтверждаете, что ознакомлены и согласны с <a href="/">Политикой в отношении обработки персональных данных.</a></div>
+					
+					<div class="form__submit">
+						<button type="submit" class="form__submit-btn btn-red btn-red_big">Отправить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 
 

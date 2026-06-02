@@ -85,6 +85,11 @@
 	.products__grid._big{
 		--products_count: 4;
 	}
+
+	.adres-mini{
+		margin-left: 0;
+		left: 20px;
+	}
 	/* commit */
 
 	.slider-button-prev, 
@@ -324,7 +329,7 @@
 		width: calc(100% / 4 - 20px);
 	}
 
-	.contacts-gallery__img-border span
+	.contacts-gallery__count span
 	{
 		font-size: 12px;
 	}
