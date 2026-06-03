@@ -1016,13 +1016,17 @@
 		margin-top: 11px;
 	}
 
-	.product__review-val
+	.product__review-number
 	{
 		font-size: 12px;
-		padding-left: 12px;
 	}
 
-	.product__review-link
+	.product__review-star
+	{
+		margin-top: 1px;
+	}
+
+	.product__review-size
 	{
 		margin-left: 6px;
 	}
@@ -1123,6 +1127,16 @@
 	.products__list-data
 	{
 		padding-right: 30px;
+	}
+
+	.products__list .product__review-star 
+	{
+		margin-top: 2px;
+	}
+
+	.products__list .product__review-number
+	{
+		font-size: 14px;
 	}
 
 

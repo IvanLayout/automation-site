@@ -3536,19 +3536,14 @@
 		height: 12px;
 	}
 
-	.product__review-val
-	{
-		padding-left: 15px;
-	}
-
-	.product__review-val::before
+	.product__review-star
 	{
 		width: 10px;
 		height: 10px;
-		top: 1px;
+		margin-top: 1px;
 	}
 
-	.product__review-link 
+	.product__review-size
 	{
 		margin-left: 12px;
 	}
@@ -3908,7 +3903,7 @@
 		margin-left: -13px;
 	}
 
-	.products__list .product__review-flex
+	.products__list .product__review
 	{
 		margin-left: 13px;
 		margin-top: 5px;

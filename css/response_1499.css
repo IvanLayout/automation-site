@@ -1987,12 +1987,16 @@
 		margin-top: 6px;
 	}
 
-	.product__review-val::before
+	.product__review-star
 	{
-		top: 2px;
-
 		width: 8px;
 		height: 8px;
+		margin-top: 2px;
+	}
+
+	.product__review-size
+	{
+		margin-top: 0;
 	}
 
 	.product__desc-items 
@@ -2172,18 +2176,13 @@
 		margin-top: 9px;
 	}
 
-	.products__list .product__review-val
-	{
-		padding-left: 17px;
-	}
-
-	.products__list .product__review-val::before
+	.products__list .product__review-star
 	{
 		width: 11px;
 		height: 11px;
 	}
 
-	.products__list .product__review-link
+	.products__list .product__review-size
 	{
 		font-size: 12px;
 		margin-left: 10px;

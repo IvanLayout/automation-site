@@ -138,6 +138,11 @@
 		margin-top: 5px;
 	}
 
+	.products__list .product__copy
+	{
+		margin-left: 0;
+	}
+
 	.cats-page__item
 	{
 		padding-top: 24px;
