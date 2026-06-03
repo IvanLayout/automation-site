@@ -14639,6 +14639,21 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: calc(100% - 141px);
 }
 
+.product-info__cart-btn span + span
+{
+	display: none;
+}
+
+.product-info__cart-btn._active span + span
+{
+	display: block;
+}
+
+.product-info__cart-btn._active span
+{
+	display: none;
+}
+
 .product-info__amount
 {
 	width: 131px;
