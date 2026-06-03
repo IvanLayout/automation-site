@@ -1591,6 +1591,50 @@ $(() => {
 		})
 	}
 
+	if ($('.product-info').length) {
+		galleryThumbs = new Swiper('.product-thumbs', {
+			spaceBetween: 5,
+			slidesPerView: 'auto',
+			direction: 'horizontal',
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'375': {
+					spaceBetween: 5,
+					slidesPerView: 'auto',
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 5,
+				},
+				'1024': {
+					spaceBetween: 8,
+					slidesPerView: 3,
+				}
+			}
+		})
+
+		new Swiper('.product-images__slider', {
+			spaceBetween: 10,
+			loop: false,
+			speed: 1000,
+			watchOverflow: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			}
+		})
+	}
+
 	// bell
 	$('body').on('click', '.product-bell', function (e) {
 		e.preventDefault()
