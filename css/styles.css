@@ -14487,6 +14487,42 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 		color: #D64923;
 	}
 }
+
+.product-info__links
+{
+	margin: -20px 0 0 -20px;
+}
+
+.product-info__link
+{
+	text-decoration: none;
+	display: block;
+	white-space: nowrap;
+	margin: 20px 0 0 20px;
+	color: #1B2745;
+	border: 1px solid rgba(27, 39, 69, .2);
+	line-height: 41px;
+	padding-left: 9px;
+	padding-right: 9px;
+	transition: color .2s linear, border .2s linear;
+	border-radius: 4px;
+}
+
+@media (any-hover: hover)
+{
+    .product-info__link:hover
+	{
+		border-color: #D64923;
+		color: #D64923;
+	}
+}
+
+.product-info__link.active
+{
+	border-color: #319ACE;
+	color: #319ACE;
+}
+
 /*------------
 @media (any-hover: hover)
 {
