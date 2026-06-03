@@ -949,6 +949,36 @@
 	.gallery__item:nth-child(n + 6) {
 		display: none;
 	}
+
+
+	.section-socials__info{
+		margin-top: 12px;
+	}
+
+	.section-socials__colr{
+		margin-top: 16px;
+	}
+
+	.section-socials__title{
+		font-size: 20px;
+	}
+
+	.section-socials__items{
+		margin-top: 16px;
+		gap: 20px;
+	}
+
+	.section-socials__item-title{
+		line-height: 1.83;
+	}
+
+	.section-socials__flex{
+		margin-top: 7px;
+	}
+
+	.section-socials__item:last-child{
+		padding-left: 0;
+	}
 	/* commit */
 
 	.advantages-main__item

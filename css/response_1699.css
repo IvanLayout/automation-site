@@ -375,6 +375,35 @@
 	.gallery__item:first-child {
 		grid-column: span 4;
 	}
+
+	.section-socials__colr{
+		max-width: 409px;
+	}
+	
+
+	.vacancie__pad{
+		padding: 29px 36px 32px 23px;
+	}
+
+	.vacancie__desc{
+		margin-top: 12px;
+	}
+
+	.vacancie__price{
+		padding-top: 32px;
+	}
+
+	.vacancie__bot{
+		padding: 23px;
+	}
+	
+	.vacancie__link{
+		gap: 16px;
+	}
+	
+	.vacancie__link-icon{
+		width: 23px;
+	}
 	/* commit */
 
 	.advantages-main__info

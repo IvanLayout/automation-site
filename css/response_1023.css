@@ -1884,6 +1884,99 @@
 	.gallery__item:first-child .gallery__img {
 		aspect-ratio: 1;
 	}
+
+	.section-socials__coll{
+		width: 100%;
+	}
+
+	.section-socials__info{
+		max-width: 490px;
+	}
+
+	.section-socials__colr{
+		width: 100%;
+		max-width: none;
+		margin-top: 30px;
+	}
+
+	.section-socials__title{
+		font-size: 14px;
+	}
+
+	.section-socials__items{
+		margin-top: 10px;
+	}
+
+	.section-socials__item-title{
+		font-size: 12px;
+	}
+
+	.section-socials__item:last-child{
+		padding-left: 25px;
+	}
+
+
+	.tabs-inner__slider .swiper-slide + .swiper-slide .tabs-inner__btn::after{
+		left: -20px;
+		width: calc(100% + 20px);
+	}
+
+	.tabs-inner__btn{
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+
+	.team__item-name{
+		font-size: 14px;
+	}
+
+	.team__item-position{
+		margin-top: 5px;
+		font-size: 12px;
+	}
+
+	.tabs-container_marg2{
+		margin-top: 20px;
+	}
+
+	.slider-button-prev._hide,
+	.slider-button-next._hide{
+		display: none;
+	}
+
+	.slider-pagination._hide{
+		display: flex;
+	}
+
+
+	.vacancie{
+		min-height: 1px;
+	}
+
+	.vacancie__pad{
+		padding: 14px;
+	}
+
+	.vacancie__name{
+		font-size: 14px;
+	}
+
+	.vacancie__price{
+		font-size: 20px;
+		padding-top: 14px;
+	}
+
+	.vacancie__bot{
+		padding: 13px 14px;
+	}
+	
+	.vacancie__link{
+		gap: 10px;
+	}
+
+	.vacancie__link-name span{
+		display: none;
+	}
 	/* commit */
 
 	body

@@ -1083,6 +1083,76 @@
 	.gallery__count{
 		font-size: 12px;
 	}
+
+	.section-socials__colr{
+		max-width: 437px;
+	}
+
+
+	.section-socials__info{
+		margin-top: 20px;
+		max-width: 398px;
+	}
+
+	.section-socials__title{
+		font-size: 16px;
+	}
+
+	.section-socials__items{
+		margin-top: 16px;
+	}
+
+	.section-socials__item-title{
+		line-height: 1.3;
+	}
+
+	.tabs-inner__slider .swiper-slide + .swiper-slide .tabs-inner__btn::after{
+		left: -25px;
+		width: calc(100% + 25px);
+	}
+
+
+	.tabs-inner{
+		margin-bottom: 20px;
+	}
+
+	.team__slider{
+		margin-top: 20px;
+	}
+
+	.team__item-name{
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.team__item-position{
+		margin-top: 10px;
+	}
+
+	.vacancie__pad{
+		padding: 19px;
+	}
+
+	.vacancie__name{
+		font-size: 16px;
+	}
+
+	.vacancie__desc{
+		margin-top: 12px;
+	}
+
+	.vacancie__price{
+		font-size: 24px;
+		padding-top: 20px;
+	}
+
+	.vacancie__bot{
+		padding: 19px;
+	}
+	
+	.vacancie__link{
+		gap: 6px;
+	}
 	/* commit */
 
 	body

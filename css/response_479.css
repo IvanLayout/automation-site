@@ -426,6 +426,39 @@
 	.gallery__grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+
+	.section-socials__flex{
+		gap: 5px;
+	}
+
+	.vacancie__pad{
+		padding: 19px;
+	}
+
+	.vacancie__name{
+		font-size: 14px;
+	}
+
+	.vacancie__desc{
+		margin-top: 10px;
+	}
+
+	.vacancie__bot{
+		padding: 19px;
+	}
+	
+	.vacancie__link{
+		gap: 10px;
+	}
+
+	.vacancie__link-icon{
+		width: 29px;
+	}
+
+	.vacancie__link-name span{
+		display: inline;
+	}
 	/* commit */
 
 	._marg 
