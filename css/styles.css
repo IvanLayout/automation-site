@@ -8764,14 +8764,10 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	-webkit-filter: grayscale(100%) saturate(0);
 }
 
-@media (any-hover: hover)
+.brands__item:hover img
 {
-    .brands__item:hover img
-    {
-        filter: none;
-    }
+	filter: none;
 }
-
 
 /*------------
     cooperation

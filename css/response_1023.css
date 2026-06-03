@@ -2618,6 +2618,10 @@
 		height: 31px;
 	}
 
+	.brands__item img{
+		filter: none;
+	}
+
 
 	.cooperation__bg
 	{
