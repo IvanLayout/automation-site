@@ -979,6 +979,81 @@
 	.section-socials__item:last-child{
 		padding-left: 0;
 	}
+
+
+	.in-numbersq__flex{
+		margin-top: 24px;
+		flex-wrap: wrap;
+	}
+
+	.in-numbersq__coll{
+		border-top: 1px solid #E5E5E5;
+		width: 100%;
+		text-align: center;
+		padding-top: 19px;
+		padding-bottom: 19px;
+	}
+
+	.in-numbersq__number{
+		font-size: 48px;
+	}
+
+	.in-numbersq__desc{
+		margin-top: 17px;
+	}
+
+	.in-numbersq__colr{
+		width: 100%;
+		position: relative;
+	}
+
+	.in-numbersq__items{
+		width: 100%;
+		padding: 19px 0;
+		border: none;
+		border-top: 1px solid #E5E5E5;
+	}
+
+	.in-numbersq__items::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 1px;
+		height: 100%;
+		background: #E5E5E5;
+		margin-left: -.5px;
+	}
+
+	.in-numbersq__items:first-child{
+		width: 100%;
+	}
+
+	.in-numbersq__items:last-child{
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.in-numbersq__items-wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.in-numbersq__item{
+		width: calc(50% - 20px);
+	}
+
+	.in-numbersq__item + .in-numbersq__item{
+		margin-top: 0;
+		padding-right: 10px;
+	}
+
+	.in-numbersq__item-number{
+		font-size: 32px;
+	}
 	/* commit */
 
 	.advantages-main__item

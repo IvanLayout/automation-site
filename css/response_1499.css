@@ -1153,6 +1153,53 @@
 	.vacancie__link{
 		gap: 6px;
 	}
+
+
+	.in-numbersq__flex{
+		margin-top: 20px;
+	}
+
+	.in-numbersq__coll{
+		min-width: 1px;
+		width: 20.67%;
+	}
+
+	.in-numbersq__number{
+		font-size: 64px;
+	}
+
+	.in-numbersq__colr{
+		width: 79.33%;
+	}
+
+	.in-numbersq__items{
+		padding-bottom: 0;
+	}
+	
+	.in-numbersq__items-wrap{
+		min-width: 1px;
+	}
+
+	.in-numbersq__item + .in-numbersq__item{
+		margin-top: 40px;
+	}
+
+	.in-numbersq__item-number{
+		font-size: 36px;
+	}
+
+	.in-numbersq__items {
+		width: 31.8%;
+	}
+
+	.in-numbersq__items:first-child{
+		width: 39.5%;
+	}
+
+	.in-numbersq__items:last-child {
+		width: 28.7%;
+	}
+}
 	/* commit */
 
 	body

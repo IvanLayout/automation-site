@@ -404,6 +404,27 @@
 	.vacancie__link-icon{
 		width: 23px;
 	}
+
+
+	.in-numbersq__items{
+		width: 34%;
+	}
+
+	.in-numbersq__items:first-child{
+		width: 36%;
+	}
+	
+	.in-numbersq__items:last-child{
+		padding-right: 0;
+		justify-content: flex-end;
+		border-right: none;
+
+		width: 30%;
+	}
+
+	.in-numbersq__items:last-child .in-numbersq__items-wrap{
+		min-width: 1px;
+	}
 	/* commit */
 
 	.advantages-main__info

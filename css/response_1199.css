@@ -99,6 +99,24 @@
 	.gallery__item:first-child {
 		grid-column: span 3;
 	}
+
+
+	.in-numbersq__number {
+		font-size: 58px;
+	}
+
+	.in-numbersq__items{
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+
+	.in-numbersq__items:first-child {
+		width: 37.5%;
+	}
+
+	.in-numbersq__items:last-child {
+		width: 30.7%;
+	}
 	/* commit */
 
 	.slider-button-prev, 

@@ -7566,6 +7566,75 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	object-fit: cover;
 	border-radius: 50%;
 }
+
+.in-numbersq__flex{
+	margin-top: 52px;
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: nowrap;
+}
+
+.in-numbersq__coll{
+	width: 20.7%;
+	padding-right: 20px;
+	align-self: center;
+	min-width: 320px;
+	flex-shrink: 0;
+}
+
+.in-numbersq__number{
+	font-weight: 500;
+	font-size: 96px;
+	line-height: .71;
+	letter-spacing: -0.01em;
+	color: #D64923;
+}
+
+.in-numbersq__desc{
+	color: rgba(27, 39, 69, 0.8);
+	margin-top: 28px;
+}
+
+.in-numbersq__colr{
+	width: 79.3%;
+	align-items: stretch;
+	align-content: stretch;
+	padding-left: 1px;
+}
+
+.in-numbersq__items{
+	width: calc(100%/3 + 1px);
+	margin-left: -1px;
+	border-left: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.in-numbersq__items-wrap{
+	min-width: 300px;
+}
+
+.in-numbersq__item + .in-numbersq__item{
+	margin-top: 41px;
+}
+
+.in-numbersq__item-number{
+	font-weight: 500;
+	font-size: 48px;
+	letter-spacing: -0.01em;
+}
+
+.in-numbersq__item-desc{
+	color: rgba(27, 39, 69, 0.8);
+	margin-top: 10px;
+}
 /*------------
     commit
 ------------*/
