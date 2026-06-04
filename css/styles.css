@@ -14426,15 +14426,16 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     position: relative;
     color: rgba(27, 39, 69, .8);
     flex-shrink: 0;
-    width: 464px;
+    width: 456px;
     margin-right: 10px;
     padding-right: 20px;
 }
 
-/* .product-info__feature .features__feature-name 
+.product-info__feature .features__feature-name 
 {
     width: 464px;
-} */
+}
+
 .features__feature-name::before 
 {
     content: "";
@@ -15014,6 +15015,159 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	{
 		fill: #D64923;
 	}
+}
+
+
+.tabs-accord__open
+{
+	display: none;
+}
+
+.tabs-info
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+	gap: 20px;
+	position: relative;
+}
+
+.tabs-info::after
+{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 1px;
+
+	background: rgba(27, 39, 69, .2);
+}
+
+.tabs__btn 
+{
+    position: relative;
+    color: rgba(27, 39, 69, .5);
+    font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 0.01em;
+    padding-bottom: 17px;
+    border-bottom: 2px solid transparent;
+    transition: color .2s linear, border .2s linear;
+	text-transform: uppercase;
+}
+
+@media (any-hover: hover)
+{
+    .tabs__btn:hover
+	{
+		color: #D64923;
+	}
+}
+
+.tabs__btn._active
+{
+	border-color: #1B2745;
+	color: #1B2745;
+}
+
+.informations__data
+{
+	padding-top: 30px;
+}
+
+.informations__cols
+{
+	justify-content: space-between;
+}
+
+.informations__coll
+{
+	width: calc(50% - 15px);
+}
+
+.informations__colr
+{
+	width: calc(50% - 15px);
+	max-width: 665px;
+    padding-top: 33px;
+}
+
+.informations__title
+{
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	letter-spacing: 0.01em;
+}
+
+.informations__item + .informations__item
+{
+	margin-top: 40px;
+}
+
+
+.informations__download-item + .informations__download-item
+{
+	margin-top: 35px;
+}
+
+.informations__download-link
+{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	padding-left: 27px;
+	line-height: 1.25;
+	font-size: 14px;
+}
+
+.informations__download-link::before
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 17px;
+	height: 17px;
+
+	background: url(../images/download2.svg) 50% no-repeat;
+}
+
+.informations__download-name
+{
+	color: #1B2745;
+	border-bottom: 1px solid #1B2745;
+	text-transform: uppercase;
+	transition: border .2s linear;
+}
+
+.informations__download-size
+{
+	margin-top: 10px;
+	display: block;
+	color: rgba(27, 39, 69, .55);
+}
+
+@media (any-hover: hover)
+{
+    .informations__download-link:hover .informations__download-name
+	{
+		border-color: transparent;
+	}
+}
+
+.informations__data .text-block
+{
+	max-width: 1182px;
 }
 /*------------
 @media (any-hover: hover)

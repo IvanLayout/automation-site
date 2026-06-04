@@ -461,6 +461,22 @@ $(() => {
 
 		$('.filter-filter').css('top', relativeOffset + heigh/2)
 	})
+
+
+	// Аккордион простой моб
+	$('body').on('click', '.tabs-accord__open', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.tabs-accord__item')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.tabs-accord__data').slideUp(300)
+		} else {
+			parent.addClass('_active')
+			parent.find('.tabs-accord__data').slideDown(300)
+		}
+	})
 	
 
 	// Аккордион
