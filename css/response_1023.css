@@ -2027,6 +2027,16 @@
 	.in-numbersq__item-desc br{
 		display: none;
 	}
+
+	
+	.about-info{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.about-info__text-block h3{
+		max-width: 520px;
+	}
 	/* commit */
 
 	body

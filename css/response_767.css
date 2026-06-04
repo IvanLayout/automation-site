@@ -1054,6 +1054,12 @@
 	.in-numbersq__item-number{
 		font-size: 32px;
 	}
+
+
+	.about-info{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	/* commit */
 
 	.advantages-main__item

@@ -117,6 +117,23 @@
 	.in-numbersq__items:last-child {
 		width: 30.7%;
 	}
+
+	.about-info__bg{
+		display: none;
+	}
+
+	.about-info__colr{
+		width: 100%;
+		max-width: none;
+	}
+
+	.about-info__text-block{
+		max-width: none;
+	}
+
+	.about-info__text-block h3{
+		max-width: none;
+	}
 	/* commit */
 
 	.slider-button-prev, 

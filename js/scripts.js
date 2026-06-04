@@ -1024,6 +1024,58 @@ $(() => {
 		})
 	}
 
+	if ($('.produce-own__slider').length) {
+		new Swiper(".produce-own__slider", {
+			loop: false,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 0,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 0,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 0,
+					slidesPerView: 3,
+				},
+				'1024': {
+					spaceBetween: 0,
+					slidesPerView: 3,
+				},
+				'1200': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				},
+			}
+		})
+	}
+
 	if ($('.compare-products').length) {
 		productsCompareFix = new Swiper('.compare-fixed__products-slider', {
 			loop: false,

@@ -425,6 +425,24 @@
 	.in-numbersq__items:last-child .in-numbersq__items-wrap{
 		min-width: 1px;
 	}
+
+
+	.about-info__bg{
+		margin-left: -1000px;
+	}
+
+
+	.produce-own__slider{
+		margin-top: 20px;
+	}
+
+	.produce-own__item{
+		padding: 40px;
+	}
+
+	.produce-own__item-box._flex .produce-own__img {
+		width: calc(45.41% - 20px);
+	}
 	/* commit */
 
 	.advantages-main__info
