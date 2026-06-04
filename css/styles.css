@@ -13937,6 +13937,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: 35px;
 	height: 35px;
 	left: 0;
+	margin-top: -17.5px;
 }
 
 .product-thumbs .slider-button-next
@@ -13944,6 +13945,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: 35px;
 	height: 35px;
 	right: 0;
+	margin-top: -17.5px;
 }
 
 .product-thumbs .slider-button-next svg 
@@ -13985,7 +13987,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: 16px;
 	height: 20px;
 
-	background: url(../images/ic_shiled.svg) 50% no-repeat;
+	background: url(../images/ic_shiled.svg) 50%/contain no-repeat;
 }
 
 
@@ -14433,7 +14435,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 
 .product-info__feature .features__feature-name 
 {
-    width: 464px;
+    width: 65.5%;
 }
 
 .features__feature-name::before 
@@ -14801,6 +14803,12 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid rgba(27, 39, 69, .2);
+}
+
+.info-accord__title
+{
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .info-accord__title.accord__open
@@ -15181,14 +15189,14 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	justify-content: space-between;
 	align-items: flex-start;
 	align-content: flex-start;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 
 	margin-top: 11px;
 }
 
 .reviews-inner__coll
 {
-	width: calc(66.6% - 15px);
+	width: calc(100% - 490px);
 	max-width: 932px;
 }
 
@@ -15513,8 +15521,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 
 .reviews-inner__colr
 {
-	width: calc(33.4% - 15px);
-    min-width: 457px;
+	width: 457px;
     padding-top: 31px;
 }
 
@@ -15633,8 +15640,6 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	border-radius: 10px;
 	background: #fff;
 
-	display: flex;
-	flex-direction: column;
 	height: auto;
 	padding: 30px;
 
@@ -15652,7 +15657,6 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 {
 	margin-top: 20px;
 	color: rgba(27, 39, 69, .8);
-	flex: 1 0 auto;
 }
 
 .service-sect__link
