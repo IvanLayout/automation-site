@@ -15607,6 +15607,77 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 {
 	margin-top: 10px;
 }
+
+
+.reviews-inner__more
+{
+	margin-top: 10px;
+}
+
+/*------------
+    service-sect
+------------*/
+
+.service-sect__slider
+{
+	margin-top: 24px;
+}
+
+.service-sect__slider .slider-pagination
+{
+	display: none;
+}
+
+.service-sect__item
+{
+	border-radius: 10px;
+	background: #fff;
+
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	padding: 30px;
+
+	box-shadow: 0 -4px 8px 0 rgba(55, 55, 55, 0.04), 0 -33px 20px 0 rgba(55, 55, 55, 0.01), 0 -93px 26px 0 rgba(55, 55, 55, 0), 0 3px 6px 0 rgba(55, 55, 55, 0.02), 0 11px 11px 0 rgba(55, 55, 55, 0.02), 0 26px 15px 0 rgba(55, 55, 55, 0.01), 0 46px 18px 0 rgba(55, 55, 55, 0), 0 72px 20px 0 rgba(55, 55, 55, 0);
+}
+
+.service-sect__title
+{
+	font-size: 28px;
+	font-weight: 500;
+	color: #319ACE;
+}
+
+.service-sect__desc
+{
+	margin-top: 20px;
+	color: rgba(27, 39, 69, .8);
+	flex: 1 0 auto;
+}
+
+.service-sect__link
+{
+	margin-top: 24px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.service-sect__link a
+{
+	text-decoration: none;
+	color: #1B2745;
+	border-bottom: 1px solid #1B2745;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .service-sect__link a:hover
+	{
+		border-color: transparent;
+	}
+}
 /*------------
 @media (any-hover: hover)
 {
