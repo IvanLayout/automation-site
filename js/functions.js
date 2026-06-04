@@ -462,6 +462,18 @@ $(() => {
 		$('.filter-filter').css('top', relativeOffset + heigh/2)
 	})
 
+	// Показать ответ
+	$('body').on('click', '.reviews-inner__btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			$(this).closest('.reviews-inner__bottom').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$(this).closest('.reviews-inner__bottom').find('._hide').addClass('_show')
+		}
+	})
 
 	// Аккордион простой моб
 	$('body').on('click', '.tabs-accord__open', function(e) {

@@ -1635,6 +1635,56 @@ $(() => {
 		})
 	}
 
+	if ($('.reviews-inner__slider').length) {
+		new Swiper('.reviews-inner__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 5,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'992': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'1024': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+			}
+		})
+	}
+
 	// bell
 	$('body').on('click', '.product-bell', function (e) {
 		e.preventDefault()
