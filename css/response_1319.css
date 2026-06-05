@@ -249,6 +249,12 @@
 	}
 
 
+	.product-fixed__box
+	{
+		width: 55%;
+	}
+
+
 	.footer__colr 
 	{
 		width: calc(100% - 290px);

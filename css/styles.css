@@ -14515,7 +14515,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     position: relative;
     text-align: left;
     transition: color .2s linear;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .product-info__copy-btn svg
@@ -16394,6 +16394,124 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: 100%;
 }
 
+
+.product-fixed
+{
+    position: fixed;
+    z-index: 60;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+
+    width: 100%;
+
+	padding-top: 16px;
+	padding-bottom: 20px;
+
+    pointer-events: none;
+
+    opacity: 0;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(212, 212, 212, .25);
+
+    transition: opacity .2s linear, visibility .2s linear;
+}
+
+.product-fixed._show
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+.product-fixed__flex
+{
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.product-fixed__box
+{
+	margin-left: 30px;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	flex-shrink: 0;
+}
+
+.product-fixed__product
+{
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.product-fixed__product-img
+{
+	flex-shrink: 0;
+	width: 73px;
+	height: 73px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.product-fixed__product-img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-fixed .product-info__info
+{
+	margin-top: 0;
+}
+
+.product-fixed .product-info__info-item
+{
+	font-size: 12px;
+}
+
+.product-fixed .product-info__review-number
+{
+	font-size: 14px;
+}
+
+.product-fixed__product-box
+{
+	width: calc(100% - 100px);
+	margin-left: auto;
+	padding-top: 7px;
+}
+
+.product-fixed__product-name
+{
+	color: #000;
+}
+
+.product-info__total-top
+{
+	flex-wrap: nowrap;
+}
+
+.product-fixed .product-info__cart-btn
+{
+	white-space: nowrap;
+	margin-left: 30px;
+	min-width: 255px;
+	width: auto;
+}
+
+.product-fixed .product-info__amount
+{
+	margin-left: 30px;
+}
 /*------------
     Footer
 ------------*/

@@ -4657,6 +4657,60 @@
 	}
 
 
+	.product-fixed
+	{
+		top: 70px;
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+
+	.product-fixed__product-img
+	{
+		display: none;
+	}
+
+	.product-fixed__product-box
+	{
+		margin-left: 0;
+	}
+
+	.product-fixed__product-name
+	{
+		font-size: 20px;
+	}
+
+	.product-fixed__box
+	{
+		width: auto;
+	}
+
+	.product-fixed .product-info__amount
+	{
+		display: none;
+	}
+
+	.product-fixed .product-info__cart-btn
+	{
+		min-width: 134px;
+		margin-left: 30px;
+	}
+
+	.product-fixed .product-info__discount
+	{
+		display: none;
+	}
+
+	.product-fixed .product-info__price
+	{
+		font-size: 24px;
+	}
+
+	.product-fixed .product-info__old-price
+	{
+		font-size: 18px;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 75px;

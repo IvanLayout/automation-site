@@ -500,6 +500,28 @@
 	}
 
 
+	.product-fixed__product-name
+	{
+		font-size: 18px;
+	}
+
+	.product-fixed .product-info__amount
+	{
+		margin-left: 15px;
+	}
+
+	.product-info__price
+	{
+		font-size: 20px;
+	}
+
+	.product-fixed .product-info__old-price 
+	{
+		font-size: 16px;
+		margin-top: 3px;
+	}
+
+
 	.footer-menu__flex
 	{
 		margin-left: -30px;

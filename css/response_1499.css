@@ -2706,6 +2706,65 @@
 		margin-top: 24px;
 	}
 
+	
+	.product-fixed__product
+	{
+		max-width: 450px;
+	}
+
+	.product-fixed__product-img
+	{
+		width: auto;
+		max-width: 73px;
+	}
+
+	.product-fixed__product-box
+	{
+		width: 100%;
+		margin-left: 26px;
+		padding-top: 2px;
+	}
+
+	.product-fixed__product-name
+	{
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.product-fixed .product-info__info
+	{
+		margin-left: -10px;
+	}
+
+	.product-fixed .product-info__info-item
+	{
+		margin-left: 10px;
+		margin-top: 8px;
+	}
+
+	.product-fixed__box
+	{
+		width: 57.5%;
+		justify-content: space-between;
+	}
+
+	.product-fixed .product-info__old-price
+	{
+		font-size: 18px;
+		margin-top: 6px;
+	}
+
+	.product-fixed .product-info__cart-btn
+	{
+		min-width: 173px;
+		margin-left: auto;
+	}
+
+	.product-fixed .product-info__amount 
+	{
+		margin-left: 23px;
+	}
+
 
 	.footer
 	{
