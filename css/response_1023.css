@@ -4135,7 +4135,7 @@
 
 	.product-info__btn-favorite::before
 	{
-		top: 0;
+		top: 1px;
 	}
 
 	.product-info__btn-compare

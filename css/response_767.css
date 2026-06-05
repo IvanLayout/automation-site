@@ -2239,6 +2239,86 @@
 	}
 
 
+	.product-images__logo 
+	{
+		height: 26px;
+	}
+
+	.product-images__img::after 
+	{
+		width: 68px;
+		height: 68px;
+		margin-top: -34px;
+		margin-left: -34px;
+		background-size: 27px;
+	}
+
+	.product-images__video::before
+	{
+		width: 68px;
+		height: 68px;
+		margin-top: -34px;
+		margin-left: -34px;
+	}
+
+	.product-info__title
+	{
+		font-size: 22px;
+	}
+
+	.product-info__cart-btn,
+	.product-info__fast-buy
+	{
+		line-height: 44px;
+	}
+
+
+	.product-info__set
+	{
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.product-info__total
+	{
+		border-radius: 10px;
+	}
+
+	.top-wrap__compare-link
+	{
+		font-size: 12px;
+	}
+
+	.reviews-inner__slider-img
+	{
+		border-radius: 10px;
+	}
+
+	.reviews-inner__number
+	{
+		font-size: 24px;
+		margin-right: 10px;
+	}
+
+	.reviews-rating__star
+	{
+		width: 21px;
+		height: 21px;
+	}
+
+
+	.service-sect__item
+	{
+		width: 284px;
+		border-radius: 10px;
+	}
+
+	.service-sect__desc
+	{
+		margin-top: 10px;
+	}
+
+
 	.footer
 	{
 		padding-top: 30px;

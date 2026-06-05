@@ -1738,13 +1738,9 @@ $(() => {
 				clickable: true
 			},
 			breakpoints: {
-				'320': {
-					spaceBetween: 0,
-					slidesPerView: 1,
-				},
-				'480': {
-					spaceBetween: 0,
-					slidesPerView: 2,
+				'375': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 10,

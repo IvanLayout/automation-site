@@ -1065,6 +1065,179 @@
 	}
 
 
+	.product-info__images
+	{
+		padding-top: 18px;
+	}
+
+	.product-images__logo
+	{
+		top: 50px;
+	}
+
+	.product-images__slider .swiper-slide
+	{
+		border: none;
+	}
+
+	.product-images__img 
+	{
+		aspect-ratio: 1 / 1.037;
+		padding-top: 80px;
+	}
+
+	.product-images__img::after,
+	.product-images__img::before
+	{
+		margin-top: -7px;
+	}
+
+	.product-images__slider .slider-pagination 
+	{
+		margin-top: 18px;
+	}
+
+	.product-info__guarantee
+	{
+		margin-top: 25px;
+	}
+
+
+	.product-info__info-flex
+	{
+		margin-top: 25px;
+	}
+
+	.product-info__top .stiker
+	{
+		font-size: 12px;
+	}
+
+	.product-info__title
+	{
+		font-size: 20px;
+		line-height: 1.3;
+	}
+
+	.product-info__desc 
+	{
+		max-height: 63px;
+		-webkit-line-clamp: 4;
+	}
+
+	.product-info__feature .features__feature + .features__feature, 
+	.features__feature + .features__feature 
+	{
+		margin-top: 15px;
+	}
+
+	.product-info__feature .features__feature-name,
+	.features__feature-name
+	{
+		width: 55%;
+	}
+
+	.features__feature-val
+	{
+		width: 45%;
+	}
+
+	.features__feature-name
+	{
+		padding-right: 0;
+		margin-right: 0;
+	}
+
+	.info-accord__item
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.info-accord__delivery-desc + .info-accord__delivery-desc 
+	{
+		margin-top: 10px;
+	}
+
+	.info-accord__data 
+	{
+		padding-top: 10px;
+	}
+
+	.partner-links
+	{
+		margin-top: 0;
+	}
+
+
+	.tabs-accord__item:nth-child(2) 
+	{
+		border-top: 1px solid rgba(27, 39, 69, .2);
+	}
+
+	.tabs-accord__open
+	{
+		padding-right: 0;
+	}
+
+	.tabs-accord__open svg
+	{
+		display: none;
+	}
+
+	.informations__item + .informations__item
+	{
+		margin-top: 30px;
+	}
+
+	.informations__title
+	{
+		margin-bottom: 20px;
+	}
+
+	.informations__colr
+	{
+		margin-top: 30px;
+	}
+
+
+	.reviews-inner__cols 
+	{
+		margin-top: 13px;
+	}
+
+	.reviews-inner__btn-modal
+	{
+		margin-top: 15px;
+	}
+
+	.reviews-inner__rating-item + .reviews-inner__rating-item 
+	{
+		margin-top: 10px;
+	}
+
+	.reviews-inner__slider_main .reviews-inner__slide 
+	{
+		width: 68px;
+	}
+
+
+	.service-sect__slider 
+	{
+		margin-top: 15px;
+	}
+
+	.service-sect__item
+	{
+		padding: 20px;
+	}
+
+	.service-sect__link 
+	{
+		margin-top: 20px;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;
