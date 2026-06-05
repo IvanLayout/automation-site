@@ -2676,6 +2676,20 @@
 	}
 
 
+	.product-info__links
+	{
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+
+	.product-info__link
+	{
+		line-height: 28px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+
 	.footer
 	{
 		padding-top: 40px;

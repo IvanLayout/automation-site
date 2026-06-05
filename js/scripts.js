@@ -1657,14 +1657,6 @@ $(() => {
 				prevEl: '.slider-button-prev'
 			},
 			breakpoints: {
-				'375': {
-					spaceBetween: 5,
-					slidesPerView: 'auto',
-				},
-				'480': {
-					spaceBetween: 10,
-					slidesPerView: 5,
-				},
 				'1024': {
 					spaceBetween: 8,
 					slidesPerView: 3,
@@ -1677,9 +1669,12 @@ $(() => {
 			loop: false,
 			speed: 1000,
 			watchOverflow: true,
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
 			},
 			thumbs: {
 				swiper: galleryThumbs
@@ -1692,7 +1687,7 @@ $(() => {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 20,
+			spaceBetween: 10,
 			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
@@ -1706,28 +1701,6 @@ $(() => {
 			scrollbar: {
 				el: ".swiper-scrollbar",
 				hide: false,
-			},
-			breakpoints: {
-				'320': {
-					spaceBetween: 15,
-					slidesPerView: 3,
-				},
-				'480': {
-					spaceBetween: 10,
-					slidesPerView: 5,
-				},
-				'768': {
-					spaceBetween: 15,
-					slidesPerView: 3,
-				},
-				'992': {
-					spaceBetween: 15,
-					slidesPerView: 3,
-				},
-				'1024': {
-					spaceBetween: 10,
-					slidesPerView: 'auto',
-				}
 			},
 			on: {
 				init: function (swiper) {
@@ -1774,7 +1747,7 @@ $(() => {
 					slidesPerView: 2,
 				},
 				'768': {
-					spaceBetween: 0,
+					spaceBetween: 10,
 					slidesPerView: 3,
 				},
 				'1024': {

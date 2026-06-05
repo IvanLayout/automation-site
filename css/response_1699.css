@@ -1184,7 +1184,7 @@
 		width: calc(33% - 9px);
 	}
 
-	.product-images__slider
+	.product-images__slider .swiper-slide
 	{
 		border: 1px solid rgba(0, 0, 0, .09);
 		border-radius: 10px;
@@ -1270,6 +1270,11 @@
 	.reviews-inner__coll
 	{
 		max-width: 813px;
+	}
+
+	.reviews-inner__colr
+	{
+		margin-right: 0;
 	}
 
 	.service-sect__link

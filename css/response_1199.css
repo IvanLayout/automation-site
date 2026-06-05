@@ -473,6 +473,28 @@
 	}
 
 
+	.product-info__btn-share,
+	.product-info__btn-compare
+	{
+		margin-left: 15px;
+	}
+
+	.product-info__coll 
+	{
+		width: calc(100% - 340px);
+	}
+
+	.product-info__colr 
+	{
+		width: 320px;
+	}
+
+	.product-info__feature .features__feature-name 
+	{
+		width: 180px;
+	}
+
+
 	.footer-menu__flex
 	{
 		margin-left: -30px;

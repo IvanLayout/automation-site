@@ -14149,8 +14149,8 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .product-info__top
 {
 	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
 	flex-wrap: nowrap;
 }
 
@@ -14330,6 +14330,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	padding-left: 17px;
 	transition: color .2s linear;
 	text-decoration: none;
+	display: block;
 }
 
 .product-info__btn-share svg
@@ -14376,6 +14377,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     align-content: center;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.product-info__top .product-info__review 
+{
+	display: none;
 }
 
 .product-info__review-flex 
@@ -15166,7 +15172,55 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 
 .tabs-accord__open
 {
+	font-size: 14px;
+	position: relative;
+	text-transform: uppercase;
+	padding: 20px 20px 18px 0;
+	cursor: pointer;
+	color: rgba(27, 39, 69, .5);
+	
+	font-weight: 600;
 	display: none;
+	transition: color .2s linear;
+}
+
+.tabs-accord__item
+{
+	border-top: 1px solid rgba(27, 39, 69, .2);
+}
+
+.tabs-accord__item:nth-child(2)
+{
+	border-top: none;
+}
+
+.tabs-accord__item:last-child
+{
+	border-bottom: 1px solid rgba(27, 39, 69, .2);
+}
+
+.tabs-accord__open svg
+{
+	position: absolute;
+    top: 50%;
+    right: 2px;
+    display: block;
+    width: 5px;
+    height: 9px;
+    fill: currentColor;
+	margin-top: -4px;
+	transform: rotate(90deg);
+    transition: fill .2s linear;
+}
+
+.tabs-accord__item._active .tabs-accord__open svg
+{
+	transform: rotate(-90deg);
+}
+
+.tabs-accord__item._active  .tabs-accord__open
+{
+	color: rgba(27, 39, 69, 1);
 }
 
 .tabs-info
@@ -15336,6 +15390,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 {
 	width: calc(100% - 490px);
 	max-width: 932px;
+	margin-right: auto;
 }
 
 .reviews-inner__items
@@ -15661,11 +15716,8 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 {
 	width: 457px;
     padding-top: 31px;
-}
-
-.reviews-inner__max-w
-{
-	width: 457px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .reviews-inner__wrap-top
