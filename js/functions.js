@@ -462,6 +462,17 @@ $(() => {
 		$('.filter-filter').css('top', relativeOffset + heigh/2)
 	})
 
+	// Добавление/Удаление (корзина)
+	$('body').on('click', '.cart-js', function (e) {
+		e.preventDefault()
+	
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
 	// Показать ответ
 	$('body').on('click', '.reviews-inner__btn', function (e) {
 		e.preventDefault()

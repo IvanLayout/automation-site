@@ -2396,7 +2396,7 @@
 											<div class="product-info__old-price">1 396 ₽ /шт</div>
 
 											<div class="product-info__total-btns _flex">
-												<button type="button" class="btn-red product-info__cart-btn">
+												<button type="button" class="btn-red product-info__cart-btn cart-js">
 													<span>В корзину</span>
 
 													<span>В корзине</span>
@@ -2420,13 +2420,31 @@
 													</div>
 												</div>
 
-												<button type="button" class="btn-border product-info__fast-buy">Купить в 1 клик</button>
+												<button type="button" class="btn-border product-info__fast-buy modal-btn" data-content="#modal-fast">Купить в 1 клик</button>
 											</div>
 
 											<div class="product-info__total-desc">Внешний вид товаров может отличаться от изображений, представленных на сайте.</div>
 										</div>
 
-										<a href="/" class="product-info__ask-quest">
+										<div class="product-info__total">
+											<div class="product-info__total-info">Нет в наличии, последняя цена</div>
+
+											<div class="product-info__price">1 396 ₽/шт</div>
+
+											<div class="product-info__total-btns">
+												<a href="/" class="btn-border product-info__select-btn">Подобрать аналог</a>
+
+												<a href="/" class="product-info__inform">
+													<svg>
+														<use xlink:href="images/sprite.svg#bell"></use>
+													</svg>
+
+													<span>Сообщить о поступлении</span>
+												</a>
+											</div>
+										</div>
+
+										<button type="button" class="product-info__ask-quest modal-btn" data-content="#modal-ask">
 											<svg>
 												<use xlink:href="images/sprite.svg#message"></use>
 											</svg>
@@ -2434,7 +2452,7 @@
 											<span>
 												Задать вопрос менеджеру
 											</span>
-										</a>
+										</button>
 
 										<div class="info-accord">
 											<div class="info-accord__item accord__item _active">
@@ -7102,6 +7120,122 @@
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<div id="modal-fast" class="modal modal-mobw">
+			<div class="modal__box">
+				<div class="modal__title">Заявка на покупку товара</div>
+
+				<div class="modal-fast__wrap _flex">
+					<a href="/" class="modal-fast__img">
+						<img data-src="images/tmp/product_image.jpg" src="images/img_plug.png" alt="" class="lazyload">
+					</a>
+
+					<div class="modal-fast__info _flex">
+						<div class="modal-fast__box">
+							<div class="modal-fast__name">
+								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
+							</div>
+	
+							<div class="modal-fast__desc">
+								<div class="modal-fast__article">Артикул: IL–LAA-N</div>
+	
+								<div class="modal-fast__cod">0300/200/250/250–010–50/25-FB-G1/2</div>
+							</div>
+						</div>
+
+						<div class="modal-fast__prices">
+							<div class="modal-fast__price">1 396 ₽/шт</div>
+
+							<div class="modal-fast__old-price">1 396 ₽ /шт</div>
+						</div>
+					</div>
+				</div>
+
+				<form action="" class="form-gray modal__form-gray">
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="tel" value="" name="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="email" value="" name="" placeholder="Email*" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<textarea name="" id="" placeholder="Сообщение" class="form-gray__textarea"></textarea>
+						</div>
+					</div>
+					<div class="checkbox form__agree form__agree_marg">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">
+								Я <a href="/">соглашаюсь</a> на получение рекламных предложений, а также рассылок рекламного характера, в том числе полезных материалов.
+							</span>
+						</label>
+					</div>
+
+					<div class="form__agree">Заполняя поля и нажимая кнопку «Отправить», вы подтверждаете, что ознакомлены и согласны с <a href="/">Политикой в отношении обработки персональных данных.</a></div>
+					
+					<div class="form__submit">
+						<button type="submit" class="form__submit-btn btn-red btn-red_big">Отправить заказ</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-ask" class="modal modal-mobw">
+			<div class="modal__box">
+				<div class="modal__title">Консультация менеджера</div>
+
+				<div class="modal__desc">Если у вас есть вопросы — оставьте свой номер телефона и почту, мы перезвоним в течение 30 минут и ответим на них!</div>
+
+				<form action="" class="form-gray modal__form-gray">
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="tel" value="" name="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="email" value="" name="" placeholder="Email*" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<textarea name="" id="" placeholder="Сообщение" class="form-gray__textarea"></textarea>
+						</div>
+					</div>
+					<div class="checkbox form__agree form__agree_marg">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">
+								Я <a href="/">соглашаюсь</a> на получение рекламных предложений, а также рассылок рекламного характера, в том числе полезных материалов.
+							</span>
+						</label>
+					</div>
+
+					<div class="form__agree">Заполняя поля и нажимая кнопку «Отправить», вы подтверждаете, что ознакомлены и согласны с <a href="/">Политикой в отношении обработки персональных данных.</a></div>
+					
+					<div class="form__submit">
+						<button type="submit" class="form__submit-btn btn-red btn-red_big">Отправить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 
 

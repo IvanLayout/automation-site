@@ -1238,6 +1238,59 @@
 	}
 
 
+	.modal__desc,
+	.modal-fast__wrap
+	{
+		margin-bottom: 20px;
+	}
+
+	.modal-fast__img 
+	{
+		width: 62px;
+		height: 62px;
+	}
+
+	.modal-fast__info
+	{
+		flex-wrap: wrap;
+	}
+
+	.modal-fast__name
+	{
+		font-size: 12px;
+	}
+
+	.modal-fast__desc > div + div
+	{
+		margin-top: 0;
+	}
+	
+	.modal-fast__prices
+	{
+		margin-top: 10px;
+		width: 100%;
+		margin-left: 0;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.modal-fast__price
+	{
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+	.modal-fast__old-price
+	{
+		font-size: 11px;
+		margin-top: 0;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;
