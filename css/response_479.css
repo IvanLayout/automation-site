@@ -1354,6 +1354,37 @@
 	}
 
 
+	.product-fixed
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.product-fixed__product,
+	.product-fixed__prices
+	{
+		display: none;
+	}
+
+	.product-fixed__box
+	{
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.product-fixed .product-info__cart-btn
+	{
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.product-fixed .product-info__amount
+	{
+		display: block;
+		margin-left: 10px;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;

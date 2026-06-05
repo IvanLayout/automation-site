@@ -2319,6 +2319,38 @@
 	}
 
 
+	.product-fixed__flex
+	{
+		flex-wrap: wrap;
+	}
+
+	.product-fixed__product
+	{
+		max-width: 100%;
+	}
+
+	.product-fixed__box
+	{
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.product-fixed__product-name 
+	{
+		font-size: 18px;
+	}
+
+	.product-fixed .product-info__price 
+	{
+		font-size: 20px;
+	}
+
+	.product-fixed .product-info__old-price
+	{
+		font-size: 16px;
+	}
+
+
 	.footer
 	{
 		padding-top: 30px;

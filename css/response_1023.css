@@ -4301,6 +4301,13 @@
 		font-size: 14px;
 	}
 
+	.product-info__cart-btn._active
+	{
+		border-color: #D64923;
+		color: #fff;
+		background: #D64923;
+	}
+
 	.product-info__total-btns
 	{
 		margin-top: 15px;
