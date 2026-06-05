@@ -16340,6 +16340,60 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     fill: #CC1525;
 }
 
+
+.modal-success__wrap
+{
+	margin: auto 0;
+}
+
+.modal-success__icon
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 230px;
+}
+
+.modal-success__icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-success__text
+{
+    font-size: 28px;
+    font-weight: 500;
+
+    margin-top: 62px;
+
+    text-align: center;
+}
+
+.modal-success__desc
+{
+	color: rgba(27, 39, 69, .6);
+
+    margin-top: 13px;
+
+    text-align: center;
+}
+
+.modal-success__btn
+{
+	margin-top: 33px;
+}
+
+.modal-success__btn a
+{
+	width: 100%;
+}
+
 /*------------
     Footer
 ------------*/

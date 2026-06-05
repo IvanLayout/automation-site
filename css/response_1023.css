@@ -4644,6 +4644,19 @@
 	}
 
 
+	.fancybox__dialog .modal-success__desc br
+	{
+		display: none;
+	}
+
+	.modal-success__btn
+	{
+		max-width: 477px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 75px;

@@ -1767,6 +1767,16 @@ $(() => {
 		});
 	}
 
+	$('body').on('submit', '.form-ajax', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
 
 	// bell
 	$('body').on('click', '.product-bell', function (e) {

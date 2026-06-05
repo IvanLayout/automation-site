@@ -2690,6 +2690,23 @@
 	}
 
 
+	.modal-success__text
+	{
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	.modal-success__desc
+	{
+		margin-top: 10px;
+	}
+
+	.modal-success__btn
+	{
+		margin-top: 24px;
+	}
+
+
 	.footer
 	{
 		padding-top: 40px;
