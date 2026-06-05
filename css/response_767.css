@@ -1060,6 +1060,23 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+
+	.produce-own__slider{
+		margin-top: 24px;
+	}
+
+	.produce-own__item{
+		padding: 30px;
+	}
+
+	.produce-own__img{
+		margin-top: 33px;
+		width: 100%;
+	}
+
+	.produce-own__item-box._flex .produce-own__img{
+		margin-top: 12px;
+	}
 	/* commit */
 
 	.advantages-main__item

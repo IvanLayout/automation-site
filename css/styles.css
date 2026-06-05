@@ -7773,6 +7773,49 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	max-width: 100%;
 	max-height: 100%;
 }
+
+
+
+.presence-card{
+	background: #F3F6FA;
+}
+
+.presence-card__flex{
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.presence-card__coll{
+	width: 32.64%;
+}
+
+.presence-card__colr{
+	position: relative;
+	width: 67.36%;
+}
+
+.presence-card .map{
+	position: relative;
+	height: 764px;
+	min-height: 100%;
+	border-radius: 0;
+	overflow: hidden;
+
+	width: calc(100% + (100vw - 1765px - var(--scroll_width))/2);
+	margin-right: calc(((100vw - 1765px - var(--scroll_width))/2)*-1);
+}
+
+.presence-card .map::before{
+	content: '';
+	position: absolute;
+	left: -74px;
+	top: 0;
+	width: 210px;
+	height: 100%;
+	z-index: 20;
+	pointer-events: none;
+	background: linear-gradient(270deg, rgba(243, 246, 250, 0) 0%, #f3f6fa 61.06%);
+}
 /*------------
     commit
 ------------*/
@@ -12242,6 +12285,15 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 
     overflow: hidden;
     border-radius: 10px;
+}
+
+.ymaps-map{
+	background: #1e1f20 !important;
+}
+
+.ymaps-layers-pane{
+	background-color: #CBCDD1;
+	mix-blend-mode: luminosity;
 }
 
 .contacts-maps__wrap

@@ -834,16 +834,19 @@ $(window).on('resize', function() {
 
 // Вспомогательные функции
 const widthScroll = () => {
-	let div = document.createElement('div')
+	const div = document.createElement('div')
 
 	div.style.overflowY = 'scroll'
 	div.style.width = '50px'
 	div.style.height = '50px'
 	div.style.visibility = 'hidden'
+	div.style.position = 'absolute'
+	div.style.scrollbarWidth = 'thin' // Firefox
 
 	document.body.appendChild(div)
 
-	let scrollWidth = div.offsetWidth - div.clientWidth
+	const scrollWidth = div.offsetWidth - div.clientWidth
+
 	document.body.removeChild(div)
 
 	return scrollWidth

@@ -2037,6 +2037,40 @@
 	.about-info__text-block h3{
 		max-width: 520px;
 	}
+
+
+	.produce-own__item{
+		padding: 20px;
+	}
+
+	.produce-own__img{
+		width: 80%;
+		margin-top: 44px;
+	}
+
+	.produce-own__item-box._flex{
+		flex-wrap: wrap;
+	}
+
+	.produce-own__item-box._flex .produce-own__col{
+		width: 100%;
+	}
+
+	.produce-own__item-box._flex .produce-own__info{
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		width: 36%;
+	}
+
+	.produce-own__info-img {
+    	aspect-ratio: 1 / .36;
+	}
+
+	.produce-own__item-box._flex .produce-own__img {
+		width: calc(62% - 20px);
+		margin-top: 16px;
+	}
 	/* commit */
 
 	body

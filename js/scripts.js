@@ -1027,7 +1027,7 @@ $(() => {
 	if ($('.produce-own__slider').length) {
 		new Swiper(".produce-own__slider", {
 			loop: false,
-			spaceBetween: 0,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -1053,25 +1053,21 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 0,
+					spaceBetween: 10,
 					slidesPerView: 1,
 				},
 				'480': {
-					spaceBetween: 0,
-					slidesPerView: 2,
+					spaceBetween: 10,
+					slidesPerView: 1,
 				},
 				'768': {
-					spaceBetween: 0,
-					slidesPerView: 3,
-				},
-				'1024': {
-					spaceBetween: 0,
-					slidesPerView: 3,
-				},
-				'1200': {
-					spaceBetween: 20,
+					spaceBetween: 10,
 					slidesPerView: 2,
 				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				}
 			}
 		})
 	}

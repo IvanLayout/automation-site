@@ -2421,6 +2421,20 @@
 					</div>
 				</section>
 
+				<section class="presence-card _marg">
+					<div class="cont">
+						<div class="presence-card__flex _flex">
+							<div class="presence-card__coll">
+								<div class="main-title">Карта присутствия</div>
+							</div>
+
+							<div class="presence-card__colr">
+								<div class="map" id="map"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<section class="vacancies _marg">
 					<div class="cont">
 						<div class="main-title">«Русавтоматизация» — лучший работодатель России</div>
@@ -4459,5 +4473,31 @@
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
+		<script>
+			//карта
+			ymaps.ready(init);
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [57.657548, 39.778991],
+					zoom: 5
+				}),
+				myPlacemark = new ymaps.Placemark([57.657548, 39.778991],{
+				}, {
+					iconImageHref: 'images/map_marker.svg',
+					iconImageSize: [15, 15],
+					iconImageOffset: [7, 7],
+				}),
+				myPlacemark2 = new ymaps.Placemark([57.607846, 50.847209],{
+				}, {
+					iconImageHref: 'images/map_marker.svg',
+					iconImageSize: [15, 15],
+					iconImageOffset: [7, 7],
+				})
+
+				myMap.geoObjects.add(myPlacemark).add(myPlacemark2)
+			}
+		</script>
 	</body>
 </html>
