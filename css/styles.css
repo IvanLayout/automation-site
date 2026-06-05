@@ -15945,12 +15945,400 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 		border-color: transparent;
 	}
 }
-/*------------
-@media (any-hover: hover)
+
+
+.rating-js
 {
-    
+    overflow: hidden;
+	margin-top: 24px;
+	margin-bottom: 50px;
 }
-------------*/
+
+.rating-cancel,
+.star-rating
+{
+    display: block;
+    float: left;
+    overflow: hidden;
+
+    width: 35px;
+    height: 34px;
+
+    cursor: pointer;
+    text-indent: -999em;
+
+    background: transparent;
+}
+
+.rating-cancel
+{
+    display: none !important;
+}
+
+.star-rating + .star-rating
+{
+    margin-left: 8px;
+}
+
+.star-rating,
+.star-rating a
+{
+    background: url(../images/ic_star_big_off.svg) 50%/contain no-repeat;
+}
+
+.rating-cancel a,
+.star-rating a
+{
+    display: block;
+
+    width: 35px;
+    height: 34px;
+
+    border: 0;
+    background-image: url(../images/ic_star_big_off.svg);
+}
+
+.star-rating-on a
+{
+    background-image: url(../images/ic_star_big_on.svg);
+}
+
+.star-rating-hover a
+{
+    background-image: url(../images/ic_star_big_on.svg);
+}
+
+.star-rating-readonly a
+{
+    cursor: default;
+}
+
+.star-rating
+{
+    overflow: hidden;
+
+    background: transparent;
+}
+
+
+
+.dropzone-photo
+{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    cursor: pointer;
+
+    gap: 12px;
+}
+
+.dropzone-photo__add
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    min-height: 120px;
+    padding: 16px;
+
+    pointer-events: none;
+
+    background: #F5F5F5;
+	border-radius: 4px;
+}
+
+.dropzone-photo__add-flex
+{
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    max-width: 285px;
+}
+
+.dropzone-photo__add-icon
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+	margin-bottom: 3px;
+}
+
+.dropzone-photo__add-icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dropzone-photo__desc
+{
+	color: #737D87;
+}
+
+.dz-preview
+{
+    position: relative;
+
+    width: calc(100%/6 - (60px/6));
+}
+
+.dz-image
+{
+    position: relative;
+
+    display: block;
+
+    padding-bottom: 100%;
+}
+
+.dz-image::after
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%);
+}
+
+.dz-image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.dz-details
+{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+
+    color: #FBFBFB;
+    font-size: 10px;
+    line-height: 1.4;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 0 4px;
+
+    text-align: center;
+
+    transition: opacity .2s linear;
+}
+
+.dz-size
+{
+    order: 2;
+
+    width: 100%;
+    margin-top: 2px;
+}
+
+.dz-size strong
+{
+    font-weight: 400;
+}
+
+.dz-filename
+{
+    overflow: hidden;
+
+    width: 100%;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dz-success-mark,
+.dz-error-mark
+{
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    left: 50%;
+
+    display: none !important;
+
+    margin-top: -12px;
+    margin-left: -12px;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition: opacity .2s linear;
+}
+
+.dz-preview.dz-success .dz-success-mark
+{
+    animation: passing-through 3s cubic-bezier(.77, 0, .175, 1);
+}
+
+.dz-preview.dz-error .dz-error-mark
+{
+    opacity: 1;
+}
+
+.dz-success-mark svg,
+.dz-error-mark svg
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    stroke: #FF8B02;
+}
+
+.dz-progress
+{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+
+    overflow: hidden;
+
+    width: 80px;
+    max-width: 90%;
+    height: 10px;
+
+    pointer-events: none;
+
+    opacity: 1;
+    border-radius: 5px;
+    background: #FBFBFB;
+
+    transform: scale(1) translate(-50%,-50%);
+}
+
+.dz-preview.dz-processing .dz-progress
+{
+    opacity: 1;
+
+    transition: all .2s linear;
+}
+
+.dz-preview.dz-complete .dz-progress
+{
+    opacity: 0;
+
+    transition: opacity .4s ease-in;
+}
+
+.dz-preview:not(.dz-processing) .dz-progress
+{
+    animation: pulse 6s ease infinite;
+}
+
+.dz-upload
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 0;
+
+    background: #FF8B02;
+
+    transition: width 300ms ease-in-out;
+}
+
+.dz-error-message
+{
+    position: absolute;
+    z-index: 1000;
+    top: calc(100% + 8px);
+    left: 0;
+
+    color: #F03546;
+    font-size: 12px;
+    line-height: 1.4;
+
+    display: none !important;
+
+    width: 100%;
+    padding: 6px 8px;
+
+    text-align: left;
+
+    border-radius: 4px;
+    background: #FFF;
+
+    transition: opacity .3s ease;
+}
+
+.dz-preview.dz-error .dz-error-message
+{
+    display: block;
+}
+
+.dz-error-message
+{
+    display: none !important;
+}
+
+.dz-remove
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    transition: opacity .2s linear;
+}
+
+.dz-remove svg
+{
+    width: 100%;
+    height: 100%;
+
+    transition: fill .2s linear;
+
+    fill: #FFF;
+}
+
+.dz-remove:hover svg
+{
+    fill: #CC1525;
+}
 
 /*------------
     Footer
@@ -16339,6 +16727,12 @@ a.footer__creator-img
 	color: #1B2745;
 }
 
+.modal .form-gray.form-gray__small .form-gray__textarea,
+.modal .form-gray.form-gray__small .form-gray__input
+{
+	font-size: 16px;
+}
+
 .modal__desc
 {
 	margin-bottom: 24px;
@@ -16432,6 +16826,23 @@ a.footer__creator-img
     text-decoration: line-through;
     margin-top: 3px;
 	font-size: 14px;
+}
+
+.modal-review__desc
+{
+	color: rgba(27, 39, 69, .8);
+}
+
+.modal-review__title
+{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.modal-review__title_marg
+{
+	margin-top: 60px;
 }
 
 

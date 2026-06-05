@@ -4607,6 +4607,43 @@
 	}
 
 
+	.rating-js
+	{
+		margin-top: 17px;
+		margin-bottom: 30px;
+	}
+
+	.rating-cancel,
+	.star-rating,
+	.rating-cancel a,
+	.star-rating a
+	{
+		width: 24px;
+		height: 24px;
+	}
+
+	.star-rating + .star-rating
+	{
+		margin-left: 6px;
+	}
+
+	.modal-review__title
+	{
+		font-size: 14px;
+	}
+
+	.modal .form-gray.form-gray__small .form-gray__textarea, 
+	.modal .form-gray.form-gray__small .form-gray__input
+	{
+		font-size: 12px;
+	}
+
+	.modal-review__title_marg
+	{
+		margin-top: 30px;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 75px;

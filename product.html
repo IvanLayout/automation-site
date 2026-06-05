@@ -28,6 +28,7 @@
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1699.css" media="(max-width: 1699px)">
@@ -4968,7 +4969,7 @@
 									</div>
 								</div>
 
-								<button type="button" class="reviews-inner__btn-modal">Оставить отзыв</button>
+								<button type="button" data-content="#modal-reviews" class="reviews-inner__btn-modal modal-btn">Оставить отзыв</button>
 
 								<div class="reviews-inner__rating-items">
 									<div class="reviews-inner__rating-item">
@@ -7152,7 +7153,7 @@
 					</div>
 				</div>
 
-				<form action="" class="form-gray modal__form-gray">
+				<form action="" class="form-gray modal__form-gray form-gray__small">
 					<div class="form-gray__line">
 						<div class="form-gray__field">
 							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
@@ -7198,7 +7199,7 @@
 
 				<div class="modal__desc">Если у вас есть вопросы — оставьте свой номер телефона и почту, мы перезвоним в течение 30 минут и ответим на них!</div>
 
-				<form action="" class="form-gray modal__form-gray">
+				<form action="" class="form-gray modal__form-gray form-gray__small">
 					<div class="form-gray__line">
 						<div class="form-gray__field">
 							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
@@ -7238,6 +7239,64 @@
 			</div>
 		</div>
 
+		<div id="modal-reviews" class="modal modal-mobw modal-review">
+			<div class="modal__box">
+				<div class="modal__title">Ваш отзыв о товаре</div>
+
+				<div class="modal-review__desc">XSON-FC–CF03-K05 Датчик уровня поплавковый</div>
+
+				<form action="" class="form-gray modal__form-gray form-gray__small">
+					<div class="rating-js">
+						<div class="rating-js__star">
+							<input name="adv1" type="radio" class="wow" value="1">
+							<input name="adv1" type="radio" class="wow" value="2">
+							<input name="adv1" type="radio" class="wow" value="3">
+							<input name="adv1" type="radio" class="wow" value="4">
+							<input name="adv1" type="radio" class="wow" value="5">
+						</div>
+					</div>
+
+					<div class="modal-review__title">Вам понравился заказ?</div>
+
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<textarea name="" id="" placeholder="Сообщение" class="form-gray__textarea"></textarea>
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="text" value="" name="" placeholder="Достоинства" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="text" value="" name="" placeholder="Недостатки" class="form-gray__input">
+						</div>
+					</div>
+
+					<div class="modal-review__title modal-review__title_marg">Загрузите до 5 фото</div>
+
+					<div class="dropzone-photo" id="dropzone-photo">
+						<div class="dropzone-photo__add">
+							<div class="dropzone-photo__add-flex _flex">
+								<div class="dropzone-photo__add-icon">
+									<img data-src="images/camera.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+
+								<div class="dropzone-photo__desc">
+									<span>Нажмите, чтобы загрузить или перетащите фото сюда</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="form__submit">
+						<button type="submit" class="form__submit-btn btn-red btn-red_big">Оставить отзыв</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
@@ -7246,6 +7305,8 @@
 		<script src="js/fancybox.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/dropzone.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

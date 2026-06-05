@@ -1290,6 +1290,49 @@
 		margin-top: 0;
 	}
 
+	
+	.rating-js
+	{
+		margin-top: 12px;
+		margin-bottom: 20px;
+	}
+
+	.rating-cancel,
+	.star-rating,
+	.rating-cancel a,
+	.star-rating a
+	{
+		width: 21px;
+		height: 21px;
+	}
+
+	.star-rating + .star-rating
+	{
+		margin-left: 4px;
+	}
+
+	.modal-review__title
+	{
+		margin-bottom: 10px;
+	}
+
+	.modal-review__title_marg
+	{
+		margin-top: 20px;
+	}
+
+	.dropzone-photo__add
+	{
+		min-height: 76px;
+		background: #ECEEF1;
+	}
+
+	.dropzone-photo__add-flex
+	{
+		max-width: 206px;
+	}
+
+
 
 	.footer__logo 
 	{
