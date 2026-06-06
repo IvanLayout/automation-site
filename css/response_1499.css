@@ -1234,6 +1234,60 @@
 		font-size: 20px;
 		max-width: 252px;
 	}
+
+	.presence-card .map {
+		height: 430px;
+		width: calc(100% + (100vw - 1200px - var(--scroll_width)) / 2);
+		margin-right: calc(((100vw - 1200px - var(--scroll_width)) / 2) * -1);
+	}
+
+	.presence-card .map::before{
+		left: -35px;
+	}
+
+
+	.presence-card__coll{
+		padding-top: 40px;
+		width: 43.84%;
+		max-width: 510px;
+	}
+
+	.presence-card__desc{
+		margin-top: 20px;
+	}
+
+	.presence-card__select-wrap{
+		margin-top: 20px;
+		max-width: 456px;
+	}
+
+	.select-wrap .nice-select .current{
+		font-size: 14px;
+		height: 38px;
+		line-height: 36px;
+	}
+
+	.select-wrap .nice-select .list .list_item{
+		font-size: 14px;
+	}
+
+	.presence-card__bot{
+		max-width: 456px;
+		margin-top: 24px;
+	}
+
+	.presence-card .small-title br{
+		display: none;
+	}
+
+	.presence-card__info{
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+	.presence-card__colr{
+		width: 56.16%;
+	}
 	/* commit */
 
 	body

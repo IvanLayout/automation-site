@@ -231,6 +231,9 @@ $(() => {
 		},
 	});
 
+	// Кастомный select
+	$('select').niceSelect()
+
 
 
 	$('body').on('click', '.header-catalog__open', function (e) {

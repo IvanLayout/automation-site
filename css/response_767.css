@@ -1077,6 +1077,22 @@
 	.produce-own__item-box._flex .produce-own__img{
 		margin-top: 12px;
 	}
+
+	
+
+	.presence-card .map {
+		width: calc(100% + 40px);
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+
+	.presence-card__bot{
+		margin-top: 30px;
+	}
+
+	.presence-card .small-title br{
+		display: inline;
+	}
 	/* commit */
 
 	.advantages-main__item

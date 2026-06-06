@@ -443,6 +443,19 @@
 	.produce-own__item-box._flex .produce-own__img {
 		width: calc(45.41% - 20px);
 	}
+
+	.presence-card .map {
+		width: calc(100% + (100vw - 1400px - var(--scroll_width)) / 2);
+		margin-right: calc(((100vw - 1400px - var(--scroll_width)) / 2) * -1);
+	}
+
+	.presence-card__coll {
+		width: 39.15%;
+	}
+
+	.presence-card__colr {
+		width: 60.85%;
+	}
 	/* commit */
 
 	.advantages-main__info

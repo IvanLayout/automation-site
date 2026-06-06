@@ -134,6 +134,19 @@
 	.about-info__text-block h3{
 		max-width: none;
 	}
+
+	.presence-card .map {
+		width: calc(100% + 20px);
+		margin-right: -20px;
+	}
+
+	.presence-card__coll{
+		width: 40%;
+	}
+
+	.presence-card__colr{
+		width: 60%;
+	}
 	/* commit */
 
 	.slider-button-prev, 
