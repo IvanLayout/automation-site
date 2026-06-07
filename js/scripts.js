@@ -1072,6 +1072,52 @@ $(() => {
 		})
 	}
 
+	if ($('.benefit-client__slider').length) {
+		benefitClient = new Swiper(".benefit-client__slider", {
+			loop: true,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			on: {
+				realIndexChange: function (swiper) {
+					$('.benefit-client__item').removeClass('_active')
+
+					$(`.benefit-client__item[data-slide-index="${swiper.realIndex}"]`).addClass('_active')
+				},
+			}
+		})
+
+		$('body').on('click', '.benefit-client__item', function (e) {
+			const index = $(this).data('slide-index');
+			benefitClient.slideTo(index);
+		});
+	}
+
 	if ($('.compare-products').length) {
 		productsCompareFix = new Swiper('.compare-fixed__products-slider', {
 			loop: false,

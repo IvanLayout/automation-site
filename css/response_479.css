@@ -459,6 +459,33 @@
 	.vacancie__link-name span{
 		display: inline;
 	}
+
+
+	.benefit-client__flex{
+		margin-top: 24px;
+	}
+
+	.benefit-client__slider{
+		background: transparent;
+	}
+
+	.benefit-client__slider .swiper-slide{
+		padding: 20px;
+		min-height: 339px;
+	}
+
+	.benefit-client__slider .slider-button-next,
+	.benefit-client__slider .slider-button-prev{
+		display: none;
+	}
+
+	.benefit-client__slider .slider-pagination{
+		display: flex;
+	}
+
+	.benefit-client__desc{
+		margin-top: 25px;
+	}
 	/* commit */
 
 	._marg 

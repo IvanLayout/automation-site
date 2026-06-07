@@ -2128,6 +2128,38 @@
 		margin-top: 12px;
 		padding: 16px 20px;
 	}
+
+	.benefit-client__slider{
+		width: 100%;
+	}
+
+	.benefit-client__slider .swiper-slide{
+		padding: 30px 120px 30px 30px;
+	}
+
+	.benefit-client__desc{
+		width: 70%;
+	}
+
+	.benefit-client__icon{
+		margin-bottom: 60px;
+	}
+
+	.benefit-client__slider .slider-button-prev{
+		right: 73px;
+		left: auto;
+		bottom: 30px;
+	}
+
+	.benefit-client__slider .slider-button-next{
+		right: 30px;
+		left: auto;
+		bottom: 30px;
+	}
+
+	.benefit-client__grid{
+		display: none;
+	}
 	/* commit */
 
 	body

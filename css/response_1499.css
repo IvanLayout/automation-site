@@ -1288,6 +1288,36 @@
 	.presence-card__colr{
 		width: 56.16%;
 	}
+
+
+	.benefit-client__slider .swiper-slide{
+		padding: 30px 0 30px 30px;
+	}
+
+	.benefit-client__item {
+		padding-top: 32px;
+		padding-bottom: 39px;
+	}
+
+	.benefit-client__title{
+		font-size: 20px;
+	}
+
+	.benefit-client__desc{
+		font-size: 14px;
+	}
+
+	.benefit-client__slider .slider-button-prev {
+		left: 136%;
+	}
+
+	.benefit-client__slider .slider-button-next {
+		left: calc(136% + 43px);
+	}
+
+	.benefit-client__desc{
+		margin-top: 15px;
+	}
 	/* commit */
 
 	body

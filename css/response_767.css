@@ -1093,6 +1093,11 @@
 	.presence-card .small-title br{
 		display: inline;
 	}
+
+
+	.benefit-client__desc{
+		width: 100%;
+	}
 	/* commit */
 
 	.advantages-main__item

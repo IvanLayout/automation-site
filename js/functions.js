@@ -118,6 +118,21 @@ $(() => {
 		$('.adres-over').removeClass('_show')
 	})
 
+	// Плавная прокрутка к якорю
+	$('.scroll-btn').click(function(e) {
+		e.preventDefault()
+
+		let href = $(this).data('anchor')
+
+		let offsetTop = 10;
+
+		if ( $('.product-fixed').length && $(window).width() > 767 ){
+			offsetTop = $('.product-fixed').innerHeight() + 10
+		}
+
+		$('html, body').stop().animate({ scrollTop: $(href).offset().top - offsetTop }, 1000)
+	})
+
 	
 	// Табы
 	var locationHash = window.location.hash

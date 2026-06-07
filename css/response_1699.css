@@ -456,6 +456,50 @@
 	.presence-card__colr {
 		width: 60.85%;
 	}
+
+	.benefit-client__item{
+		padding-top: 32px;
+		padding-bottom: 29px;
+	}
+
+	.benefit-client__item-icon{
+		max-width: 63px;
+		margin-bottom: 28px;
+	}
+
+	.benefit-client__item-desc br{
+		display: inline;
+	}
+
+	.benefit-client__slider .swiper-slide{
+		padding: 32px 0 32px 32px;
+	}
+
+	.benefit-client__icon{
+		max-width: 63px;
+	}
+
+	.benefit-client__desc{
+		margin-top: 10px;
+	}
+
+	.benefit-client__slider .slider-button-prev{
+		bottom: 32px;
+		left: 140%;
+		width: 28px;
+		height: 28px;
+	}
+
+	.benefit-client__slider .slider-button-next {
+		bottom: 32px;
+		left: calc(140% + 43px);
+		width: 28px;
+		height: 28px;
+	}
+
+	.benefit-client__flex{
+		margin-top: 20px;
+	}
 	/* commit */
 
 	.advantages-main__info

@@ -147,6 +147,16 @@
 	.presence-card__colr{
 		width: 60%;
 	}
+
+
+	.benefit-client__item {
+		padding-top: 23px;
+		padding-bottom: 23px;
+	}
+
+	.benefit-client__item-icon{
+		margin-bottom: 20px;
+	}
 	/* commit */
 
 	.slider-button-prev, 
