@@ -2823,6 +2823,10 @@
 		max-width: 450px;
 	}
 
+	.product-fixed__product_big{
+		max-width: none;
+	}
+
 	.product-fixed__product-img
 	{
 		width: auto;
@@ -2859,6 +2863,10 @@
 		justify-content: space-between;
 	}
 
+	.product-fixed__box_small{
+		width: auto;
+	}
+
 	.product-fixed .product-info__old-price
 	{
 		font-size: 18px;
@@ -2873,6 +2881,10 @@
 
 	.product-fixed .product-info__amount 
 	{
+		margin-left: 23px;
+	}
+
+	.product-fixed__link{
 		margin-left: 23px;
 	}
 
