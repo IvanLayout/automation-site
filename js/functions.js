@@ -126,6 +126,10 @@ $(() => {
 
 		let offsetTop = 10;
 
+		if ( $(window).width() > 767 ){
+			offsetTop = 75
+		}
+
 		if ( $('.product-fixed').length && $(window).width() > 767 ){
 			offsetTop = $('.product-fixed').innerHeight() + 10
 		}
