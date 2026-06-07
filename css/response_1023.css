@@ -2211,6 +2211,18 @@
 	.about__btn:last-child{
 		padding-right: 0;
 	}
+
+	.informations .tabs-accord__item{
+		border-top: 1px solid rgba(27, 39, 69, .2);
+	}
+
+	.informations .tabs-accord__item:last-child{
+		border-bottom: 1px solid rgba(27, 39, 69, .2);
+	}
+
+	.informations__top{
+		display: none;
+	}
 	/* commit */
 
 	body

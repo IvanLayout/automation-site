@@ -2357,6 +2357,10 @@
 	}
 
 
+	.product-fixed{
+		display: none;
+	}
+
 	.product-fixed__flex
 	{
 		flex-wrap: wrap;
