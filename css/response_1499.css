@@ -1318,6 +1318,23 @@
 	.benefit-client__desc{
 		margin-top: 15px;
 	}
+
+	.about-banner__subtitle{
+		margin-top: 20px;
+		max-width: 510px;
+	}
+
+	.about-banner__wrap{
+		margin-top: 35px;
+	}
+
+	.about-banner__video{
+		margin-top: 24px;
+	}
+
+	.about__btn{
+		height: 67px;
+	}
 	/* commit */
 
 	body

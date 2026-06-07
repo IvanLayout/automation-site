@@ -486,6 +486,25 @@
 	.benefit-client__desc{
 		margin-top: 25px;
 	}
+
+	
+
+	.about-banner{
+		min-height: 617px;
+	}
+
+	.about-banner__wrap{
+		margin-top: 20px;
+	}
+
+	.about-banner__video{
+		margin-top: 30px;
+	}
+
+	.about__btn{
+		height: 50px;
+		padding: 0 32px;
+	}
 	/* commit */
 
 	._marg 

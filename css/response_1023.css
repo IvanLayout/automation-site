@@ -2160,6 +2160,57 @@
 	.benefit-client__grid{
 		display: none;
 	}
+
+
+	.about-banner{
+		padding-top: 10px;
+		min-height: 457px;
+	}
+
+	.about-banner__wrap{
+		margin-top: 5px;
+	}
+
+	.about__btns-grid{
+		display: flex;
+		flex-wrap: nowrap;
+		overflow: hidden;
+		overflow-x: auto;
+		width: calc(100% + 80px);
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.about__btns-grid::-webkit-scrollbar{
+		display: none;
+	}
+
+	.about-banner__video{
+		padding-left: 66px;
+		line-height: 56px;
+		font-size: 12px;
+	}
+
+	.about-banner__video-play{
+		width: 56px;
+		padding: 8px;
+	}
+
+	.about__btn{
+		height: 42px;
+		padding: 0 40px;
+		white-space: nowrap;
+	}
+
+	.about__btn:first-child{
+		padding-left: 0;
+	}
+
+	.about__btn:last-child{
+		padding-right: 0;
+	}
 	/* commit */
 
 	body

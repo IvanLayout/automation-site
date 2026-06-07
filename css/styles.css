@@ -8041,6 +8041,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: 40% 0;
 }
 
 .about-banner .breadcrumbs a
@@ -8120,7 +8121,30 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 }
 
 .about__btns{
-	
+	border-top: 1px solid rgba(255, 255, 255, .2);
+	position: relative;
+	z-index: 2;
+}
+
+.about__btns-grid{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.about__btn{
+	height: 88px;
+	color: #fff;
+	transition: .2s linear;
+}
+
+.about__btn + .about__btn{
+	border-left: 1px solid rgba(255, 255, 255, .2);
+}
+
+@media (any-hover: hover){
+	.about__btn:hover{
+		color: #D64923;
+	}
 }
 /*------------
     commit

@@ -128,6 +128,11 @@
 		width: calc(100% + (100vw - 1160px - var(--scroll_width)) / 2);
 		margin-right: calc(((100vw - 1160px - var(--scroll_width)) / 2) * -1);
 	}
+
+
+	.about-banner{
+		min-height: 500px;
+	}
 	/* commit */
 
 
