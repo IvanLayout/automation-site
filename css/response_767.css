@@ -280,6 +280,12 @@
 		height: 40px;
 	}
 
+	.search__search-submit
+	{
+		height: 40px;
+		width: 40px;
+	}
+
 	.page-brands__items_marg{
 		margin-top: 35px;
 	}
