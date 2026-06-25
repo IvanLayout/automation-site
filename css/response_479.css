@@ -1436,6 +1436,13 @@
 	}
 
 
+	.top-wrap__btn
+	{
+		align-self: flex-start;
+		padding-top: 10px;
+	}
+
+
 	.footer__logo 
 	{
 		max-width: 220px;
