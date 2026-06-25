@@ -886,6 +886,11 @@
         position: relative;
     }
 
+	.inner-news_marg
+	{
+		margin-top: 10px;
+	}
+
     /* .inner-news__wrap{
         top: 70px;
     } */

@@ -641,6 +641,11 @@
 		aspect-ratio: 1 / .845;
 	}
 
+	.inner-news_marg
+	{
+		margin-top: 20px;
+	}
+
 	.inner-news__grid .inner-news__item
 	{
 		width: calc(100% / 1 - 15px);

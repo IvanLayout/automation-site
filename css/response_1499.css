@@ -1821,9 +1821,9 @@
 	}
 
 
-	.inner-news__grid
+	.inner-news_marg
 	{
-		/* margin-top: -10px; */
+		margin-top: 40px;
 	}
 
 	.inner-news__info

@@ -269,6 +269,12 @@
 	}
 
 
+	.inner-news_marg
+	{
+		margin-top: 55px;
+	}
+
+
 	.footer__colr 
 	{
 		width: calc(100% - 290px);

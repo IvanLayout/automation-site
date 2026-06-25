@@ -10200,6 +10200,11 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	margin-top: 24px;
 }
 
+.inner-news_marg
+{
+	margin-top: 70px;
+}
+
 .inner-news__wrap
 {
 	position: sticky;
