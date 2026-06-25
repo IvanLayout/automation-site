@@ -583,6 +583,23 @@
 	}
 
 
+	.cart-total__item + .cart-total__item
+	{
+		margin-top: 10px;
+	}
+
+	.cart-total__bord
+	{
+		margin-top: 20px;
+		margin-bottom: 13px;
+	}
+
+	.promo-wrap
+	{
+		margin-top: 20px;
+	}
+
+
 	.pade-checkout__sector{
 		position: relative;
 	}
