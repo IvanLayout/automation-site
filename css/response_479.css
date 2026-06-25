@@ -1226,16 +1226,6 @@
 		border-top: 1px solid rgba(27, 39, 69, .2);
 	}
 
-	.tabs-accord__open
-	{
-		padding-right: 0;
-	}
-
-	.tabs-accord__open svg
-	{
-		display: none;
-	}
-
 	.informations__item + .informations__item
 	{
 		margin-top: 30px;

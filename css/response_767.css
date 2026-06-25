@@ -1805,6 +1805,11 @@
 		columns: 2;
 	}
 
+	.inner-news__box
+	{
+		flex: none;
+	}
+
 	.main-tags
 	{
 		display: block;
