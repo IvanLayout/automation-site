@@ -6531,6 +6531,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	justify-content: space-between;
 }
 
+.form-gray__flex_gap{
+	row-gap: 10px;
+}
+
 .form-gray__col{
 	width: calc(50% - 10px);
 }
@@ -10846,9 +10850,17 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	order: 5;
 }
 
-.main-tags__open._active
+.main-tags__open span + span{
+	display: none;
+}
+
+.main-tags__open._active span
 {
-	display: none !important;
+	display: none;
+}
+
+.main-tags__open._active span + span{
+	display: inline;
 }
 
 @media (any-hover: hover)
@@ -10890,6 +10902,10 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	height: 6px;
 	fill: #1B2745;
 	transition: fill .2s linear;
+}
+
+.main-tags__open._active svg{
+	transform: rotate(180deg);
 }
 
 @media (any-hover: hover)

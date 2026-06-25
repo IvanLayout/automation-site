@@ -575,9 +575,15 @@ $(() => {
 	$('body').on('click', '.main-tags__open', function(e) {
 		e.preventDefault()
 		
-		$(this).addClass('_active')
-		$(this).closest('.main-tags_blog').addClass('_all')
-		$(this).closest('.main-tags_blog').find('.main-tags__item').addClass('_show')
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			$(this).closest('.main-tags_blog').removeClass('_all')
+			$(this).closest('.main-tags_blog').find('.main-tags__item').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$(this).closest('.main-tags_blog').addClass('_all')
+			$(this).closest('.main-tags_blog').find('.main-tags__item').addClass('_show')
+		}
 	})
 
 	// Показать все теги
@@ -765,6 +771,19 @@ $(() => {
 	
 		$(this).addClass('_hide')
 	})
+
+
+	$(document).on('click', '.copy-js', function () {
+		const text = $(this).data('textCopy');
+
+		navigator.clipboard.writeText(text)
+			.then(function () {
+				console.log('Скопировано');
+			})
+			.catch(function (err) {
+				console.error('Ошибка копирования:', err);
+			});
+	});
 })
 
 

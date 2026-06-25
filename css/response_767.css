@@ -657,6 +657,10 @@
 		margin-top: 10px;
 	}
 
+	.form-gray__flex_gap{
+		row-gap: 0;
+	}
+
 	.radio-big__box{
 		padding: 11px 32px 11px 9px;
 	}
