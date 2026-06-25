@@ -1712,17 +1712,36 @@
 	}
 
 
+	.articles__wrap .slider-pagination
+	{
+		display: flex;
+		margin-top: 0;
+		bottom: 25px;
+	}
+
+	.articles__wrap .slider-pagination .slider-dot
+	{
+		background: rgba(255,255,255,.5);
+	}
+
+	.articles__wrap .slider-pagination .slider-dot.slider-dot_active
+	{
+		background: rgba(255,255,255,1);
+	}
+
 	.articles__item
 	{
 		border-radius: 10px;
 		padding-left: 18px;
 		padding-right: 18px;
+		padding-bottom: 45px;
 	}
 
 	.articles__item._item_big
 	{
 		padding-left: 18px;
 		padding-right: 18px;
+		padding-bottom: 45px;
 
 		aspect-ratio: 1 / .7073;
 	}
