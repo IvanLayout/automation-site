@@ -2369,10 +2369,25 @@ button
 	min-width: 204px;
 }
 
+.checkout__agree + .form__agree
+{
+	margin-top: 10px;
+}
+
+.form__agree + .form__agree
+{
+	margin-top: 10px;
+}
+
 .form__agree
 {
     font-size: 12px;
     line-height: 1.3;
+}
+
+.form__agree-big
+{
+	font-size: 14px;
 }
 
 .form__agree_marg{

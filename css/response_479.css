@@ -1442,6 +1442,22 @@
 		padding-top: 10px;
 	}
 
+	.footer-small
+	{
+		padding-top: 11px;
+	}
+
+	.footer-small__flex
+	{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.footer-small__copy
+	{
+		width: 100%;
+	}
+
 
 	.footer__logo 
 	{

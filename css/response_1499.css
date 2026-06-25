@@ -839,7 +839,8 @@
 		margin-top: 20px;
 	}
 
-	.checkout__agree .checkbox__text{
+	.checkout__agree .checkbox__text,
+	.form__agree-big{
 		font-size: 12px;
 	}
 
