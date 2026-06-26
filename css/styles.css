@@ -3961,10 +3961,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	aspect-ratio: 1;
 	margin: 0 auto;
 	display: block;
+	height: auto;
 }
 
 .small-product__img span{
-	display: block;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
