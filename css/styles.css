@@ -3964,7 +3964,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 .small-product__img span{
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
