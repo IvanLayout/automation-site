@@ -11595,6 +11595,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 {
 	padding-bottom: 25px;
 	padding-top: 5px;
+	width: 100%;
 }
 
 .product__logo
@@ -11980,7 +11981,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 }
 
 .product__img span{
-	display: block;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
