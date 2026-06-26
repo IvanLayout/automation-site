@@ -11489,6 +11489,8 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .products__slider
 {
 	margin-top: 24px;
+
+	display: none !important;
 }
 
 .products__slider > .slider-pagination
@@ -16225,6 +16227,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .reviews-inner__slide
 {
 	width: 100px;
+	aspect-ratio: 1;
 }
 
 .reviews-inner__slider-img 
@@ -16236,7 +16239,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	flex-wrap: wrap;
 
 	width: 100%;
-	aspect-ratio: 1;
+	height: 100%;
 	border-radius: 10px;
 	border: 1px solid rgba(27, 39, 69, .2);
 	padding: 10px;
@@ -16247,7 +16250,6 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     display: block;
 	max-width: 100%;
 	max-height: 100%;
-	flex-shrink: 0;
 }
 
 
