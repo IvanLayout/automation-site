@@ -6068,6 +6068,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	flex-wrap: wrap;
 
 	width: 100%;
+	height: auto;
 	aspect-ratio: 1;
 }
 
