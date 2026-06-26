@@ -16247,6 +16247,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
     display: block;
 	max-width: 100%;
 	max-height: 100%;
+	flex-shrink: 0;
 }
 
 
