@@ -8158,7 +8158,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	left: 0;
 	top: 0;
 	width: 70px;
-	aspect-ratio: 1;
+	height: 70px;
 	border: 1px solid rgba(255, 255, 255, .1);
 	border-radius: 50%;
 	padding: 10px;
