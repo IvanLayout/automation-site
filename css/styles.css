@@ -14380,6 +14380,10 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	display: none;
 }
 
+.product-images__slider .swiper-slide{
+	aspect-ratio: 1 / .723;
+}
+
 .product-images__img
 {
 	display: flex;
@@ -14392,7 +14396,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	border-radius: 10px;
 	overflow: hidden;
 	width: 100%;
-	aspect-ratio: 1 / .723;
+	height: 100%;
 	padding: 26px;
 
 	position: relative;
