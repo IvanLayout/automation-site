@@ -11950,6 +11950,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 	aspect-ratio: 1;
 	height: 100%;
 	margin: 0 auto;
+	display: block;
 }
 
 .product__img span{
