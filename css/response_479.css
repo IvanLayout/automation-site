@@ -1607,4 +1607,14 @@
 	{
 		margin-top: 38px;
 	}
+
+
+	.modal.modal_login{
+		width: 100%;
+	}
+
+	.modal.modal_login .modal__box{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }

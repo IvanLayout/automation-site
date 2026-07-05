@@ -992,6 +992,10 @@
 		margin-bottom: 16px;
 	}
 
+	.modal__subtitle{
+		margin-top: -6px;
+	}
+
 	.modal-addres__detect{
 		margin-top: 16px;
 	}

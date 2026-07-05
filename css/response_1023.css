@@ -504,6 +504,10 @@
     .fix-btns__btn-name{
         margin-top: 8px;
         display: block;
+		white-space: nowrap;
+		max-width: 70px;
+		overflow: hidden;
+		text-overflow: ellipsis;
     }
 
     .header-catalog .cont{
