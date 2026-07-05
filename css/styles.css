@@ -587,7 +587,7 @@ button
     display: block;
 
     height: 40px;
-    padding: 0 26px 0 60px;
+    padding: 3px 26px 0 60px;
 
     border-radius: 4px;
     background: #319ACE;
@@ -4256,6 +4256,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	color: rgba(27, 39, 69, 0.5);
 	transition: color .2s linear;
 	margin-bottom: -1px;
+}
+
+.tabs-small__btn-delete{
+	display: none;
 }
 
 .tabs-small__btn::before{

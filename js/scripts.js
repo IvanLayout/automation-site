@@ -1114,7 +1114,7 @@ $(() => {
 
 		$('body').on('click', '.benefit-client__item', function (e) {
 			const index = $(this).data('slide-index');
-			benefitClient.slideTo(index);
+			benefitClient.slideToLoop(index);
 		});
 	}
 

@@ -816,7 +816,7 @@
 								<div class="banner-info__desc">Подберём модель светосигнальных колонн XSON под ваш технологический процесс.</div>
 
 								<div class="banner-info__btn">
-									<a href="/" class="btn-red">Получить консультацию</a>
+									<button type="button" class="btn-red modal-btn" data-content="#modal-callbacks">Получить консультацию</button>
 								</div>
 
 								<div class="banner-info__imp">Напомним, что для производств с высоким уровнем шума и плохой видимостью бренд представил серию BTL70BK.</div>
@@ -1531,6 +1531,40 @@
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<div id="modal-callbacks" class="modal">
+			<div class="modal__box">
+				<div class="modal__title">Заказать звонок</div>
+
+				<form action="" class="form-gray modal__form-gray">
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
+						</div>
+					</div>
+					<div class="form-gray__line">
+						<div class="form-gray__field">
+							<input type="tel" value="" name="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form-gray__input">
+						</div>
+					</div>
+					<div class="checkbox form__agree form__agree_marg">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">
+								Я <a href="/">соглашаюсь</a> на получение рекламных предложений, а также рассылок рекламного характера, в том числе полезных материалов.
+							</span>
+						</label>
+					</div>
+
+					<div class="form__agree">Заполняя поля и нажимая кнопку «Отправить», вы подтверждаете, что ознакомлены и согласны с <a href="/">Политикой в отношении обработки персональных данных.</a></div>
+					
+					<div class="form__submit">
+						<button type="submit" class="form__submit-btn btn-red btn-red_big">Отправить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 
 

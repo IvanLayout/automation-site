@@ -1328,7 +1328,7 @@
 		align-items: stretch;
 		align-content: stretch;
 		flex-wrap: wrap;
-		gap: 50px;
+		gap: 50px 14px;
 	}
 
 	.imp-info__line{
@@ -3169,6 +3169,17 @@
 		width: calc(100% / 3 - 15px);
 		margin-top: 30px;
 		margin-left: 15px;
+	}
+
+	.inner-news__grid .inner-news__item:nth-child(n + 11) 
+	{
+		order: 1;
+	}
+
+	.inner-news__item.inner-news__subscribe
+	{
+		width: calc(100% - 15px);
+		order: 1;
 	}
 
 	.inner-news__time
