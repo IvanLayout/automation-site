@@ -316,9 +316,15 @@ button
 ------------*/
 .header
 {
-	position: relative;
+	position: sticky;
+	left: 0;
+	top: 0;
 	background: #fff;
 	z-index: 91;
+}
+
+.header.hideCom{
+	display: none;
 }
 
 .header__top{
@@ -15771,10 +15777,10 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 }
 
 .informations__top{
-	position: sticky;
+	/* position: sticky;
 	left: 0;
 	top: 109px;
-	z-index: 10;
+	z-index: 10; */
 	background: #fff;
 	margin-top: -20px;
 	transition: opacity .2s linear, visibility .2s linear;
