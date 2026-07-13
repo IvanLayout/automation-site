@@ -93,6 +93,7 @@
     }
 
     .header__info{
+		position: static;
         height: 70px;
     }
 
@@ -109,7 +110,6 @@
 
     .header__info-wrap._fix{
         position: fixed;
-        box-shadow: 0 0 10px 0 rgba(13, 30, 42, 0.1);
     }
 
     .header__info-wrap._show{
@@ -3644,6 +3644,10 @@
 	.aside-filter
 	{
 		display: none;
+	}
+	
+	.content__flex{
+		flex-wrap: wrap;
 	}
 
 	.content__center

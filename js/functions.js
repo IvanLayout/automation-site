@@ -278,10 +278,9 @@ $(() => {
 			$(this).closest('.header-submenu__item').addClass('_active')
 		}
 	})
-
-
-	if ( $(window).width() < 1024 ) {
-		$('body').on('click', '.header__list-link._sub', function (e) {
+	
+	$('body').on('click', '.header__list-link._sub', function (e) {
+		if ( $(window).width() < 1024 ) {
 			e.preventDefault()
 
 			if ( $(this).closest('.header__list-item').hasClass('_show') ) {
@@ -289,8 +288,8 @@ $(() => {
 			} else {
 				$(this).closest('.header__list-item').addClass('_show')
 			}
-		})
-	}
+		}
+	})
 	
 
 	// Наведение на пункты меню
@@ -304,8 +303,8 @@ $(() => {
 		})
 	}
 
-	if ( $(window).width() < 1024 ) {
-		$('body').on('click', '.header-menu__link._sub', function (e) {
+	$('body').on('click', '.header-menu__link._sub', function (e) {
+		if ( $(window).width() < 1024 ) {
 			e.preventDefault()
 
 			let titleCatalog = $(this).find('.header-menu__link-name').text()
@@ -314,8 +313,8 @@ $(() => {
 			$(this).next('.header-submenu').addClass('_show')
 
 			$('.header-catalog, .catalog-head__back').addClass('_second')
-		})
-	}
+		}
+	})
 
 	$('body').on('click', '.open-catalog-mob', function (e) {
 		e.preventDefault()
@@ -818,7 +817,7 @@ $(window).on('load', () => {
 	if ( $('.product-fixed').length ) {
 		if( $(window).scrollTop() > $('.product-info__total').offset().top + $('.product-info__total').innerHeight() ) {
 			if( $(window).width() > 1023 ){
-				let Pos = $('.header').innerHeight()
+				let Pos = $('.header__info-wrap').innerHeight()
 				$('.product-fixed').css('top', Pos)
 			}
 			$('.product-fixed').addClass('_fix')
@@ -860,11 +859,11 @@ $(window).on('load', () => {
 			if( $(window).scrollTop() > $('.compare-feature').offset().top ) {
 				$('.compare-fixed').addClass('_fix')
 
-				$('.header').addClass('hideCom')
+				$('.header__info._fix').addClass('hideCom')
 			} else {
 				$('.compare-fixed').removeClass('_fix')
 
-				$('.header').removeClass('hideCom')
+				$('.header__info._fix').removeClass('hideCom')
 			}
 		}
 

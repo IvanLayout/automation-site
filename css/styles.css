@@ -316,18 +316,16 @@ button
 ------------*/
 .header
 {
-	position: sticky;
+	position: relative;
 	left: 0;
 	top: 0;
 	background: #fff;
 	z-index: 91;
 }
 
-.header.hideCom{
-	display: none;
-}
-
 .header__top{
+	position: relative;
+	z-index: 91;
 	border-bottom: 1px solid rgba(27, 39, 69, 0.1);
 }
 
@@ -545,13 +543,27 @@ button
     fill: currentColor;
 }
 
-
 .header__info{
-	position: relative;
+	height: 88px;
 }
 
 .header__info-wrap{
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 90;
+	width: 100%;
+	background: #fff;
 	padding: 15px 0 20px;
+}
+
+.header__info-wrap._fix{
+	position: fixed;
+	box-shadow: 0 0 10px 0 rgba(13, 30, 42, 0.1);
+}
+
+.header__info .header__info-wrap._fix.hideCom{
+	display: none;
 }
 
 .header__info .cont
@@ -1084,6 +1096,10 @@ button
     background: #FFF;
 
     transition: visibility .2s linear, opacity .2s linear;
+}
+
+._fix .header-catalog__block{
+    height: calc(100vh - 88px);
 }
 
 .header-catalog__block._show
@@ -13301,6 +13317,7 @@ input[type=radio]:checked + .radio-line__box .radio-line__btn{
 .content__flex
 {
 	justify-content: space-between;
+	flex-wrap: nowrap;
 }
 
 .content__flex_marg{
@@ -17997,4 +18014,11 @@ a.footer__creator-img
 	position: relative;
 	top: -1px;
 	padding-top: 1px;
+}
+
+@media (max-width: 1799px)
+{
+	.adres-mini{
+		margin-left: -843px;
+	}
 }
